@@ -289,11 +289,11 @@ footer .copyright {
   text-align: center;
   margin-bottom: 0;
 }
-footer .theme-by {
+/*footer .theme-by {
   text-align: center;
   margin: 10px 0 0;
 }
-
+*/
 @media only screen and (min-width: 768px) {
   footer {
     padding: 50px 0;
