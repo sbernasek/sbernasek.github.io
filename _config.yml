@@ -67,7 +67,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: false
+#  rss: false
   email: "sbernasek@gmail.com"
 #  facebook: deanattali
   github: sebastianbernasek
@@ -173,7 +173,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
@@ -196,57 +196,57 @@ exclude:
   - README.md
   - Vagrantfile
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Add a thumbnail image to your post."
-          placeholder: "Thumbnail"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+# # prose.io config
+# prose:
+#   rooturl: '_posts'
+#   media: 'img'
+#   ignore:
+#     - 404.html
+#     - LICENSE
+#     - feed.xml
+#     - _config.yml
+#     - /_layouts
+#     - /_includes
+#     - /css
+#     - /img
+#     - /js
+#   metadata:
+#     _posts:
+#       - name: "layout"
+#         field:
+#           element: "hidden"
+#           value: "post"
+#       - name: "title"
+#         field:
+#           element: "text"
+#           label: "Post title"
+#           placeholder: "Title"
+#           alterable: true
+#       - name: "subtitle"
+#         field:
+#           element: "textarea"
+#           label: "Subtitle"
+#           placeholder: "A description of your post."
+#           alterable: true
+#       - name: "date"
+#         field:
+#           element: "text"
+#           label: "Date"
+#           help: "Enter date of post."
+#           placeholder: "yyyy-mm-dd"
+#           alterable: true
+#       - name: "image"
+#         field:
+#           element: "text"
+#           label: "Image"
+#           help: "Add a thumbnail image to your post."
+#           placeholder: "Thumbnail"
+#           alterable: true
+#       - name: "published"
+#         field:
+#           element: "checkbox"
+#           label: "Publish"
+#           help: "Check to publish post, uncheck to hide."
 
 plugins:
   - jekyll-paginate
