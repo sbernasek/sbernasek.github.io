@@ -1,5 +1,7 @@
 # --- General options --- #
 
+port: 4444
+
 # Name of website
 title: Sebastian Bernasek
 
@@ -20,12 +22,13 @@ description:
 
 # List of links in the navigation bar
 navbar-links:
-  About: "aboutme"
-  News:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-  Research: "http://sebastianbernasek.github.io"
-  Publications: "http://sebastianbernasek.github.io"
+  About: "pages/about"
+  Projects:
+    - Research: "pages/research"
+    - Software: "pages/software"
+  Publications: "pages/publications"
+  GitHub: "https://github.com/sebastianbernasek"
+  Resume: "cv/cv.pdf"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -71,14 +74,14 @@ social-network-links:
 #  rss: false
   email: "sbernasek@gmail.com"
 #  facebook: deanattali
+  linkedin: sbernasek
   github: sebastianbernasek
 #  twitter: daattali
 #  reddit: yourname
-  linkedin: sbernasek
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-  instagram: sbernasek
+#  instagram: sbernasek
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888

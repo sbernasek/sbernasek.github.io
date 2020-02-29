@@ -1,0 +1,550 @@
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  26 OCT 2019 08:39
+ restricted system commands enabled.
+**skills.tex
+(./skills.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.6 \cvsection
+            {Skills}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \cvsection{S
+              kills}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
+[]Skills 
+ []
+
+
+! LaTeX Error: Environment cvskills_new undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{cvskills_new}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.12   \cvskillcolumn
+                   {Programming}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12   \cvskillcolumn{P
+                     rogramming}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment cvskillnotes undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13     \begin{cvskillnotes}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--14
+[]Programming 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14       \item {
+                \emph{FlyEye Analysis}: HHHH.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (16.23877pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 Eye
+ []
+
+
+Overfull \hbox (24.04428pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 Anal-
+ []
+
+
+Overfull \hbox (8.43326pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 y-
+ []
+
+
+Overfull \hbox (12.0652pt too wide) in paragraph at lines 14--15
+\OT1/cmr/m/it/10 sis\nullfont :
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15       \item {
+                \emph{FlyQMA}: FFFFFta.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{cvskillnotes}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16     \end{cvskillnotes}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 15--18
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (24.06653pt too wide) in paragraph at lines 15--18
+\OT1/cmr/m/it/10 QMA\nullfont :
+ []
+
+! Misplaced alignment tab character &.
+l.19   &
+      
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.21   \cvskillcolumn
+                   {Programming}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21   \cvskillcolumn{P
+                     rogramming}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment cvskillnotes undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22     \begin{cvskillnotes}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--23
+[]Programming 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23       \item {
+                \emph{FlyEye Analysis}: HHHH.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (16.23877pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/it/10 Eye
+ []
+
+
+Overfull \hbox (24.04428pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/it/10 Anal-
+ []
+
+
+Overfull \hbox (8.43326pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/it/10 y-
+ []
+
+
+Overfull \hbox (12.0652pt too wide) in paragraph at lines 23--24
+\OT1/cmr/m/it/10 sis\nullfont :
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24       \item {
+                \emph{FlyQMA}: FFFFFta.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{cvskillnotes}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25     \end{cvskillnotes}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 24--27
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (24.06653pt too wide) in paragraph at lines 24--27
+\OT1/cmr/m/it/10 QMA\nullfont :
+ []
+
+! Misplaced alignment tab character &.
+l.28    &
+       
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.30   \cvskillcolumn
+                   {Programming}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30   \cvskillcolumn{P
+                     rogramming}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment cvskillnotes undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31     \begin{cvskillnotes}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--32
+[]Programming 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32       \item {
+                \emph{FlyEye Analysis}: HHHH.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (16.23877pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/it/10 Eye
+ []
+
+
+Overfull \hbox (24.04428pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/it/10 Anal-
+ []
+
+
+Overfull \hbox (8.43326pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/it/10 y-
+ []
+
+
+Overfull \hbox (12.0652pt too wide) in paragraph at lines 32--33
+\OT1/cmr/m/it/10 sis\nullfont :
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33       \item {
+                \emph{FlyQMA}: FFFFFta.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{cvskillnotes}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34     \end{cvskillnotes}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 33--36
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (24.06653pt too wide) in paragraph at lines 33--36
+\OT1/cmr/m/it/10 QMA\nullfont :
+ []
+
+! Misplaced alignment tab character &.
+l.37    &
+       
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.39   \cvskillcolumn
+                   {Programming}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39   \cvskillcolumn{P
+                     rogramming}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment cvskillnotes undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40     \begin{cvskillnotes}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--41
+[]Programming 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41       \item {
+                \emph{FlyEye Analysis}: HHHH.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (16.23877pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Eye
+ []
+
+
+Overfull \hbox (24.04428pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 Anal-
+ []
+
+
+Overfull \hbox (8.43326pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 y-
+ []
+
+
+Overfull \hbox (12.0652pt too wide) in paragraph at lines 41--42
+\OT1/cmr/m/it/10 sis\nullfont :
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42       \item {
+                \emph{FlyQMA}: FFFFFta.}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{cvskillnotes}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43     \end{cvskillnotes}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (17.51653pt too wide) in paragraph at lines 42--45
+\OT1/cmr/m/it/10 Fly-
+ []
+
+
+Overfull \hbox (24.06653pt too wide) in paragraph at lines 42--45
+\OT1/cmr/m/it/10 QMA\nullfont :
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{cvskills_new}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{cvskills_new}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> skills.tex
+           
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 14 strings out of 495119
+ 100000,89155 words of node,token memory allocated 3803 words of node memory still in use:
+   70 hlist, 16 disc, 13 local_par, 1 dir, 173 glue, 12 kern, 61 penalty, 206 gl
+yph, 32 glue_spec nodes
+   avail lists: 1:1,2:12,3:1,4:2,5:3,7:6,8:1,10:1
+ 3678 multiletter control sequences out of 65536+600000
+ 15 fonts using 632831 bytes
+ 14i,1n,10p,92b,92s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!
