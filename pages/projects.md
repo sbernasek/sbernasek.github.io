@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Research Projects
-subtitle:
 ---
 
-My primary field was computational biology; I synthesized concepts from chemical engineering and computer science to study how cells make decisions. I was particularly focused on exploring the chemical mechanisms that guide cells to adopt the appropriate roles and functions during the formation of complex organs, like the fruit fly eye.
+My primary field is computational biology; I synthesize concepts from chemical engineering and computer science to study how cells make decisions. As a graduate student, I was particularly focused on exploring the chemical mechanisms that guide cells to adopt the appropriate roles and functions during the formation of complex organs.
 
 Despite the subject matter, my role is akin to that of a modern data scientist. I combine computer vision, mathematical modeling, statistics, and dynamical systems theory to develop new analytical methods and derive meaning from experimental data. Common themes include:
 

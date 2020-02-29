@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Software for computational biologists
+title: Software
 ---
 
 
