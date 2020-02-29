@@ -1,16 +1,28 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Software for computational biologists
 ---
 
-My name is Inigo Montoya. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Fly-QMA
 
-What else do you need?
+A python package for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while improving reproducibility.  
+[[site](https://sebastianbernasek.github.io/flyqma/)][[code](https://github.com/sebastianbernasek/flyqma)]  
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### FlyEye Analysis
+
+A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. Supports dynamic analysis, spatial analysis, model fitting, and visualization of the resultant trends.  
+[[site](https://sebastianbernasek.github.io/flyeye/)][[code](https://github.com/sebastianbernasek/flyeye)]  
+
+
+### Binding
+
+A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable.  
+[[code](https://github.com/sebastianbernasek/binding)]  
+
+
+### Gene SSA
+
+A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I've come across.  
+[[code](https://github.com/sebastianbernasek/genessa)]  

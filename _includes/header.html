@@ -50,19 +50,26 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
-		  {% if page.subtitle %}
-		    {% if include.type == "page" %}
-            <hr class="small">
-            <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
-		  {% endif %}
-		  
-		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: site.date_format }}</span>
-		  {% endif %}
+          <!-- SEB EDIT -->
+          <!-- <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1> -->
+          <h2>
+            <span class="{{ include.type }}-heading">{{ page.title }}</span>
+          </h2>
+          <hr class="small">
+          <!-- END SEB EDIT -->
+		      {% if page.subtitle %}
+    		    {% if include.type == "page" %}
+                <!-- <hr class="small"> -->
+                <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
+    			{% else %}
+    			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+    			{% endif %}
+    		  {% endif %}
+    		  
+    		  {% if include.type == "post" %}
+    		  <span class="post-meta">Posted on {{ page.date | date: site.date_format }}</span>
+    		  {% endif %}
+
         </div>
       </div>
     </div>
