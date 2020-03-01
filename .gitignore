@@ -6,6 +6,9 @@ _site
 # cv files
 cv/content/references.tex
 
+# unused images
+/img/assets
+
 # general
 .DS_Store
 Thumbs.db

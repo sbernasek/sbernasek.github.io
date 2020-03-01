@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hi, I'm Sebastian! Or Seb.
+bigimg: /img/cover.jpg
 use-site-title: false
 ---
 
