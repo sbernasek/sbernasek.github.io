@@ -1,7 +1,7 @@
 ---
 layout: page
 title: I'm Sebastian! Or Seb.
-use-site-title: false
+use-site-title: true
 ---
 
 ![Cover Photo](/img/cover.jpg){: .center-block :}

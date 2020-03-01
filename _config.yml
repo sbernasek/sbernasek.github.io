@@ -22,6 +22,7 @@ description: Seb's personal webpage.
 
 # List of links in the navigation bar
 navbar-links:
+  Trips: "pages/trips"
   Research:
     - Projects: "pages/projects"
     - Software: "pages/software"
