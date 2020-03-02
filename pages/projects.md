@@ -18,9 +18,15 @@ Check out the sections below for an introduction to some of my past projects, an
 
 ### Redundancy in gene regulatory networks
 
-During the development of complex organisms, gene regulatory networks integrate external signals to ensure the timely execution of downstream events. These networks exhibit extensive functional redundancy, enabling cells to partially compensate for deleterious mutations. I sought to elucidate evolutionary forces shaping these topologies by identifying additional benefits that redundant regulatory mechanisms confer upon heterogeneous populations of organisms. My collaborators and I coupled model-based predictions with experimental validation in model organisms in an effort to generate and test new hypotheses. We showed that redundant regulatory mechanisms enable faster rates of growth and development by safeguarding against excessive protein expression when metabolic rates are high.
+During the development of complex organisms, gene regulatory networks integrate external signals to ensure the timely execution of downstream events. These networks exhibit extensive functional redundancy, enabling cells to partially compensate for deleterious mutations. I sought to elucidate evolutionary forces shaping these topologies by identifying additional benefits that redundant regulatory mechanisms confer upon heterogeneous populations of organisms. My collaborators and I coupled model-based predictions with experimental validation in model organisms in an effort to generate and test new hypotheses. We showed that redundant regulatory mechanisms enable faster rates of growth and development by safeguarding against excessive protein expression when metabolic rates are high. 
+
+![Regulatory tradeoffs](/img/research/metabolism_coords.png){: .center-block :}
+
+The results implicate a novel driving force in the evolution of genetic circuits; by adding more brakes, organisms can safely upgrade their metabolic engine in order to gain an edge in the race from embryo to adulthood.
 
 The [study](https://doi.org/10.1016/j.cell.2019.06.023) was published in *Cell*.
+
+![Evolutionary role for regulatory repressors](/img/research/metabolism_race.png){: .center-block :}
 
 
 ### Automated analysis of mosaic tissues
@@ -36,3 +42,5 @@ The [manuscript](https://doi.org/10.1101/775783) is scheduled for publication in
 Transcription factors coordinate the timing and execution of cell differentiation by tuning the expression of target genes. Some transcription factors promote differentiation, while others impede it. Competing transcription factors are often co-expressed *in vivo*, and it remains unclear how cells reliably integrate their antagonistic inputs. I developed and deployed computer vision techniques to infer the expression dynamics of competing transcription factors from confocal microscope images of the developing fruit fly eye. Combined with an experimental pipeline developed by my experimental collaborators, my approach facilitates quantitative modeling and characterization of transcription factor activity both before, during, and after differentiation.
 
 Check out a [preprint](https://doi.org/10.1101/430744) of our manuscript.
+
+![Expression dynamics in the developing eye](/img/research/ratio.png){: .center-block :}
