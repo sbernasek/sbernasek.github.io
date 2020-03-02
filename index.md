@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I'm Sebastian! Or Seb.
+title: Hi. I'm Sebastian! Or Seb.
 use-site-title: true
 ---
 

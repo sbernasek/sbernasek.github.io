@@ -22,7 +22,7 @@ description:
 
 # List of links in the navigation bar
 navbar-links:
-  Trips: "pages/trips"
+  Current: "blog/index"
   Research:
     - Projects: "pages/projects"
     - Software: "pages/software"
@@ -145,6 +145,9 @@ title-separator: "-"
 date_format: "%B %-d, %Y"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
+
+paginate_path: "/blog/index/"
+
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"

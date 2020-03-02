@@ -29,6 +29,7 @@ Biologists use mosaic tissues to compare the behavior of genetically distinct ce
 
 The [manuscript](https://doi.org/10.1101/775783) is scheduled for publication in Spring 2020.
 
+![Fly-QMA pipeline](/img/research/flyqma.png){: .center-block :}
 
 ### Cellular decisions in the developing eye
 
