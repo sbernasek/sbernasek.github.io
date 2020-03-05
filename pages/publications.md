@@ -11,7 +11,7 @@ Sebastian Bernasek*, J.F. Lachance*, N. Pelaez*, R. Bakker, H. Navarro, L. Amara
 
 **Fly-QMA: Automated analysis of mosaic imaginal discs in Drosophila.**  
 Sebastian Bernasek, N. Pelaez, R. Carthew, N. Bagheri, L. Amaral  
-[In press](https://doi.org/10.1101/775783), scheduled 2020.  
+[Published]( https://doi.org/10.1371/journal.pcbi.1007406) in *PLOS Computational Biology*, 2020.
 
 **Repressive gene regulation synchronizes neural development with cellular metabolism.**  
 J. Cassidy*, Sebastian Bernasek*, R. Bakker, R. Giri, N. Pelaez, B. Eder, A. Bobrowska, N. Bagheri, L. Amaral, R. Carthew  

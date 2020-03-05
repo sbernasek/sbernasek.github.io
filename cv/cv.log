@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  29 FEB 2020 08:56
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAR 2020 16:54
  restricted system commands enabled.
 **cv.tex
 (./cv.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.181 seconds)
+luaotfload | main : initialization completed in 0.133 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1502,23 +1502,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of LuaTeX's memory you used:
  41924 strings out of 495119
  125171,953878 words of node,token memory allocated
- 1471 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 123 glue, 56 attribute, 55 glue_spec, 56 attribute_
+ 1482 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 124 glue, 57 attribute, 55 glue_spec, 57 attribute_
 list, 1 write nodes
-   avail lists: 1:6,2:1591,3:321,4:240,5:521,6:3581,7:1698,8:129,9:517,10:20,11:
-395
+   avail lists: 1:6,2:1589,3:321,4:240,5:523,6:3600,7:1698,8:131,9:517,10:20,11:
+398
  43927 multiletter control sequences out of 65536+600000
- 77 fonts using 16745135 bytes
+ 77 fonts using 16745231 bytes
  72i,19n,89p,880b,565s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2016/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
 sPro-RegularIt.otf></Library/Fonts/SourceSansPro-LightIt.otf></Library/Fonts/Sou
 rceSansPro-Light.otf></Library/Fonts/SourceSansPro-Bold.otf><./fonts/Roboto-Regu
 lar.ttf><./fonts/FontAwesome.ttf><./fonts/Roboto-Italic.ttf></Library/Fonts/Sour
 ceSansPro-Regular.otf><./fonts/Roboto-Bold.ttf><./fonts/Roboto-Thin.ttf>
-Output written on cv.pdf (2 pages, 54550 bytes).
+Output written on cv.pdf (2 pages, 54533 bytes).
 
-PDF statistics: 115 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  10 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
