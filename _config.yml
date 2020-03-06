@@ -27,7 +27,7 @@ navbar-links:
     - Projects: "pages/projects"
     - Software: "pages/software"
     - Publications: "pages/publications"
-    - Dissertation: "https://github.com/sebastianbernasek/dissertation/blob/master/thesis.pdf"
+    - Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf"
   Resume: "cv/cv.pdf"
   GitHub: "https://github.com/sebastianbernasek"
 
