@@ -129,6 +129,8 @@ GEM
     jekyll-optional-front-matter (0.3.0)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
+    jekyll-pdf-embed (1.0.3)
+      jekyll
     jekyll-readme-index (0.2.0)
       jekyll (~> 3.0)
     jekyll-redirect-from (0.14.0)
@@ -250,6 +252,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 197)
   jekyll-paginate
+  jekyll-pdf-embed
 
 BUNDLED WITH
    1.17.2

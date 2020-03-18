@@ -7,11 +7,11 @@ title: Publications
 
 **Ratio-based sensing of two transcription factors regulates the transit to differentiation.**  
 Sebastian Bernasek*, J.F. Lachance*, N. Pelaez*, R. Bakker, H. Navarro, L. Amaral, N. Bagheri, I. Rebay, R. Carthew  
-[Under revision](https://doi.org/10.1101/430744), expected 2020.  
+[In preparation](https://doi.org/10.1101/430744), expected 2020.  
 
 **Fly-QMA: Automated analysis of mosaic imaginal discs in Drosophila.**  
 Sebastian Bernasek, N. Pelaez, R. Carthew, N. Bagheri, L. Amaral  
-[Published]( https://doi.org/10.1371/journal.pcbi.1007406) in *PLOS Computational Biology*, 2020.
+[Published](https://doi.org/10.1371/journal.pcbi.1007406) in *PLOS Computational Biology*, 2020.
 
 **Repressive gene regulation synchronizes neural development with cellular metabolism.**  
 J. Cassidy*, Sebastian Bernasek*, R. Bakker, R. Giri, N. Pelaez, B. Eder, A. Bobrowska, N. Bagheri, L. Amaral, R. Carthew  
@@ -24,13 +24,13 @@ J. Frostad, M. Seth, Sebastian Bernasek, L.G. Leal
 
 ### Patents
 
-US Patent App. 62/872,869: **Methods for Optimizing Gas Utilization.**  
-Sebastian Bernasek and co-inventors.  
-LanzaTech, Filed 2019.  
-
 [US Patent 9,783,835](https://patents.google.com/patent/US9783835B2/en): **Method for producing a lipid in a fermentation process.**  
 Sean Simpson and Sebastian Bernasek  
-LanzaTech, Issued 2017.  
+LanzaTech, Granted 2017.  
+
+<!-- US Patent App. 62/872,869: **Methods for Optimizing Gas Utilization.**  
+Sebastian Bernasek and co-inventors.  
+LanzaTech, Filed 2019.  -->
 
 [US Patent App. 14/927,950](https://patents.google.com/patent/US20160122787A1/en): **Fermentation process for the production of lipids.**  
 Sean Simpson and Sebastian Bernasek  

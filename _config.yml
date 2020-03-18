@@ -20,14 +20,16 @@ description:
 
 # --- Navigation bar options --- #
 
+
 # List of links in the navigation bar
 navbar-links:
-  Current: "blog/index"
-  Research:
+#  Current: "blog/index"
+  Research: 
     - Projects: "pages/projects"
     - Software: "pages/software"
     - Publications: "pages/publications"
-    - Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf"
+    - Dissertation: "/dissertation"
+    #- Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf" # direct download
   Resume: "cv/cv.pdf"
   GitHub: "https://github.com/sebastianbernasek"
 
@@ -246,6 +248,9 @@ prose:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-pdf-embed
+  - accordion
+  - collapsible
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

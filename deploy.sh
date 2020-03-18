@@ -1,5 +1,5 @@
 git add .;
-git commit -m "updated content.";
+git commit -m "Updated content.";
 git push;
 git pull;
 
