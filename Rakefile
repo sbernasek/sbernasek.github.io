@@ -18,7 +18,7 @@ task :generate do
   })).process
 
   system "touch _site/CNAME"
-  url = "sbernasek.com"
+  url = "www.sbernasek.com"
   system "echo #{url} >> _site/CNAME"
 
   message = "Build completed at #{Time.now.utc}"
