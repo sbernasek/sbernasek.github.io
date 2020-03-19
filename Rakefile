@@ -16,6 +16,11 @@ task :generate do
     "source"      => ".",
     "destination" => "./_site"
   })).process
+
+  system "touch _site/CNAME"
+  url = "sbernasek.com"
+  system "echo #{url} >> _site/CNAME"
+
   message = "Build completed at #{Time.now.utc}"
   system "echo #{message.shellescape}"
 end
