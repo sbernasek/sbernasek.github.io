@@ -2,6 +2,7 @@
 layout: page
 title: Hi. I'm Seb!
 use-site-title: true
+bigimg: "/img/cover.jpg"
 ---
 
 ![Cover Photo](/img/cover.jpg){: .center-block :}
