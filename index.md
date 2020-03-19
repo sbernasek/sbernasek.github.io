@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi. I'm Seb!
+title: Sebastian Bernasek
 use-site-title: true
 bigimg: "/img/cover.jpg"
 ---
