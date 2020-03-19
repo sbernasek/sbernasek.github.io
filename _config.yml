@@ -251,8 +251,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-pdf-embed
-  - accordion
-  - collapsible
 
 destination: ./gh-pages
 
