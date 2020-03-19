@@ -8,6 +8,7 @@ require 'jekyll'
 require 'shellwords'
 
 system "git checkout source"
+system "echo On source branch."
 
 desc "Generate blog files"
 task :generate do
