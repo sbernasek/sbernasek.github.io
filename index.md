@@ -5,7 +5,7 @@ use-site-title: true
 bigimg: "/img/cover.jpg"
 ---
 
-![Cover Photo](/img/headshot_wide.jpg){: .center-block :} 
+<!-- ![Cover Photo](/img/headshot_wide.jpg){: .center-block :}  -->
 
 <!--
 <p class="aligncenter">
