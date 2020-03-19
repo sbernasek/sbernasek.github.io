@@ -30,7 +30,7 @@ task :publish => [:generate] do
     system "git commit -am #{message}"
     system "git push origin master --force"
     system "git checkout source"
-    system "echo Finished."
+    system "echo Build and deployment complete."
   end
 end
 
