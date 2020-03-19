@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>What I've been up to.</title>
+  <title>Tag Index</title>
 
   <meta name="author" content="Sebastian Bernasek" />
 
@@ -73,19 +73,19 @@
   
 
   
-  <meta property="og:title" content="What I've been up to." />
+  <meta property="og:title" content="Tag Index" />
   
 
    
-  <meta property="og:description" content="Since finishing graduate school, Christina and I decided to take some time to eat, drink, ski, hike, and gawk at really old buildings. Check out some of the highlights below. {% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted...">
+  <meta property="og:description" content="{%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag in tags_list -%} &amp;nbsp;{{- tag -}}&amp;nbsp;({{site.tags[tag].size}}) {%- endfor -%} {%- for...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="/blog/" />
-  <link rel="canonical" href="/blog/" />
+  <meta property="og:url" content="/tags/" />
+  <link rel="canonical" href="/tags/" />
   
 
   
@@ -97,11 +97,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="What I've been up to." />
+  <meta name="twitter:title" content="Tag Index" />
   
 
   
-  <meta name="twitter:description" content="Since finishing graduate school, Christina and I decided to take some time to eat, drink, ski, hike, and gawk at really old buildings. Check out some of the highlights below. {% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted...">
+  <meta name="twitter:description" content="{%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:',' | sort -%} {%- for tag in tags_list -%} &amp;nbsp;{{- tag -}}&amp;nbsp;({{site.tags[tag].size}}) {%- endfor -%} {%- for...">
   
 
   
@@ -165,9 +165,9 @@
 
         <div class="page-heading">
           <!-- SEB EDIT -->
-          <!-- <h1>What I've been up to.</h1> -->
+          <!-- <h1>Tag Index</h1> -->
           <h2>
-            <span class="page-heading">What I've been up to.</span>
+            <span class="page-heading">Tag Index</span>
           </h2>
           <!-- <hr class="small"> -->
           <!-- END SEB EDIT -->
@@ -189,230 +189,61 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      Since finishing graduate school, Christina and I decided to take some time to eat, drink, ski, hike, and gawk at really old buildings. Check out some of the highlights below.
-
-<!-- SEB EDIT: Added pagination content. -->
-<div class="posts-list">
-  
-  <article class="post-preview">
-    <a href="/2020-02-29-spain/">
-    <h2 class="post-title">Test markdown</h2>
-
-    
-    <h3 class="post-subtitle">
-      Each post also has a subtitle
-    </h3>
-    
-    </a>
-
-    <p class="post-meta">
-      Posted on February 29, 2020
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        
-
-
-        
-        
-          <a href="/2020-02-29-spain/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tags#test">test</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2020-02-29-slovenia/">
-    <h2 class="post-title">Test markdown</h2>
-
-    
-    <h3 class="post-subtitle">
-      Each post also has a subtitle
-    </h3>
-    
-    </a>
-
-    <p class="post-meta">
-      Posted on February 29, 2020
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        
-
-
-        
-        
-          <a href="/2020-02-29-slovenia/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tags#test">test</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2020-02-29-italy/">
-    <h2 class="post-title">Test markdown</h2>
-
-    
-    <h3 class="post-subtitle">
-      Each post also has a subtitle
-    </h3>
-    
-    </a>
-
-    <p class="post-meta">
-      Posted on February 29, 2020
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        
-
-
-        
-        
-          <a href="/2020-02-29-italy/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tags#test">test</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2020-02-29-germany/">
-    <h2 class="post-title">Test markdown</h2>
-
-    
-    <h3 class="post-subtitle">
-      Each post also has a subtitle
-    </h3>
-    
-    </a>
-
-    <p class="post-meta">
-      Posted on February 29, 2020
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        
-
-
-        
-        
-          <a href="/2020-02-29-germany/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tags#test">test</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2020-02-29-france/">
-    <h2 class="post-title">Test markdown</h2>
-
-    
-    <h3 class="post-subtitle">
-      Each post also has a subtitle
-    </h3>
-    
-    </a>
-
-    <p class="post-meta">
-      Posted on February 29, 2020
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        
-
-
-        
-        
-          <a href="/2020-02-29-france/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
-    <div class="blog-tags">
-      Tags:
-      
-      
-      <a href="/tags#test">test</a>
-      
-      
-    </div>
-    
-
-   </article>
-  
-</div>
-
-
-<ul class="pager main-pager">
-  
-  
-  <li class="next">
-    <a href="/blog/index/">Older Posts &rarr;</a>
-  </li>
-  
-</ul>
-
-
-
+      <a href="#test" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;test&nbsp;(10)</a><div id="full-tags-list"><h2 id="test" class="linked-section">
+        <i class="fa fa-tag" aria-hidden="true"></i>
+        &nbsp;test&nbsp;(10)
+    </h2>
+    <div class="post-list"><div class="tag-entry">
+                <a href="/2020-02-29-spain/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-slovenia/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-italy/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-germany/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-france/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-england/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-czechia/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-croatia/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-cervinia/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div><div class="tag-entry">
+                <a href="/2020-02-29-austria/">Test markdown</a>
+                <div class="entry-date">
+                    <time datetime="2020-02-29T00:00:00-08:00">February 29, 2020</time>
+                </div>
+            </div></div></div>
 
 	    
     </div>

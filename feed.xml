@@ -1,24 +1,120 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ '' | absolute_url }}</link>
-    <atom:link href="{{ 'feed.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:20 %}
+    <title>Sebastian Bernasek</title>
+    <description></description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
+        <title>Test markdown</title>
         <description>
-          {% if post.subtitle %}{{ post.subtitle | xml_escape }} - {% endif %}
-          {{ post.content | strip_html | xml_escape | truncatewords: 50 }}
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
         </description>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-spain/</link>
+        <guid isPermaLink="true">/2020-02-29-spain/</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-slovenia/</link>
+        <guid isPermaLink="true">/2020-02-29-slovenia/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-italy/</link>
+        <guid isPermaLink="true">/2020-02-29-italy/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-germany/</link>
+        <guid isPermaLink="true">/2020-02-29-germany/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-france/</link>
+        <guid isPermaLink="true">/2020-02-29-france/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-england/</link>
+        <guid isPermaLink="true">/2020-02-29-england/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-czechia/</link>
+        <guid isPermaLink="true">/2020-02-29-czechia/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-croatia/</link>
+        <guid isPermaLink="true">/2020-02-29-croatia/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-cervinia/</link>
+        <guid isPermaLink="true">/2020-02-29-cervinia/</guid>
+      </item>
+    
+      <item>
+        <title>Test markdown</title>
+        <description>
+          Each post also has a subtitle - 
+          You can write regular markdown here and Jekyll will automatically convert it to a nice webpage. I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc. Here is some bold text Here is a...
+        </description>
+        <pubDate>Sat, 29 Feb 2020 00:00:00 -0800</pubDate>
+        <link>/2020-02-29-austria/</link>
+        <guid isPermaLink="true">/2020-02-29-austria/</guid>
+      </item>
+    
   </channel>
 </rss>
