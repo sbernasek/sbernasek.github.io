@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Projects
 ---
 
 <!-- {% accordion a-unique-id %}

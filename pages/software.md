@@ -1,6 +1,6 @@
 ---
 layout: accordion
-title: Software
+title: Software for Computational Biologists
 
 accordion: 
   - title: Fly-QMA
