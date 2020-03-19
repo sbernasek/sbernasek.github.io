@@ -16,6 +16,8 @@ task :generate do
     "source"      => ".",
     "destination" => "./_site"
   })).process
+  message = "Build completed at #{Time.now.utc}"
+  system "echo #{message.shellescape}"
 end
 
 desc "Generate and publish blog to gh-pages"
@@ -30,7 +32,8 @@ task :publish => [:generate] do
     system "git commit -am #{message}"
     system "git push origin master --force"
     system "git checkout source"
-    system "echo Build and deployment complete."
+    timestamp = "#{Time.now.utc}"
+    system "echo Deployment completed at #{timestamp.shellescape}."
   end
 end
 
