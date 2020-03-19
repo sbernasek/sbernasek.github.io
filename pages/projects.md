@@ -3,15 +3,9 @@ layout: page
 title: Projects
 ---
 
-{% accordion a-unique-id %}
+<!-- {% accordion a-unique-id %}
   {% collapsible Title of a Collapsible %}
     
-    Biologists use mosaic tissues to compare the behavior of genetically distinct cells within an otherwise equivalent context. The ensuing analysis is often limited to qualitative insight. However, it is becoming clear that quantitative models are needed to unravel the complexities of many biological systems. I developed a computational framework that automates the quantification of mosaic analysis for *Drosophila* imaginal discs, a common setting for studies of developmental processes. The software extracts quantitative measurements from confocal images of mosaic tissues, rectifies any cross-talk between fluorescent reporters, and identifies clonally-related subpopulations of cells. Together, these functions allow users to rigorously ascribe changes in gene expression to the presence or absence of particular genes.
-
-    <p class="aligncenter">
-      <img src="/img/research/flyqma.png" width="650px">
-    </p>
-
   {% endcollapsible %}
 
   {% collapsible A Second Collapsible %}
@@ -21,7 +15,7 @@ title: Projects
   {% collapsible Another One? %}
     even more stuff
   {% endcollapsible %}
-{% endaccordion %}
+{% endaccordion %} -->
 
 
 My primary field is computational biology; I synthesize concepts from chemical engineering and computer science to study how cells make decisions. As a graduate student, I was particularly focused on exploring the chemical mechanisms that guide cells to adopt the appropriate roles and functions during the formation of complex organs.
