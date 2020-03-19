@@ -12,8 +12,10 @@ description:
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
+homeurl: "https://www.sbernasek.com"
+
 # url is the the website domain URL without a trailing slash
-url: "https://www.sbernasek.com"
+#url: "https://www.sbernasek.com"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -87,7 +89,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "www.sbernasek.com"
+#url-pretty: "sbernasek.com"
 
 # --- Web Statistics Section --- #
 
