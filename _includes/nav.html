@@ -12,7 +12,8 @@
       {%- else -%}
       <!-- SEB EDIT -->
         <!-- <a class="navbar-brand" href="{{ '' | absolute_url }}">{{ site.title }}</a> -->
-        <a class="navbar-brand" href="{{ site.homeurl }}">{{ site.title }}</a>
+        <!-- <a class="navbar-brand" href="{{ site.homeurl }}">{{ site.title }}</a> -->
+        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
       <!-- END SEB EDIT -->
       {%- endif -%}
     </div>
@@ -52,7 +53,7 @@
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
       <!-- SEB EDIT -->
-	    <a href="{{ site.homeurl }}">
+	    <a href="{{ site.url }}">
 	      <img class="avatar-img" src="{{ site.avatar | relative_url }}" />
 		</a>
     <!-- SEB EDIT -->
