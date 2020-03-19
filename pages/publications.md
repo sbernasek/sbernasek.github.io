@@ -6,7 +6,7 @@ title: Publications
 ### Academic
 
 **Ratio-based sensing of two transcription factors regulates the transit to differentiation.**  
-Sebastian Bernasek&Dagger;, J.F. Lachance&Dagger;, N. Pelaez&Dagger;, R. Bakker, H. Navarro, L. Amaral, N. Bagheri, I. Rebay, R. Carthew  
+Sebastian Bernasek<sup>&Dagger;</sup>, J.F. Lachance<sup>&Dagger;</sup>, N. Pelaez<sup>&Dagger;</sup>, R. Bakker, H. Navarro, L. Amaral, N. Bagheri, I. Rebay, R. Carthew  
 [In preparation](https://doi.org/10.1101/430744), expected 2020.  
 
 **Fly-QMA: Automated analysis of mosaic imaginal discs in Drosophila.**  
@@ -14,14 +14,14 @@ Sebastian Bernasek, N. Pelaez, R. Carthew, N. Bagheri, L. Amaral
 [Published](https://doi.org/10.1371/journal.pcbi.1007406) in *PLOS Computational Biology*, 2020.
 
 **Repressive gene regulation synchronizes neural development with cellular metabolism.**  
-J. Cassidy&Dagger;, Sebastian Bernasek&Dagger;, R. Bakker, R. Giri, N. Pelaez, B. Eder, A. Bobrowska, N. Bagheri, L. Amaral, R. Carthew  
+J. Cassidy<sup>&Dagger;</sup>, Sebastian Bernasek<sup>&Dagger;</sup>;, R. Bakker, R. Giri, N. Pelaez, B. Eder, A. Bobrowska, N. Bagheri, L. Amaral, R. Carthew  
 [Published](https://doi.org/10.1016/j.cell.2019.06.023) in *Cell*, 2019.  
 
 **Direct measurement of interaction forces between charged multilamellar vesicles.**  
 J. Frostad, M. Seth, Sebastian Bernasek, L.G. Leal  
 [Published](https://www.ncbi.nlm.nih.gov/pubmed/25141827) in *Soft Matter*, 2014.  
 
-&Dagger; Co-first authors.
+<sup>&Dagger;</sup> Co-first authors.
 
 ### Patents
 
