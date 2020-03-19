@@ -26,7 +26,7 @@ homeurl: "https://www.sbernasek.com"
 # List of links in the navigation bar
 navbar-links:
 #  Current: "blog/index"
-  Research: "pages/projects"
+  Research: 
     - Projects: "pages/projects"
     - Software: "pages/software"
     - Publications: "pages/publications"
