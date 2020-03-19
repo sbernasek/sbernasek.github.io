@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>Software for Computational Biologists</title>
+  <title>Software</title>
 
   <meta name="author" content="Sebastian Bernasek" />
 
@@ -73,11 +73,11 @@
   
 
   
-  <meta property="og:title" content="Software for Computational Biologists" />
+  <meta property="og:title" content="Software" />
   
 
    
-  <meta property="og:description" content="">
+  <meta property="og:description" content="{% accordion software-accordion %} {% collapse Fly-QMA %} A python package for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while improving reproducibility. [[site](https://www.sbernasek.com/flyqma)][[code](https://github.com/sebastianbernasek/flyqma)] pip install flyqma {% endcollapse %} {% collapse FlyEye Analysis...">
   
 
 
@@ -99,11 +99,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Software for Computational Biologists" />
+  <meta name="twitter:title" content="Software" />
   
 
   
-  <meta name="twitter:description" content="">
+  <meta name="twitter:description" content="{% accordion software-accordion %} {% collapse Fly-QMA %} A python package for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while improving reproducibility. [[site](https://www.sbernasek.com/flyqma)][[code](https://github.com/sebastianbernasek/flyqma)] pip install flyqma {% endcollapse %} {% collapse FlyEye Analysis...">
   
 
   
@@ -183,9 +183,9 @@
 
         <div class="page-heading">
           <!-- SEB EDIT -->
-          <!-- <h1>Software for Computational Biologists</h1> -->
+          <!-- <h1>Software</h1> -->
           <h2>
-            <span class="page-heading">Software for Computational Biologists</span>
+            <span class="page-heading">Software</span>
           </h2>
           <!-- <hr class="small"> -->
           <!-- END SEB EDIT -->
@@ -207,35 +207,83 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
+      <div class="accordion" id="accordion-software-accordion">
+
+  <div class="card ml-collapse-card">
+  <div class="card-header" id="accordion-software-accordion-heading-1">
+    <h3 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#accordion-software-accordion-collapse-1" aria-expanded="false" aria-controls="accordion-software-accordion-collapse-1">
+        <span class="plus-minus-wrapper"><div class="plus-minus"></div></span><span class="collapse-title">Fly-QMA</span>
+      </button>
+    </h3>
+  </div>
+  <div id="accordion-software-accordion-collapse-1" class="collapse" aria-labelledby="accordion-software-accordion-heading-1" data-parent="#accordion-software-accordion">
+    <div class="card-body">
+<p>A python package for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while improving reproducibility. [<a href="https://www.sbernasek.com/flyqma">site</a>][<a href="https://github.com/sebastianbernasek/flyqma">code</a>]</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pip install flyqma
+</code></pre></div></div>
+
+</div>
+  </div>
+</div>
 
 
-<style>
-ul.jekyllcodex_accordion {position: relative; margin: 1.4rem 0!important; border-bottom: 1px solid rgba(0,0,0,0.25); padding-bottom: 0;}
-ul.jekyllcodex_accordion li {border-top: 1px solid rgba(0,0,0,0.25); list-style: none; margin-left: 0;}
-ul.jekyllcodex_accordion li input {display: none;}
-ul.jekyllcodex_accordion li label {display: block; cursor: pointer; padding: 0.75rem 2.4rem 0.75rem 0; margin: 0;}
-ul.jekyllcodex_accordion li div {display: none; padding-bottom: 1.2rem;}
-ul.jekyllcodex_accordion li input:checked + label {font-weight: bold;}
-ul.jekyllcodex_accordion li input:checked + label + div {display: block;}
-ul.jekyllcodex_accordion li label::before {content: "+"; font-weight: normal; font-size: 130%; line-height: 1.1rem; padding: 0; position: absolute; right: 0.5rem; transition: all 0.15s ease-in-out;}
-ul.jekyllcodex_accordion li input:checked + label::before {transform: rotate(-45deg);}
-</style>
-<ul class="jekyllcodex_accordion">
-    
-        <li><input id="accordion1" type="checkbox" /><label for="accordion1">Fly-QMA</label><div><p>A python package for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while improving reproducibility. [<a href="https://www.sbernasek.com/flyqma">site</a>][<a href="https://github.com/sebastianbernasek/flyqma">code</a>]</p>
-</div></li>
-    
-        <li><input id="accordion2" type="checkbox" /><label for="accordion2">FlyEye Analysis</label><div><p>A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. Supports dynamic analysis, spatial analysis, model fitting, and visualization of the resultant trends. [<a href="https://www.sbernasek.com/flyeye">site</a>][<a href="https://github.com/sebastianbernasek/flyeye">code</a>]</p>
-</div></li>
-    
-        <li><input id="accordion3" type="checkbox" /><label for="accordion3">Binding</label><div><p>A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable. [<a href="https://github.com/sebastianbernasek/binding">code</a>]</p>
-</div></li>
-    
-        <li><input id="accordion4" type="checkbox" /><label for="accordion4">Gene SSA</label><div><p>A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I’ve come across. [<a href="https://github.com/sebastianbernasek/genessa">code</a>]</p>
-</div></li>
-    
-</ul>
+  <div class="card ml-collapse-card">
+  <div class="card-header" id="accordion-software-accordion-heading-2">
+    <h3 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#accordion-software-accordion-collapse-2" aria-expanded="false" aria-controls="accordion-software-accordion-collapse-2">
+        <span class="plus-minus-wrapper"><div class="plus-minus"></div></span><span class="collapse-title">FlyEye Analysis</span>
+      </button>
+    </h3>
+  </div>
+  <div id="accordion-software-accordion-collapse-2" class="collapse" aria-labelledby="accordion-software-accordion-heading-2" data-parent="#accordion-software-accordion">
+    <div class="card-body">
+<p>A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. Supports dynamic analysis, spatial analysis, model fitting, and visualization of the resultant trends. [<a href="https://www.sbernasek.com/flyeye">site</a>][<a href="https://github.com/sebastianbernasek/flyeye">code</a>]</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pip install flyeye
+</code></pre></div></div>
+
+</div>
+  </div>
+</div>
+
+
+  <div class="card ml-collapse-card">
+  <div class="card-header" id="accordion-software-accordion-heading-3">
+    <h3 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#accordion-software-accordion-collapse-3" aria-expanded="false" aria-controls="accordion-software-accordion-collapse-3">
+        <span class="plus-minus-wrapper"><div class="plus-minus"></div></span><span class="collapse-title">TF-Binding</span>
+      </button>
+    </h3>
+  </div>
+  <div id="accordion-software-accordion-collapse-3" class="collapse" aria-labelledby="accordion-software-accordion-heading-3" data-parent="#accordion-software-accordion">
+    <div class="card-body">
+<p>A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable. [<a href="https://github.com/sebastianbernasek/binding">code</a>]</p>
+
+</div>
+  </div>
+</div>
+
+
+  <div class="card ml-collapse-card">
+  <div class="card-header" id="accordion-software-accordion-heading-4">
+    <h3 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#accordion-software-accordion-collapse-4" aria-expanded="false" aria-controls="accordion-software-accordion-collapse-4">
+        <span class="plus-minus-wrapper"><div class="plus-minus"></div></span><span class="collapse-title">Gene SSA</span>
+      </button>
+    </h3>
+  </div>
+  <div id="accordion-software-accordion-collapse-4" class="collapse" aria-labelledby="accordion-software-accordion-heading-4" data-parent="#accordion-software-accordion">
+    <div class="card-body">
+<p>A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I’ve come across. [<a href="https://github.com/sebastianbernasek/genessa">code</a>]</p>
+
+</div>
+  </div>
+</div>
+
+
+</div>
 
 	    
     </div>
