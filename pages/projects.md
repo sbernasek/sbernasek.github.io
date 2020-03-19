@@ -2,7 +2,8 @@
 layout: page
 ---
 
-<!-- {% accordion a-unique-id %}
+
+{% accordion a-unique-id %}
   {% collapsible Title of a Collapsible %}
     
   {% endcollapsible %}
@@ -14,7 +15,8 @@ layout: page
   {% collapsible Another One? %}
     even more stuff
   {% endcollapsible %}
-{% endaccordion %} -->
+{% endaccordion %}
+
 
 
 My primary field is computational biology; I synthesize concepts from chemical engineering and computer science to study how cells make decisions. As a graduate student, I was particularly focused on exploring the chemical mechanisms that guide cells to adopt the appropriate roles and functions during the formation of complex organs.
