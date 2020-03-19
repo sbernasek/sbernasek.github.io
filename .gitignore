@@ -9,6 +9,7 @@ cv/content/references.tex
 # unused images
 /img/assets
 /img/headshots
+*.CR2
 *.ai
 
 # general

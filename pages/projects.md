@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+show-avatar: false
 ---
 
 {% accordion a-unique-id %}
