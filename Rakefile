@@ -16,22 +16,25 @@ task :generate do
     "source"      => ".",
     "destination" => "./_site"
   })).process
+  message = "Build completed at #{Time.now.utc}"
+  system "echo #{message.shellescape}"
 end
 
-desc "Generate and publish blog to gh-pages"
-task :publish => [:generate] do
-  Dir.mktmpdir do |tmp|
-    system "mv _site/* #{tmp}"
-    system "git checkout master"
-    system "rm -rf *"
-    system "mv #{tmp}/* ."
-    message = "Site updated at #{Time.now.utc}".shellescape
-    system "git add ."
-    system "git commit -am #{message}"
-    system "git push origin master --force"
-    system "git checkout source"
-    system "echo Build and deployment complete."
-  end
-end
+# desc "Generate and publish blog to gh-pages"
+# task :publish => [:generate] do
+#   Dir.mktmpdir do |tmp|
+#     system "mv _site/* #{tmp}"
+#     system "git checkout master"
+#     system "rm -rf *"
+#     system "mv #{tmp}/* ."
+#     message = "Site updated at #{Time.now.utc}".shellescape
+#     system "git add ."
+#     system "git commit -am #{message}"
+#     system "git push origin master --force"
+#     system "git checkout source"
+#     timestamp = "#{Time.now.utc}"
+#     system "echo Deployment completed at #{timestamp.shellescape}."
+#   end
+# end
 
-task :default => :publish
+# task :default => :publish
