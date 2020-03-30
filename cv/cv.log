@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAR 2020 16:54
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  30 MAR 2020 09:38
  restricted system commands enabled.
 **cv.tex
 (./cv.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.133 seconds)
+luaotfload | main : initialization completed in 0.128 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1163,7 +1163,7 @@ luaotfload | aux : no font with id 35
 luaotfload | aux : font no 35 (<unknown>) does not define feature smcp for scrip
 t  with language 
 luaotfload | aux : no font with id 35
-LaTeX Info: Redefining \FA on input line 166.
+LaTeX Info: Redefining \FA on input line 171.
 (compiling luc: /usr/local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl
 /roboto-regular.luc)(load luc: /Users/Sebi/Library/texlive/2016/texmf-var/luatex
 -cache/generic/fonts/otl/roboto-regular.luc)
@@ -1221,38 +1221,38 @@ luaotfload | aux : no font with id 43)
  (./cv.aux)
 \openout1 = cv.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 71.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 75.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 75.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 71.
+(Font)              scaled to size 10.95pt on input line 75.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 71.
+LaTeX Info: Redefining \selectfont on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1328,15 +1328,15 @@ luaotfload | aux : font no 46 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 46
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 71.
+(Font)              `operators' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU2/latinmodern-math.otf(0)/m/n on input
- line 71.
+ line 75.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 71.
+(Font)              `operators' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU2/latinmodern-math.otf(0)/bx/n on inp
-ut line 71.
+ut line 75.
 luaotfload | aux : font no 46 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 46
@@ -1344,15 +1344,15 @@ luaotfload | aux : font no 46 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 46
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 71.
+(Font)              `symbols' in the math version `normal' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> EU2/latinmodern-math.otf(1)/m/n on inpu
-t line 71.
+t line 75.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 71.
+(Font)              `symbols' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> EU2/latinmodern-math.otf(1)/bx/n on inp
-ut line 71.
+ut line 75.
 luaotfload | aux : font no 46 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 46
@@ -1360,20 +1360,20 @@ luaotfload | aux : font no 46 (<unknown>) does not define feature smcp for scrip
 t math with language dflt
 luaotfload | aux : no font with id 46
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 71
+(Font)              `largesymbols' in the math version `normal' on input line 75
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> EU2/latinmodern-math.otf(2)/m/n on inpu
-t line 71.
+t line 75.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 71.
+(Font)              `largesymbols' in the math version `bold' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/latinmodern-math.otf(2)/bx/n on inp
-ut line 71.
+ut line 75.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 71.
+Package hyperref Info: Link coloring OFF on input line 75.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1383,9 +1383,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count176
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
-LaTeX Info: Redefining \nameref on input line 71.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./cv.out) (./cv.out)
 \@outlinefile=\write6
@@ -1394,31 +1394,31 @@ LaTeX Info: Redefining \nameref on input line 71.
 \headertextwidth=\skip79
 \headerphotowidth=\skip80
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 75.
+(Font)              scaled to size 10.95015pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 75.
+(Font)              scaled to size 8.00012pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 75.
+(Font)              scaled to size 6.00009pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 75.
+(Font)              scaled to size 10.94983pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 75.
+(Font)              scaled to size 7.99988pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 75.
+(Font)              scaled to size 5.99991pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 7.6pt on input line 75.
+(Font)              scaled to size 7.6pt on input line 79.
 
 
 LaTeX Font Warning: Font shape `EU2/SourceSansPro(2)/m/sc' undefined
-(Font)              using `EU2/SourceSansPro(2)/m/n' instead on input line 75.
+(Font)              using `EU2/SourceSansPro(2)/m/n' instead on input line 79.
 
 
-Overfull \hbox (1.4746pt too wide) in paragraph at lines 75--76
+Overfull \hbox (1.4746pt too wide) in paragraph at lines 79--80
 []$[]$ $[]$$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
@@ -1486,11 +1486,11 @@ LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/it' will be
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./con
 tent/patents.tex) (./content/mentorship.tex)
 (./content/teaching.tex) [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
  (./cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1505,17 +1505,17 @@ Here is how much of LuaTeX's memory you used:
  1482 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 124 glue, 57 attribute, 55 glue_spec, 57 attribute_
 list, 1 write nodes
-   avail lists: 1:6,2:1589,3:321,4:240,5:523,6:3600,7:1698,8:131,9:517,10:20,11:
-398
+   avail lists: 1:6,2:1579,3:321,4:240,5:520,6:3586,7:1699,8:131,9:517,10:20,11:
+403
  43927 multiletter control sequences out of 65536+600000
- 77 fonts using 16745231 bytes
- 72i,19n,89p,880b,565s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 77 fonts using 16745327 bytes
+ 72i,19n,89p,880b,561s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2016/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
 sPro-RegularIt.otf></Library/Fonts/SourceSansPro-LightIt.otf></Library/Fonts/Sou
 rceSansPro-Light.otf></Library/Fonts/SourceSansPro-Bold.otf><./fonts/Roboto-Regu
 lar.ttf><./fonts/FontAwesome.ttf><./fonts/Roboto-Italic.ttf></Library/Fonts/Sour
 ceSansPro-Regular.otf><./fonts/Roboto-Bold.ttf><./fonts/Roboto-Thin.ttf>
-Output written on cv.pdf (2 pages, 54533 bytes).
+Output written on cv.pdf (2 pages, 54370 bytes).
 
 PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
  81 compressed objects within 1 object stream

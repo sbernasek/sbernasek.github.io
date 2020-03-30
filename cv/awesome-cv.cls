@@ -153,9 +153,14 @@
 \newbool{acvSectionColorHighlight}
 \setbool{acvSectionColorHighlight}{true}
 
+%% Awesome section color
+%\def\@sectioncolor#1#2#3{%
+%  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+%}
+
 % Awesome section color
 \def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}{#1#2#3}}}{#1#2#3}%
 }
 
 
@@ -877,9 +882,11 @@
 \newenvironment{cvskillnotes}{%
   \vspace{-4.0mm}
   \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  %\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \begin{itemize}[leftmargin=0ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet} 
+    %\renewcommand{\labelitemi}{\bullet}
+    \renewcommand{\labelitemi}{} 
 }{  
   \end{itemize}
   \end{justify}
