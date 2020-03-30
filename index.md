@@ -3,7 +3,7 @@ layout: page
 title: Sebastian Bernasek
 use-site-title: true
 bigimg:
- - "/img/site/cover.jpg" : "Lennon Wall – Prague, CZ"
+ - "/img/site/cover.jpeg" : "Lennon Wall – Prague, CZ"
 ---
 
 My mission is to answer difficult questions by understanding and predicting the behavior of complex systems, both human-engineered and those found in the natural world. Which emerging energy technologies are most likely to perform at scale? Which athletes can we expect to enjoy successful careers? How do cells make reliable decisions? How do proteins coordinate consistent formation of the fruit fly eyeball? These questions and others like them aren't just fun to explore; they have the capacity to inform major decisions such as which R&D endeavors merit additional funding or which cancer mechanisms are ripe for therapeutic intervention. 
