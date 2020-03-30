@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sebastian Bernasek
-use-site-title: true
+use-site-title: false
 bigimg:
  - "/img/site/cover.jpg" : "Lennon Wall – Prague, CZ"
 ---
