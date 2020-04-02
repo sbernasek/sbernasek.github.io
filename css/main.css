@@ -141,6 +141,30 @@ img {
   color: {{ site.hover-col }};
 }
 
+/* seb addition */
+
+.navbar-header-centered {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-custom .navbar-brand-centered {
+  float:none;
+  font-size: 28px;
+  font-weight: 800;
+  color: {{ site.navbar-text-col }};
+}
+
+.navbar-custom .navbar-brand-centered:hover,
+.navbar-custom .navbar-brand-centered:focus{
+  color: {{ site.hover-col }};
+}
+
+/* seb addition */
+
+
 .navbar-custom .navbar-brand-logo {
   padding-top: 0;
   -webkit-transition: padding .5s ease-in-out;

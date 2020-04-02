@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: gallery
 permalink: /nofilter
-title: #nofilter
+gallery_name: >
+    #nofilter
 use-site-title: false
 show-avatar: false
 ---
