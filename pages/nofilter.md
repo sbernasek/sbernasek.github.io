@@ -5,6 +5,8 @@ gallery_name: >
     #nofilter
 use-site-title: false
 show-avatar: false
+preview-img: https://i.imgur.com/OOw8P5q.jpg
+preview-text: Our travels, unfiltered. 
 ---
 
 

@@ -128,4 +128,12 @@
   <link rel="stylesheet" href="{{ "/css/staticman.css" | relative_url }}" />
   {% endif %}
 
+  {% if page.preview-img %}
+    <meta property="og:image" content="{{ page.preview-img }}"/>
+  {% endif %}
+
+  {% if page.preview-text %}
+    <meta property="og:description" content="{{ page.preview-text }}" />
+  {% endif %}
+
 </head>
