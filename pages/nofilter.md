@@ -3,6 +3,7 @@ layout: page
 permalink: /nofilter
 title: #nofilter
 use-site-title: false
+show-avatar: false
 ---
 
 
