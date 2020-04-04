@@ -16,3 +16,6 @@ cv/content/references.tex
 .DS_Store
 Thumbs.db
 ehthumbs.db
+
+# code
+code/
