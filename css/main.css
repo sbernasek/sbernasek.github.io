@@ -9,8 +9,10 @@ layout: null
 */
 
 /* SEB EDIT */
-@import url("captions.css");
-/* SEB EDIT */
+@import url("images.css");
+@import url("titles.css");
+@import url("smb-navbar.css");
+/* SEB EDIT 
 
 @import url("bootstrap-accordion.css"); 
 @import url("pygment_highlights.css");

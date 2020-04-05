@@ -57,25 +57,31 @@
 .img-container-post {
   position: relative;
   width: 100%;
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .img-caption-post {
   background: rgba(30, 30, 30, 0.8);
   position: absolute;
   padding: 5px 5px;
+  width: 50%;
+  height: 35%;
+
   font-size: 18px;
   font-weight: bold;
   color: #EEE;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
   text-align: center;
-  width: 50%;
-  height: 30%;
+  
+  /* Align text-box within image center. */
   top:0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+
+  vertical-align: middle;
+  
   border: 3px solid white;
   transition: .5s ease;
   opacity: 0.0;
@@ -86,36 +92,3 @@
   opacity: 1.0;
 }
 
-
-.row {
-  display: flex; /* equal height of the children */
-  vertical-align: middle;
-  width: 100%;
-}
-
-.col {
-  padding: 0.5em;
-  top:0;
-  bottom: 0;
-  margin: auto;
-}
-
-.center_column {
-  flex-grow: 1;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-}
-
-.blog-navbar-right {
-  float: right;
-  width: 25%;
-}
-
-.navbar-header{
-  float: left;
-  width: 25%;
-}

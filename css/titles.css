@@ -1,0 +1,21 @@
+
+.smb-page-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: auto;
+}
+
+.smb-post-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.smb-container-centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
