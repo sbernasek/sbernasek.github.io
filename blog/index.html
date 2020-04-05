@@ -1,45 +1,34 @@
 ---
-layout: page
-title: What I've been up to.
-subtitle:
+layout: blog
+permalink: /travel
+gallery_name: Xtina & Seb
+navbar: true
+use-site-title: false
+show_avatar: true
+share-img: https://i.imgur.com/OOw8P5q.jpg
+meta-description: Xtina & Seb's photos 
 ---
+
 
 <!-- SEB EDIT: Added pagination content. -->
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
-    <h2 class="post-title">{{ post.title }}</h2>
-
-    {% if post.subtitle %}
-    <h3 class="post-subtitle">
-      {{ post.subtitle }}
-    </h3>
-    {% endif %}
+    <div class="post-image-bg img-container-post" style="background-image: url({{post.image}})"> 
+        <span class="img-caption-post" style="display: inline;">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.subtitle %}
+              <h3 class="post-subtitle">
+                {{ post.subtitle }}
+              </h3>
+            {% endif %}
+        </span>
+    </div>
     </a>
 
-    <p class="post-meta">
-      Posted on {{ post.date | date: site.date_format }}
-    </p>
 
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-    </div>
-
-    {% if post.tags.size > 0 %}
+<!--     {% if post.tags.size > 0 %}
     <div class="blog-tags">
       Tags:
       {% if site.link-tags %}
@@ -50,7 +39,7 @@ subtitle:
         {{ post.tags | join: ", " }}
       {% endif %}
     </div>
-    {% endif %}
+    {% endif %} -->
 
    </article>
   {% endfor %}
@@ -83,3 +72,4 @@ subtitle:
     {% include just_comments.html %}
   </div>
 {% endif %}
+

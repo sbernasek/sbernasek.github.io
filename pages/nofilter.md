@@ -3,6 +3,7 @@ layout: gallery
 permalink: /nofilter
 gallery_name: >
     #nofilter
+navbar: false
 use-site-title: false
 show-avatar: false
 share-img: https://i.imgur.com/OOw8P5q.jpg

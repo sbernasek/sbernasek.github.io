@@ -1,74 +1,68 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
-    <div class="navbar-header-centered">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {%- if site.title-img -%}
-        <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
-      {%- elsif page.gallery_name -%}
-        <a class="navbar-brand-centered" href="{{page.permalink}}"> {{page.gallery_name}} </a>
-      {%- else -%}
+    
+    <!-- WITH NAVBAR -->
+    {%- if page.navbar %}
+      <!-- <div class="collapse navbar-collapse" id="main-navbar"> -->
+      <div class="navbar-header-centered" id="main-navbar">
 
-      <!-- SEB EDIT -->
-        <!-- <a class="navbar-brand" href="{{ site.homeurl }}">{{ site.title }}</a> -->
-      <!-- END SEB EDIT -->
-      {%- endif -%}
-    </div>
-
-    <!-- <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {%- for link in site.navbar-links -%}
-        {%- if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-            <div class="navlinks-children">
-              {%- for childlink in link[1] -%}
-              {%- for linkparts in childlink %}
-              <a href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
-              {%- endfor -%}
-              {%- endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
+        <!-- GALLERY TITLE -->
+        {%- if page.gallery_name -%}
+          <a class="navbar-brand-centered" href="{{page.permalink}}"> {{page.gallery_name}} </a>
         {%- endif -%}
-      {%- endfor -%}
-      </ul>
-    </div> -->
 
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.homeurl }}">
-        <!-- SEB EDIT -->
-	      <img class="avatar-img" src="{{ page.image | relative_url }}" />
-        <!-- SEB EDIT -->
-		</a>
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-      <!-- SEB EDIT -->
-	    <a href="{{ site.homeurl }}">
-	      <img class="avatar-img" src="{{ site.avatar | relative_url }}" />
-		</a>
-    <!-- SEB EDIT -->
-	  </div>
-	</div>
+        <!-- NAV LINKS -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ /photos | absolute_url }}">Home</a></li>
+          <li class="navlinks-container-blog">
+              <a class="navlinks-parent" href="javascript:void(0)">Galleries</a>
+              <div class="navlinks-children">
+                {% for post in paginator.posts %}
+                  <a href="{{ post.url | absolute_url }}">{{post.title}}</a>
+                  <!-- <a href="{{ post.url | relative_url }}">{{post.title}}</a> -->
+                {%- endfor -%}
+              </div>            
+            </li>
+        </ul>
 
-  <!-- SEB EDIT : adding gallery name -->
-  {% elsif page.gallery_name %}
-  <div class="avatar-container">
-    <a class="navbar-brand-title" href="{{page.permalink}}"> {{page.gallery_name}} </a>
-  </div>
-  <!-- SEB EDIT -->
-  
-  {% endif %}
+        <!-- NAV LINKS -->
+        <!-- <ul class="nav navbar-nav navbar-right">
+        {%- for link in site.navbar-links -%}
+          {%- if link[1].first %}
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
+              <div class="navlinks-children">
+                {%- for childlink in link[1] -%}
+                {%- for linkparts in childlink %}
+                <a href="{{ linkparts[1] | relative_url }}">{{ linkparts[0] }}</a>
+                {%- endfor -%}
+                {%- endfor %}
+              </div>
+            </li>
+          {% else %}
+            <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
+          {%- endif -%}
+        {%- endfor -%}
+        </ul> -->
+
+      </div>
+    
+    <!-- WITHOUT NAVBAR -->
+    {%- else -%}
+      <div class="navbar-header-centered">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {%- if site.title-img -%}
+          <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.title-img }}"/></a>
+        {%- elsif page.gallery_name -%}
+          <a class="navbar-brand-centered" href="{{page.permalink}}"> {{page.gallery_name}} </a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
 
   </div>
 </nav>

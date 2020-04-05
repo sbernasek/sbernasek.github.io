@@ -20,12 +20,18 @@ homeurl: "https://www.sbernasek.com"
 # baseurl should be an empty string
 #baseurl: ""
 
-# --- Navigation bar options --- #
 
+# --- BLOG OPTIONS --- #
+blog_title: Xtina & Seb
+blog_url: travel
+blog_avatar: "/img/site/blog_avatar.png"
+
+
+# --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  #Current: "blog/index"
+  Current: "blog/index"
   Research: 
     - Projects: "pages/projects"
     - Software: "pages/software"
@@ -158,7 +164,7 @@ timezone: "America/Vancouver"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
-paginate: 5
+paginate: 20
 
 kramdown:
   input: GFM
