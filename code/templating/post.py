@@ -31,17 +31,24 @@ class ImageHtmlTemplate(object):
 
 class PostTemplate(object):
 
-    def __init__(self, title, records, subtitle=None):
-        self.title = title
-        self.subtitle = subtitle
+    def __init__(self, title, records, cover=None, subtitle=None):
+        self._title = title
+        self._subtitle = subtitle
+        self._cover = cover
         self.records = records
         self.renderer = pystache.Renderer()
 
     def title(self):
-        return self.title
+        return self._title
 
     def subtitle(self):
-        return self.subtitle
+        return self._subtitle
+
+    def cover(self):
+        if self.cover is None:
+            return self.records.iloc[0].imgur_link
+        else:
+            return self._cover
 
     def images(self):
         html_strings = self.records.apply(self.render_image_html, axis=1)
@@ -56,9 +63,9 @@ class Post:
     
     posts_dir = '../_posts' 
     
-    def __init__(self, filename, title, records):
+    def __init__(self, filename, title, records, cover=None):
         self.filepath = join(self.posts_dir, '{:s}.md'.format(filename))
-        template = PostTemplate(title, records)
+        template = PostTemplate(title, records, cover=cover)
         self.post = pystache.Renderer().render(template)
         
     def write(self):

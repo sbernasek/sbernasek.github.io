@@ -2,8 +2,8 @@
 layout: blog
 navbar: false
 show_avatar: true
-title: San Jacinto (2020)
-title_slug: San Jacinto (2020)
+title: Palm Springs
+title_slug: Palm Springs
 subtitle: 
 comments: false
 image: https://i.imgur.com/fdcEkox.jpg
