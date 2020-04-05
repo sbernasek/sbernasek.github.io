@@ -41,16 +41,16 @@
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   right: 0;
   bottom: 0;
-  transition: .5s ease;
-  opacity: 0;
+/*  transition: .5s ease;
+*/  opacity: 1;
   display: none;
 }
 
 /* When you mouse over the container, fade in the overlay title */
-.img-container:hover .img-caption-corner {
+/*.img-container:hover .img-caption-corner {
   opacity: 1;
 }
-
+*/
 
 
 /* Container needed to position the overlay. Adjust the width as needed */
