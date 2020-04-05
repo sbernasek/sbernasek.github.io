@@ -31,7 +31,6 @@ blog_avatar: "/img/site/blog_avatar.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Current: "blog/index"
   Research: 
     - Projects: "pages/projects"
     - Software: "pages/software"
