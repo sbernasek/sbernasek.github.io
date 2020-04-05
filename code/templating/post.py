@@ -44,17 +44,15 @@ class PostTemplate(object):
     def subtitle(self):
         return self._subtitle
 
-
+    def cover(self):
+        if self.cover is None:
+            return self.records.iloc[0].imgur_link
+        else:
+            return self._cover
 
     def images(self):
         html_strings = self.records.apply(self.render_image_html, axis=1)
         return '\n\n'.join(html_strings)
-
-    def cover(self):
-        if self._cover is None:
-            return self.records.iloc[0].imgur_link
-        else:
-            return self._cover
 
     def render_image_html(self, record):
         image = ImageHtmlTemplate(record.imgur_link, gps=record.gps)
