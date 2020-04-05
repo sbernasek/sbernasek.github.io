@@ -12,38 +12,50 @@
 
     </div>
 
+
     <!-- Center column -->
-    <div class="smb-col smb-col-center">
+    {% if page.show_avatar %}
 
       <!-- Blog avatar -->
-      {% if page.show_avatar %}
+      <div class="smb-col smb-col-center">      
         <div class="blog-avatar-container">
           <div class="avatar-img-border">
             <a href="{{ site.blog_url | absolute_url }}">
               <img class="avatar-img" src="{{ site.blog_avatar | relative_url }}" />
             </a>
           </div>
-        </div>  
+        </div>
+      </div>
+
+    <!-- Page title -->
+    {% else %}
+      <div class="smb-col smb-col-center smb-right-align-mobile">
+        <h1 class="smb-page-title">
+          <span class="page-heading">
+            {{page.title}}
+          </span>
+        </h1>
+      </div>
+    {% endif %}  
+
       
-      <!-- Page title -->
-      {% else %}
-        <h1 class="smb-page-title"><span class="page-heading">{{page.title}}</span></h1>
-      {% endif %}
-
-    </div>
-
     <!-- Right column -->
-    <div class="smb-col smb-col-right">
+    {% if page.navbar %}
 
       <!-- Right column -->
-      {% if page.navbar %}
+      <div class="smb-col smb-col-right">
 
         <!-- Navigation bar for web browsers -->
         <div class="collapse navbar-collapse smb-blog-navbar" id="main-navbar">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="{{ site.blog_url | absolute_url }}">Maps</a></li>
+            <li>
+              <a href="{{ site.blog_url | absolute_url }}">
+                <span class="smb-navbar-link">Maps</span>
+              </a></li>
             <li class="navlinks-container-blog">
-              <a class="navlinks-parent smb-albums-menu" href="javascript:void(0)">Albums</a>
+              <a class="navlinks-parent smb-albums-menu" href="javascript:void(0)">
+                <span class="smb-navbar-link">Albums</span>
+              </a>
               <div class="navlinks-children">
                 {% for post in paginator.posts %}
                   <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
@@ -60,22 +72,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
+
+      </div>
       
-      <!-- Otherwise, add back button -->    
-      {% else %}
+    <!-- Otherwise, add back button -->    
+    {% else %}
+
+      <!-- Right column -->
+      <div class="smb-col smb-col-right smb-hide-mobile">
         <div class="smb-right-align">
 
-          <button class="navbar-brand smb-back-button" onclick="goBack()">Go Back</button>
+          <button class="navbar-brand smb-back-button" onclick="goBack()">
+            <span>Go back</span>
+          </button>
           <script>
             function goBack() {
               window.history.back();
             }
           </script> 
 
-        <div>
-      {% endif %}
+        </div>
+      </div>
 
-    </div>
+    {% endif %}
 
   </div>
 </nav>
