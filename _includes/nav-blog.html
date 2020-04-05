@@ -2,13 +2,14 @@
   <div class="container-fluid smb-row">
 
     <!-- Left column -->
-    <div class="navbar-header smb-col smb-col-left">
+    <div class="smb-col smb-col-left">
 
       {%- if site.site-image -%}
         <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.blog_avatar }}"/></a>
       {%- else -%}
         <a class="navbar-brand" href="{{ site.blog_url | absolute_url }}">{{ site.blog_title }}</a>
       {%- endif -%}
+
     </div>
 
     <!-- Center column -->
@@ -31,40 +32,50 @@
 
     </div>
 
+    <!-- Right column -->
+    <div class="smb-col smb-col-right">
 
-<!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+      <!-- Right column -->
+      {% if page.navbar %}
+
+        <!-- Navigation bar for web browsers -->
+        <div class="collapse navbar-collapse smb-blog-navbar" id="main-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ site.blog_url | absolute_url }}">Maps</a></li>
+            <li class="navlinks-container-blog">
+              <a class="navlinks-parent smb-albums-menu" href="javascript:void(0)">Albums</a>
+              <div class="navlinks-children">
+                {% for post in paginator.posts %}
+                  <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
+                {%- endfor -%}
+              </div>            
+            </li>
+          </ul>
+        </div>
+
+        <!-- Drop-down navigation bar for mobile -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button> -->
+        </button>
+      
+      <!-- Otherwise, add back button -->    
+      {% else %}
+        <div class="smb-right-align">
 
+          <button class="navbar-brand smb-back-button" onclick="goBack()">Go Back</button>
+          <script>
+            function goBack() {
+              window.history.back();
+            }
+          </script> 
 
+        <div>
+      {% endif %}
 
-    <!-- Right column -->
-    {% if page.navbar %}
-      <div class="collapse navbar-collapse smb-col smb-col-right smb-blog-navbar" id="main-navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site.blog_url | absolute_url }}">Maps</a></li>
-          <li class="navlinks-container-blog">
-            <a class="navlinks-parent" href="javascript:void(0)">Albums</a>
-            <div class="navlinks-children">
-              {% for post in paginator.posts %}
-                <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
-              {%- endfor -%}
-            </div>            
-          </li>
-        </ul>
-      </div>
-    
-    <!-- Otherwise, add back button -->    
-    {% else %}
-      <div class="smb-col smb-col-right" id="main-navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site.blog_url | absolute_url }}">Back</a></li>
-        </ul>
-      </div>
-    {% endif %}
+    </div>
 
   </div>
 </nav>

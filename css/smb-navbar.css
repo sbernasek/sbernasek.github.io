@@ -1,6 +1,7 @@
 
 .smb-row {
   display: flex;
+  max-width: 800px;
 }
 
 .smb-col {
@@ -18,13 +19,39 @@
 
 .smb-col-right,
 .smb-col-left {
-  flex-basis: 200px;
+  flex-basis: 300px;
   max-width: 50%;
+}
+
+.smb-back-button {
+  text-align: right;
 }
 
 .smb-blog-navbar {
   padding-top: 0px;
 }
+
+.smb-right-align {
+ float: right;
+}
+
+.smb-back-button {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: white;
+  border: 3px solid #555555;
+  transition-duration: 0.2s;
+}
+
+.smb-back-button:hover {
+  background-color: #555555;
+}
+
+
+.smb-albums-menu {
+  width: 120px;
+}
+
 
 
 .navbar-custom .blog-avatar-container {
