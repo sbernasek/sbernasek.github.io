@@ -55,7 +55,9 @@ class PostTemplate(object):
         return '\n\n'.join(html_strings)
 
     def render_image_html(self, record):
-        image = ImageHtmlTemplate(record.imgur_link, gps=record.gps)
+        image = ImageHtmlTemplate(record.imgur_link, 
+                                  caption=record.address,
+                                  gps=record.gps)
         return self.renderer.render(image)
 
 

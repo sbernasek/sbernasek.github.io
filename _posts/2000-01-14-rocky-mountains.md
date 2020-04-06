@@ -2,9 +2,9 @@
 layout: blog
 navbar: false
 show_avatar: false
-title: Rockies
-title_slug: Rockies
-subtitle:
+title: Rocky Mountains
+title_slug: Rocky Mountains
+subtitle: 
 comments: false
 image: https://i.imgur.com/s8pTyWx.jpg
 ---
@@ -12,7 +12,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/s8pTyWx.jpg" alt="Not loaded." class="center-block">
   <a  target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moapa Valley, NV</span>
   </a>  
 </div> 
 
@@ -20,7 +20,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/sqdHyXB.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4397722,-114.5146028" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moapa Valley, NV</span>
   </a>  
 </div> 
 
@@ -28,7 +28,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/e7AYtTJ.jpg" alt="Not loaded." class="center-block">
   <a  target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -36,15 +36,15 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/TUwTq7E.jpg" alt="Not loaded." class="center-block">
   <a  target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
-<!-- 
+
 <div class="img-container">
   <img src="https://i.imgur.com/9ZQMaLv.jpg" alt="Not loaded." class="center-block">
   <a  target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -52,7 +52,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/4NL5ASi.jpg" alt="Not loaded." class="center-block">
   <a  target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -60,7 +60,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/U1AYyK1.jpg" alt="Not loaded." class="center-block">
   <a  target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -68,7 +68,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/vBxok8A.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=40.5611111,-111.6290278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -76,7 +76,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/JXBl2Gv.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=40.7743139,-111.8889528" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -84,7 +84,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/f31qQD3.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=40.5840944,-111.6380694" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Alta, UT</span>
   </a>  
 </div> 
 
@@ -92,7 +92,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/uuelnd2.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=40.5954139,-111.5943000" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -100,7 +100,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/1VnIf2b.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=40.6034611,-111.6122194" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -108,7 +108,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/CoUIud3.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=40.5954861,-111.5610278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Salt Lake City, UT</span>
   </a>  
 </div> 
 
@@ -116,7 +116,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/kCXM6nY.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.4802361,-110.7622222" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Jackson, WY</span>
   </a>  
 </div> 
 
@@ -124,7 +124,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/C7Smt1a.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5972778,-110.8703778" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -132,7 +132,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/sIsvfuv.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5972750,-110.8702778" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -140,7 +140,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/GzNqW7v.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5972444,-110.8704222" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -148,7 +148,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/5OwCMMu.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5972139,-110.8703000" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -156,7 +156,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/RalM5jM.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5940444,-110.8738472" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -164,7 +164,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/bLLv5up.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5867167,-110.8615028" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -172,7 +172,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/657hpJP.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5923222,-110.8628167" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -180,7 +180,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/Hl84N8E.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.6091611,-110.8323528" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -188,7 +188,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/TLiPjYG.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5945389,-110.8670361" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -196,7 +196,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/zODdGfB.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7032472,-110.7449806" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Alta, WY</span>
   </a>  
 </div> 
 
@@ -204,7 +204,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/pFE8hi4.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7032972,-110.7449417" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Alta, WY</span>
   </a>  
 </div> 
 
@@ -212,7 +212,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/0gHpl2q.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7122833,-110.7557361" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Alta, WY</span>
   </a>  
 </div> 
 
@@ -220,7 +220,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/9fwQ54l.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7123417,-110.7557000" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Alta, WY</span>
   </a>  
 </div> 
 
@@ -228,7 +228,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/GDfJFEW.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7012944,-110.7424861" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moose, WY</span>
   </a>  
 </div> 
 
@@ -236,7 +236,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/Y1Y5NqV.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.6911667,-110.6733389" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moose, WY</span>
   </a>  
 </div> 
 
@@ -244,7 +244,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/aLOVlW6.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.8725583,-110.5735083" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moran, WY</span>
   </a>  
 </div> 
 
@@ -252,7 +252,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/w90vFjK.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7543528,-110.6238472" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moose, WY</span>
   </a>  
 </div> 
 
@@ -260,7 +260,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/Fip1m1C.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7542000,-110.6238250" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moose, WY</span>
   </a>  
 </div> 
 
@@ -268,7 +268,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/jx3oO0z.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.7179861,-110.6603472" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Moose, WY</span>
   </a>  
 </div> 
 
@@ -276,7 +276,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/oynF5LA.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6567722,-111.0984500" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -284,7 +284,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/13XNnCs.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6587639,-111.0974972" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -292,7 +292,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/5seLPJB.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6588556,-111.0975278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -300,7 +300,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/LyV2fOq.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6595333,-111.0886306" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -308,7 +308,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/bCRgJXz.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6587861,-111.0721278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -316,7 +316,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/w4cSlyk.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.8677833,-111.3562778" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -324,7 +324,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/CbZ0GtK.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.8674139,-111.3557278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -332,7 +332,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/nYeVL60.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.8672722,-111.3552861" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -340,7 +340,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/ZJwh8cW.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.8646056,-111.3522333" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -348,7 +348,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/ZowvIOu.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.8661806,-111.3531278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -356,7 +356,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/0OV17Fb.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.8667722,-111.3541111" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -364,7 +364,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/GcbKH69.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.1895861,-112.3438806" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Blackfoot, ID</span>
   </a>  
 </div> 
 
@@ -372,7 +372,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/4HnV6Dc.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.1896583,-112.3436361" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Blackfoot, ID</span>
   </a>  
 </div> 
 
@@ -380,7 +380,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/94difcW.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=42.5661306,-114.3007583" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">PLACEHOLDER_CAPTION</span>
+    <span class="img-caption-corner" style="display: inline;">Hansen, ID</span>
   </a>  
 </div> 
- -->
+
