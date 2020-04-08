@@ -1,4 +1,5 @@
 from os.path import join
+import numpy as np
 import pystache
 
 
@@ -61,10 +62,12 @@ class PostTemplate(object):
     def render_image_html(self, record):
 
         gps, place_id = None, None
-        if record.distance_to_semantic < 5:
+
+        if type(record.place_id) == str:
             place_id = record.place_id
-        if record.distance_to_semantic < 15:
-            gps = [record.latitude_used, record.longitude_used]
+
+        if not np.isnan(record.latitude):
+            gps = [record.latitude, record.longitude]
 
         image = ImageHtmlTemplate(record.imgur_link, 
                                   caption=record.caption,
