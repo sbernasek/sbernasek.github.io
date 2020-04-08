@@ -12,7 +12,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/s8pTyWx.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4317776,-114.4481667" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Valley of Fire - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">Valley of Fire State Park - Overton, NV</span>
   </a>  
 </div> 
 
@@ -20,7 +20,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/sqdHyXB.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4397722,-114.5146028" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Valley of Fire - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">Valley of Fire State Park - Overton, NV</span>
   </a>  
 </div> 
 
@@ -28,7 +28,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/e7AYtTJ.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4372724,-114.5121384" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Mouse&#x27;S Tank - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">The Boat - Berkhamsted, UK</span>
   </a>  
 </div> 
 
@@ -36,7 +36,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/TUwTq7E.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4382125,-114.5121820" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Valley of Fire - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">Valley of Fire State Park - Overton, NV</span>
   </a>  
 </div> 
 
@@ -44,7 +44,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/9ZQMaLv.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4627971,-114.5219808" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Valley of Fire - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">Valley of Fire State Park - Overton, NV</span>
   </a>  
 </div> 
 
@@ -52,7 +52,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/4NL5ASi.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4872363,-114.5293639" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Valley of Fire - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">Valley of Fire State Park - Overton, NV</span>
   </a>  
 </div> 
 
@@ -60,7 +60,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/U1AYyK1.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=36.4842283,-114.5224361" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Valley of Fire - Overton, NV</span>
+    <span class="img-caption-corner" style="display: inline;">Valley of Fire State Park - Overton, NV</span>
   </a>  
 </div> 
 
@@ -140,7 +140,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/GzNqW7v.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=43.5972444,-110.8704222" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Corbet&#x27;S Cabin Top Of The World Waffles - Teton Village, WY</span>
+    <span class="img-caption-corner" style="display: inline;">Jackson Hole - Teton Village, WY</span>
   </a>  
 </div> 
 
@@ -300,7 +300,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/LyV2fOq.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6595333,-111.0886306" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
+    <span class="img-caption-corner" style="display: inline;">Yellowstone National Park - West Yellowstone, MT</span>
   </a>  
 </div> 
 
@@ -308,7 +308,7 @@ image: https://i.imgur.com/s8pTyWx.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/bCRgJXz.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=44.6587861,-111.0721278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">West Yellowstone, MT</span>
+    <span class="img-caption-corner" style="display: inline;">Yellowstone National Park - West Yellowstone, MT</span>
   </a>  
 </div> 
 
