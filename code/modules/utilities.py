@@ -1,8 +1,7 @@
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 import math
 import numpy as np
-from postal.parser import parse_address
 
 
 def read_json(filepath):
@@ -36,6 +35,7 @@ def gps_to_decimal(d, m, s):
 
 
 def fmt_address(address):
+    from postal.parser import parse_address
     if address is None:
         return {}
     else:
