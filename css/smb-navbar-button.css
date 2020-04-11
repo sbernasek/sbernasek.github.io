@@ -1,0 +1,38 @@
+.smb-back-button {
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  background-opacity: 0;
+  padding: 5px 5px;
+  transition: all 0.5s;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  background-color: rgb(245, 245, 245);;
+  /*margin: 5px;*/
+}
+
+.smb-back-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.smb-back-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.smb-back-button:hover span {
+  padding-right: 25px;
+}
+
+.smb-back-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

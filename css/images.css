@@ -1,0 +1,95 @@
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.img-container {
+  position: relative;
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.img-caption-center {
+  background: rgba(30, 30, 30, 0.8);
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #EEE;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  right: 0;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.img-container:hover .img-caption-center {
+  opacity: 1;
+}
+
+
+.img-caption-corner {
+  background: rgba(30, 30, 30, 0.8);
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #EEE;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  right: 0;
+  bottom: 0;
+/*  transition: .5s ease;
+*/  opacity: 1;
+  display: none;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+/*.img-container:hover .img-caption-corner {
+  opacity: 1;
+}
+*/
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.img-container-post {
+  position: relative;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+.img-caption-post {
+  background: rgba(30, 30, 30, 0.8);
+  position: absolute;
+  padding: 5px 5px;
+  
+  width: 50%;
+  height: 35%;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: #EEE;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;  
+  text-align: center;
+  
+  /* Align text-box within image center. */
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  vertical-align: middle;
+  
+  border: 3px solid white;
+  transition: .5s ease;
+  opacity: 0.0;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.img-container-post:hover .img-caption-post {
+  opacity: 1.0;
+}
+

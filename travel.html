@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>sbernasek</title>
+  <title>Photo Albums</title>
 
   <meta name="author" content="Sebastian Bernasek" />
 
@@ -73,7 +73,7 @@
   
 
   
-  <meta property="og:title" content="sbernasek" />
+  <meta property="og:title" content="Photo Albums" />
   
 
    
@@ -98,7 +98,7 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="sbernasek" />
+  <meta name="twitter:title" content="Photo Albums" />
   
 
   
@@ -122,71 +122,80 @@
 
   
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
+  <div class="container-fluid smb-row">
 
-    <!-- Button in top left -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+    <!-- Left column -->
+    <div class="smb-col smb-col-left"><a class="navbar-brand" href="/travel">Xtina & Seb</a></div>
+
+
+    <!-- Center column -->
+    
+
+      <!-- Blog avatar -->
+      <div class="smb-col smb-col-center">      
+        <div class="blog-avatar-container">
+          <div class="avatar-img-border">
+            <a href="/travel">
+              <img class="avatar-img" src="/img/site/blog_avatar.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Page title -->
+      
+
+      
+    <!-- Right column -->
+    
+
+      <!-- Right column -->
+      <div class="smb-col smb-col-right">
+
+        <!-- Navigation bar for web browsers -->
+        <div class="collapse navbar-collapse smb-blog-navbar" id="main-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/travel">
+                <span class="smb-navbar-link">Maps</span>
+              </a></li>
+            <li class="navlinks-container-blog">
+              <a class="navlinks-parent smb-albums-menu" href="javascript:void(0)">
+                <span class="smb-navbar-link">Albums</span>
+              </a>
+              <div class="navlinks-children">
+                
+                  <a href="/2020-03-11-rocky-mountains/">Rocky Mountains</a>
+                  <a href="/2020-02-27-palm-springs/">Palm Springs</a>
+                  <a href="/2020-01-30-lake-tahoe/">Lake Tahoe</a>
+                  <a href="/2019-12-18-italy-2/">Italy 2</a>
+                  <a href="/2019-12-08-morocco/">Morocco</a>
+                  <a href="/2019-11-04-spain/">Catalonia</a>
+                  <a href="/2019-10-15-croatia/">Croatia</a>
+                  <a href="/2019-10-08-slovenia/">Slovenia</a>
+                  <a href="/2019-10-05-austria/">Austria</a>
+                  <a href="/2019-10-03-germany/">Bavaria</a>
+                  <a href="/2019-09-30-england/">England</a>
+                  <a href="/2019-09-30-czech-republic/">Czech Republic</a>
+                  <a href="/2019-09-01-italy/">Italy</a>
+                  <a href="/2019-08-18-france/">France</a>
+                  <a href="/2019-07-28-ca-highway-1/">CA Highway 1</a></div>            
+            </li>
+          </ul>
+        </div>
+
+        <!-- Drop-down navigation bar for mobile -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button><a class="navbar-brand" href="/travel">Xtina & Seb</a></div>
+        </button>
 
-    <!-- Links on the right -->
-    
-      <div class="collapse navbar-collapse" id="main-navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/travel">Maps</a></li>
-          <li class="navlinks-container-blog">
-            <a class="navlinks-parent" href="javascript:void(0)">Albums</a>
-            <div class="navlinks-children">
-              
-                <a href="/2000-01-14-rockies/">Rockies</a>
-                <!-- <a href="/2000-01-14-rockies/">Rockies</a> -->
-                <a href="/2000-01-13-palm-springs/">Palm Springs</a>
-                <!-- <a href="/2000-01-13-palm-springs/">Palm Springs</a> -->
-                <a href="/2000-01-12-tahoe/">Tahoe</a>
-                <!-- <a href="/2000-01-12-tahoe/">Tahoe</a> -->
-                <a href="/2000-01-11-italy-2/">Italy 2</a>
-                <!-- <a href="/2000-01-11-italy-2/">Italy 2</a> -->
-                <a href="/2000-01-10-morocco/">Morocco</a>
-                <!-- <a href="/2000-01-10-morocco/">Morocco</a> -->
-                <a href="/2000-01-09-spain/">Spain</a>
-                <!-- <a href="/2000-01-09-spain/">Spain</a> -->
-                <a href="/2000-01-08-croatia/">Croatia</a>
-                <!-- <a href="/2000-01-08-croatia/">Croatia</a> -->
-                <a href="/2000-01-07-slovenia/">Slovenia</a>
-                <!-- <a href="/2000-01-07-slovenia/">Slovenia</a> -->
-                <a href="/2000-01-06-austria/">Austria</a>
-                <!-- <a href="/2000-01-06-austria/">Austria</a> -->
-                <a href="/2000-01-05-germany/">Germany</a>
-                <!-- <a href="/2000-01-05-germany/">Germany</a> -->
-                <a href="/2000-01-04-czechia/">Czechia</a>
-                <!-- <a href="/2000-01-04-czechia/">Czechia</a> -->
-                <a href="/2000-01-03-england/">England</a>
-                <!-- <a href="/2000-01-03-england/">England</a> -->
-                <a href="/2000-01-02-italy/">Italy</a>
-                <!-- <a href="/2000-01-02-italy/">Italy</a> -->
-                <a href="/2000-01-01-france/">France</a>
-                <!-- <a href="/2000-01-01-france/">France</a> --></div>            
-          </li>
-        </ul>
       </div>
+      
+    <!-- Otherwise, add back button -->    
     
-    <!-- Alternatively... -->
-    
-
-    <!-- Blog avatar -->
-  	
-    	<div class="avatar-container">
-    	  <div class="avatar-img-border">
-    	    <a href="/travel">
-            <img class="avatar-img" src="/img/site/blog_avatar.png" />
-          </a>
-    	  </div>
-    	</div>
-  	
 
   </div>
 </nav>
@@ -195,7 +204,36 @@
     <!-- TODO this file has become a mess, refactor it -->
 
 
-<div class="intro-header"></div>
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <div class="page-heading">
+          <!-- SEB EDIT -->
+          <!-- <h1>Photo Albums</h1> -->
+
+          
+
+          <!-- <hr class="small"> -->
+          <!-- END SEB EDIT -->
+		      
+    		  
+    		  
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
 
 
 
@@ -206,212 +244,272 @@
 <div class="posts-list">
   
   <article class="post-preview">
-    <a href="/2000-01-14-rockies/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/s8pTyWx.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Rockies</h2>
-            
-        </span>
+    <a href="/2020-03-11-rocky-mountains/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/1fIBIdQ.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Rocky Mountains
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-13-palm-springs/">
+    <a href="/2020-02-27-palm-springs/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/fdcEkox.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Palm Springs</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Palm Springs
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-12-tahoe/">
+    <a href="/2020-01-30-lake-tahoe/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/WDecwZB.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Tahoe</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Lake Tahoe
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-11-italy-2/">
+    <a href="/2019-12-18-italy-2/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/tPViG2v.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Italy 2</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Italy 2
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-10-morocco/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/YTDqFPU.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Morocco</h2>
-            
-        </span>
+    <a href="/2019-12-08-morocco/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/Bh13BTf.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Morocco
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-09-spain/">
+    <a href="/2019-11-04-spain/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/DANYgWx.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Spain</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Catalonia
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-08-croatia/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/xvwSpqZ.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Croatia</h2>
-            
-        </span>
+    <a href="/2019-10-15-croatia/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/gtlRU4G.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Croatia
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-07-slovenia/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/G2GzEPJ.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Slovenia</h2>
-            
-        </span>
+    <a href="/2019-10-08-slovenia/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/PVCzpmN.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Slovenia
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-06-austria/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/ZkyFsMM.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Austria</h2>
-            
-        </span>
+    <a href="/2019-10-05-austria/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/HEVMEyF.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Austria
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-05-germany/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/rbmZHXf.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Germany</h2>
-            
-        </span>
+    <a href="/2019-10-03-germany/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/RXeBCXQ.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Bavaria
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-04-czechia/">
-    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/2DB7yPR.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Czechia</h2>
-            
-        </span>
-    </div>
-    </a>
-
-
-<!--      -->
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/2000-01-03-england/">
+    <a href="/2019-09-30-england/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/HfAchQr.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">England</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            England
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-02-italy/">
+    <a href="/2019-09-30-czech-republic/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/0t4daK7.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Czech Republic
+          </h1>
+
+          
+        </div>
+
+    </div>
+    </a>
+
+   </article>
+  
+  <article class="post-preview">
+    <a href="/2019-09-01-italy/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/XZ6Lz5l.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">Italy</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            Italy
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
-
-
-<!--      -->
 
    </article>
   
   <article class="post-preview">
-    <a href="/2000-01-01-france/">
+    <a href="/2019-08-18-france/">
     <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/5Usf1GT.jpg)"> 
-        <span class="img-caption-post" style="display: inline;">
-            <h2 class="post-title">France</h2>
-            
-        </span>
+        
+        <div class="img-caption-post smb-container-centering">
+
+          <h1 class="smb-post-title">
+            France
+          </h1>
+
+          
+        </div>
+
     </div>
     </a>
 
+   </article>
+  
+  <article class="post-preview">
+    <a href="/2019-07-28-ca-highway-1/">
+    <div class="post-image-bg img-container-post" style="background-image: url(https://i.imgur.com/iohXMew.jpg)"> 
+        
+        <div class="img-caption-post smb-container-centering">
 
-<!--      -->
+          <h1 class="smb-post-title">
+            CA Highway 1
+          </h1>
+
+          
+        </div>
+
+    </div>
+    </a>
 
    </article>
   

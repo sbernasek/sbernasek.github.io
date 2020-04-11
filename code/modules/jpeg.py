@@ -1,92 +1,84 @@
-from PIL import Image, ExifTags
+from exif import Image as ExifImage
+from iptcinfo3 import IPTCInfo
 
+import logging
+iptcinfo_logger = logging.getLogger('iptcinfo')
+iptcinfo_logger.setLevel(logging.ERROR)
 
-class GPS:
-    
-    def __init__(self, info):
-        self.info = info
-        
-    @staticmethod
-    def from_exif(exif):        
-        info = {}
-        if 'GPSInfo' in exif:
-            for key in exif['GPSInfo'].keys():
-                info[ExifTags.GPSTAGS[key]] = exif['GPSInfo'][key]
-        return GPS(info)
-
-    @property
-    def coordinates(self):
-        coords = {}
-        for key in ['Latitude', 'Longitude']:
-            if 'GPS'+key in self.info and 'GPS'+key+'Ref' in self.info:
-                e = self.info['GPS'+key]
-                ref = self.info['GPS'+key+'Ref']
-                coords[key] = ( str(e[0][0]/e[0][1]) + '°' +
-                              str(e[1][0]/e[1][1]) + '′' +
-                              str(e[2][0]/e[2][1]) + '″ ' +
-                              ref )
-
-        if 'Latitude' in coords and 'Longitude' in coords:
-            return [coords['Latitude'], coords['Longitude']]
-        else:
-            return [None, None]
-
-    @property
-    def decimal_coordinates(self):
-        coords = {}
-        for key in ['Latitude', 'Longitude']:
-            if 'GPS'+key in self.info and 'GPS'+key+'Ref' in self.info:
-                e = self.info['GPS'+key]
-                ref = self.info['GPS'+key+'Ref']
-                coords[key] = ( e[0][0]/e[0][1] +
-                              e[1][0]/e[1][1] / 60 +
-                              e[2][0]/e[2][1] / 3600
-                            ) * (-1 if ref in ['S','W'] else 1)
-
-        if 'Latitude' in coords and 'Longitude' in coords:
-            return [coords['Latitude'], coords['Longitude']]
-        else:
-            return [None, None]
+from modules.gps import GPS
+from modules.utilities import str_to_datetime, localize_datetime, gps_to_decimal
 
 
 class JPEG_Metadata:
     
     def __init__(self, path):
         self.path = path
-        im = Image.open(path)
-        self.exif = self.extract_exif(im)
-    
-    def to_record(self):
-        return {
-            'path': self.path,
-            'filename': self.filename,
-            'time_shot': self.time_shot,
-            'time_rendered': self.time_rendered,
-            'gps': self.gps.decimal_coordinates,
-            'model': self.model}
+        self.exif = self.extract_exif(path)
+        self.iptc = IPTCInfo(path)
+        latitude, longitude = GPS(path).decimal_coordinates
+        self.latitude = latitude
+        self.longitude = longitude
+
+    @staticmethod
+    def extract_exif(filepath):
+        with open(filepath, 'rb') as file:
+            exif = ExifImage(file)
+        return exif
 
     @property
     def filename(self):
         return self.path.rsplit('/', maxsplit=1)[-1]
-    
+
     @property
-    def time_shot(self):
-        return self.exif['DateTimeOriginal']
+    def source(self):
+        try:
+            return self.exif.model
+        except:
+            return 'Other'
+
+    @property
+    def time_shot_local(self):
+        return self.exif.datetime_original
+
+    @property
+    def time_shot_pst(self):
+
+        keywords = [str(x, 'utf-8') for x in self.iptc['keywords']]
+        for tz in ['pst', 'mst', 'gmt', 'cet', None]:
+            if tz in keywords:
+                break
+        if tz is None:
+            print(self.path)
+            print(self.iptc['keywords'])
+            raise ValueError('Timezone not found in file IPTC info.')
+
+        return localize_datetime(self.time_shot_local, tz)
+
+    @property
+    def timestamp(self):
+        return str_to_datetime(self.time_shot_pst)
 
     @property
     def time_rendered(self):
-        return self.exif['DateTime']
-   
+        return self.exif.datetime
+
     @property
-    def gps(self):
-        return GPS.from_exif(self.exif)
-    
-    @property
-    def model(self):
-        return self.exif['Model']
-    
-    @staticmethod
-    def extract_exif(im):
-        return {ExifTags.TAGS[k]: v for k,v in im._exif.items() if k in ExifTags.TAGS}
-        
-        
+    def geotagged(self):
+        if self.latitude is not None:
+            return True
+        else:
+            return False
+
+    def to_record(self):
+        return {
+            'source': self.source,
+            'filename': self.filename,
+            'path': self.path,
+            'timestamp': self.timestamp,
+            'time_shot_pst': self.time_shot_pst,
+            'time_shot_local': self.time_shot_local,
+            'time_rendered': self.time_rendered,
+            'geotagged': self.geotagged,
+            'latitude': self.latitude,
+            'longitude': self.longitude
+        }

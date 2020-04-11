@@ -5,8 +5,11 @@
 */
 
 /* SEB EDIT */
-@import url("captions.css");
-/* SEB EDIT */
+@import url("images.css");
+@import url("titles.css");
+@import url("smb-navbar.css");
+@import url("smb-navbar-button.css");
+/* SEB EDIT 
 
 @import url("bootstrap-accordion.css"); 
 @import url("pygment_highlights.css");
@@ -290,7 +293,7 @@ img {
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container-blog {
   position: relative;
-  width: 150px;
+  max-width: 300px;
 }
 .navbar-custom .nav .navlinks-parent:after {
   content: " \25BC";

@@ -1,0 +1,128 @@
+
+.smb-row {
+  display: flex;
+  max-width: 800px;
+}
+
+.smb-col {
+  padding: 1em;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  /*border:1px solid black;*/
+}
+
+.smb-col-left {
+    flex-basis: 300px;
+    max-width: 50%;
+  }
+
+.smb-col-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) {
+
+  .smb-col-right,
+  .smb-col-left {
+    flex-basis: 300px;
+    max-width: 50%;
+  }
+
+  .smb-col-center {
+    flex-grow: 1;
+  }
+
+}
+
+
+/*Hide containers on screens <768px*/
+@media (max-width: 768px){
+  
+  .smb-right-align-mobile {
+    float: right;
+  }
+
+  .smb-hide-mobile {
+    display: none;
+  }
+}
+
+
+.smb-blog-navbar {
+  padding-top: 0px;
+}
+
+.smb-right-align {
+ float: right;
+}
+
+.smb-albums-menu {
+  width: 160px;
+}
+
+
+
+.navbar-custom .blog-avatar-container {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+/*.navbar-custom .blog-avatar-container .avatar-img-border {
+  width: 100%;
+  border-radius: 50%;
+  margin-left: -50%;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}*/
+
+.navbar-custom .blog-avatar-container .avatar-img {
+  display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom .blog-avatar-container {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -50px;
+    width: 175px;
+    padding-top: 10px;
+  }
+
+  /*.navbar-custom .blog-avatar-container .avatar-img-border {
+    width: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+  }*/
+
+  .navbar-custom .blog-avatar-container .avatar-img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .navbar-custom.top-nav-short .blog-avatar-container .avatar-img {
+    transition: 1s ease;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 50%;
+  }
+
+}
+
