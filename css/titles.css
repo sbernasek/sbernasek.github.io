@@ -1,5 +1,6 @@
 
 .smb-page-title {
+  font-size: 28px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: auto;
@@ -26,3 +27,6 @@
   font-weight: 800;
 }
 
+.smb-full-width {
+  width: 100%;
+}

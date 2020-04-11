@@ -1,6 +1,10 @@
-<div class="img-container">
-  <img src="{{url}}" alt="Not loaded." class="center-block">
-  <a {{{hyperlink}}} target="_blank">
-    <span class="img-caption-corner" style="display: inline;">{{caption}}</span>
-  </a>  
+<div class="grid-item {{grid_item_class}}">
+  <div class="hovereffect">
+    <img src="{{url_large}}" alt="Not loaded.">
+    <a class="info" href="{{url}}" data-fancybox="gallery" data-caption="{{caption}}">
+      <div class="overlay">      
+        <h2>{{caption}}</h2>
+      </div>
+    </a>
+  </div>
 </div> 

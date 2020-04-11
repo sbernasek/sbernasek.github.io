@@ -53,6 +53,8 @@
     
       <link rel="stylesheet" href="/css/stylish.css" />
     
+      <link rel="stylesheet" href="/css/jquery.fancybox.min.css" />
+    
   
 
   
@@ -77,7 +79,16 @@
   
 
    
-  <meta property="og:description" content="{{{images}}}
+  <meta property="og:description" content="
+
+
+  
+  
+
+  {{{images}}}
+
+
+
 ">
   
 
@@ -103,7 +114,16 @@
   
 
   
-  <meta name="twitter:description" content="{{{images}}}
+  <meta name="twitter:description" content="
+
+
+  
+  
+
+  {{{images}}}
+
+
+
 ">
   
 
@@ -206,12 +226,28 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      }
+      <div class="img-container">
+<div class="grid" id="gallery">
+
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+
+  }
+
+</div>
+</div>
 
 	    
     </div>
   </div>
 </div>
+
+<!-- <script type="text/javascript" src="/js/lightbox.js"></script>
+<link rel="stylesheet" href="/css/lightbox.css">
+ -->
+
+</body>
+</html>
 
 
     <footer>
@@ -262,12 +298,64 @@
       <script src="/js/main.js"></script>
     
   
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/js/jquery.fancybox.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/js/masonry.pkgd.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script src="/js/imagesloaded.pkgd.min.js"></script>
+    
+  
 
 
 
 
 
 
+
+
+    <script type="text/javascript">
+
+      $(window).load( function() {
+
+        // Masonry tiling
+        var $grid = $('#gallery').masonry({
+            //containerStyle: null,
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            gutter: '.gutter-sizer',
+        });
+
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry();
+        });
+
+      });
+
+      // FancyBox
+      $('[data-fancybox="gallery"]').fancybox({
+        buttons : [ 
+          'slideShow',
+          'share',
+          'zoom',
+          'fullScreen',
+          'close'
+        ],
+        thumbs : {
+          autoStart : false
+        }
+      });
+
+    </script>
   
   </body>
 </html>
