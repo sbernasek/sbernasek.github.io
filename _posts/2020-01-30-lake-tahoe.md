@@ -2,8 +2,8 @@
 layout: blog
 navbar: false
 show_avatar: false
-title: Tahoe
-title_slug: Tahoe
+title: Lake Tahoe
+title_slug: Lake Tahoe
 subtitle: 
 comments: false
 image: https://i.imgur.com/WDecwZB.jpg
@@ -60,7 +60,7 @@ image: https://i.imgur.com/WDecwZB.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/o3zANs4.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=39.3267972,-120.1853333" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Erg Chebbi, MA</span>
+    <span class="img-caption-corner" style="display: inline;">Redlight Hostel - Truckee, CA</span>
   </a>  
 </div> 
 
@@ -68,7 +68,7 @@ image: https://i.imgur.com/WDecwZB.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/leSHfYg.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=39.3267111,-120.1854556" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Redlight Inn - Truckee, CA</span>
+    <span class="img-caption-corner" style="display: inline;">Redlight Hostel - Truckee, CA</span>
   </a>  
 </div> 
 
@@ -108,7 +108,7 @@ image: https://i.imgur.com/WDecwZB.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/TYQHM5I.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=39.1887778,-120.2660611" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Squaw Valley, CA</span>
+    <span class="img-caption-corner" style="display: inline;">Gold Coast Lodge - Squaw Valley, CA</span>
   </a>  
 </div> 
 
@@ -124,7 +124,7 @@ image: https://i.imgur.com/WDecwZB.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/1DVFXOp.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=38.2590472,-122.0593028" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">1998, CA</span>
+    <span class="img-caption-corner" style="display: inline;">The 1990s - Fairfield, CA</span>
   </a>  
 </div> 
 
@@ -156,7 +156,7 @@ image: https://i.imgur.com/WDecwZB.jpg
 <div class="img-container">
   <img src="https://i.imgur.com/TKQFNYu.jpg" alt="Not loaded." class="center-block">
   <a href="https://www.google.com/maps/search/?api=1&query=37.9369056,-122.2097556" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Briones Regional Park - Lafayette, CA</span>
+    <span class="img-caption-corner" style="display: inline;">Oursan Trail - Orinda, CA</span>
   </a>  
 </div> 
 

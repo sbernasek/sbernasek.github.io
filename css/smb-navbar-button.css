@@ -3,11 +3,12 @@
   display: inline-block;
   border: none;
   border-radius: 6px;
-  /*background-color: none;*/
+  background-opacity: 0;
   padding: 5px 5px;
   transition: all 0.5s;
   transition-duration: 0.5s;
   cursor: pointer;
+  background-color: rgb(245, 245, 245);;
   /*margin: 5px;*/
 }
 

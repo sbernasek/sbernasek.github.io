@@ -5,6 +5,7 @@ import logging
 iptcinfo_logger = logging.getLogger('iptcinfo')
 iptcinfo_logger.setLevel(logging.ERROR)
 
+from modules.gps import GPS
 from modules.utilities import str_to_datetime, localize_datetime, gps_to_decimal
 
 
@@ -14,6 +15,9 @@ class JPEG_Metadata:
         self.path = path
         self.exif = self.extract_exif(path)
         self.iptc = IPTCInfo(path)
+        latitude, longitude = GPS(path).decimal_coordinates
+        self.latitude = latitude
+        self.longitude = longitude
 
     @staticmethod
     def extract_exif(filepath):
@@ -64,20 +68,6 @@ class JPEG_Metadata:
             return True
         else:
             return False
-
-    @property
-    def latitude(self):
-        try:
-            return gps_to_decimal(*self.exif.gps_latitude)
-        except:
-            return None
-
-    @property
-    def longitude(self):
-        try:
-            return -gps_to_decimal(*self.exif.gps_longitude)
-        except:
-            return None
 
     def to_record(self):
         return {

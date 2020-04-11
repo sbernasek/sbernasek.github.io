@@ -20,6 +20,7 @@ class PhotoMetadata:
                 
     def load(self):
         self.data = self._load(self.path)
+        self.data = self.data.sort_values('timestamp')
         
     def initialize(self):
         columns = [

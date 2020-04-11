@@ -1,9 +1,13 @@
 from os.path import join, exists
 from glob import glob
 from time import sleep, time
+from datetime import datetime
+import numpy as np
 import pandas as pd
 from imgurpython import ImgurClient
 from imgurpython.helpers.error import ImgurClientRateLimitError
+
+from modules.utilities import datetime_to_str, str_to_datetime
 
 
 class Client(ImgurClient):
@@ -41,9 +45,10 @@ class Client(ImgurClient):
             'album',
             'filename',
             'source',
-            'imgur_album_hash',
             'imgur_id',
-            'imgur_link']
+            'imgur_link',
+            'imgur_album_hash',
+            'time_uploaded']
         self.imgur_data = pd.DataFrame(columns=columns)
         self.imgur_data = self.imgur_data.set_index(self.INDEX)
 
@@ -58,23 +63,26 @@ class Client(ImgurClient):
             config = dict(album=album_hash)
             response = self.upload_from_path(metadata_record.path, 
                                              config=config, anon=False)
+            time_uploaded = datetime_to_str(datetime.fromtimestamp(response['datetime']))
+
+            # build imgur data record
+            imgur_record = {
+                'imgur_id': response['id'],
+                'imgur_link': response['link'],
+                'imgur_album_hash': album_hash,
+                'time_uploaded': time_uploaded
+                }
+
+            # compile series
+            imgur_record = pd.Series(imgur_record, name=metadata_record._name)
+
+            # save record
+            self.imgur_data = self.imgur_data.append(imgur_record, ignore_index=False)
 
         except ImgurClientRateLimitError:
             print('Rate limit exceeded.')
             sleep(sleep_time)
             self._upload_image(album_hash, metadata_record, sleep_time)
-
-        # build imgur data record
-        imgur_record = {
-            'imgur_id': response['id'],
-            'imgur_link': response['link'],
-            'imgur_album_hash': album_hash}
-
-        # compile series
-        imgur_record = pd.Series(imgur_record, name=metadata_record._name)
-
-        # save record
-        self.imgur_data = self.imgur_data.append(imgur_record, ignore_index=False)
 
     def upload_image(self, album_hash, metadata_record):
 
@@ -115,3 +123,16 @@ class Client(ImgurClient):
 
         # update metadata
         self.save()
+
+    def upload_new_images(self, photo_metadata, delay=60):
+
+        def is_later(x):
+            if type(x.time_uploaded) == float and np.isnan(x.time_uploaded):
+                return True
+            else:
+                return str_to_datetime(x.time_uploaded) < str_to_datetime(x.time_rendered)
+        
+        # select images that have been rendered since last upload
+        records = photo_metadata[photo_metadata.join(self.imgur_data).apply(is_later, axis=1)]
+
+        self.upload_images(records, delay=delay)
