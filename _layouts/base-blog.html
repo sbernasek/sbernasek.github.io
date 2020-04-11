@@ -4,6 +4,7 @@ common-css:
   - "/css/bootstrap-social.css"
   - "/css/main.css"
   - "/css/stylish.css"
+  - "/css/jquery.fancybox.min.css"
 common-ext-css:
   - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
 common-googlefonts:
@@ -13,6 +14,9 @@ common-js:
   - "/js/jquery-1.11.2.min.js"
   - "/js/bootstrap.min.js"
   - "/js/main.js"
+  - "/js/jquery.fancybox.min.js"
+  - "/js/masonry.pkgd.min.js"
+  - "/js/imagesloaded.pkgd.min.js"
 ---
 
 <!DOCTYPE html>
@@ -31,6 +35,43 @@ common-js:
     {% include footer-blog.html %}
   
     {% include footer-scripts.html %}
+
+
+    <script type="text/javascript">
+
+      $(window).load( function() {
+
+        // Masonry tiling
+        var $grid = $('#gallery').masonry({
+            //containerStyle: null,
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            gutter: '.gutter-sizer',
+        });
+
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.masonry();
+        });
+
+      });
+
+      // FancyBox
+      $('[data-fancybox="gallery"]').fancybox({
+        buttons : [ 
+          'slideShow',
+          'share',
+          'zoom',
+          'fullScreen',
+          'close'
+        ],
+        thumbs : {
+          autoStart : false
+        }
+      });
+
+    </script>
   
   </body>
 </html>

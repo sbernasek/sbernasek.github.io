@@ -6,77 +6,122 @@ title: Palm Springs
 title_slug: Palm Springs
 subtitle: 
 comments: false
-image: https://i.imgur.com/fdcEkox.jpg
+image: https://i.imgur.com/fdcEkoxl.jpg
 ---
 
 <div class="img-container">
-  <img src="https://i.imgur.com/LBZZXzx.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8260778,-116.5564944" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Cactus to Clouds Trailhead - Palm Springs, CA</span>
-  </a>  
+<div class="grid" id="gallery">
+
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+
+  <div class="grid-item grid-item--horizontal">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/LBZZXzxl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/LBZZXzx.jpg" data-fancybox="gallery" data-caption="Cactus to Clouds Trailhead - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Cactus to Clouds Trailhead - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/fdcEkox.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8237333,-116.5627750" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Cactus to Clouds Trailhead - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/fdcEkoxl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/fdcEkox.jpg" data-fancybox="gallery" data-caption="Cactus to Clouds Trailhead - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Cactus to Clouds Trailhead - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/BJIN4zF.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8119722,-116.6301417" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Cactus to Clouds Trail - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/BJIN4zFl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/BJIN4zF.jpg" data-fancybox="gallery" data-caption="Cactus to Clouds Trail - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Cactus to Clouds Trail - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/bE3IbYZ.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8126528,-116.6329278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Cactus to Clouds Trail - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/bE3IbYZl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/bE3IbYZ.jpg" data-fancybox="gallery" data-caption="Cactus to Clouds Trail - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Cactus to Clouds Trail - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/zU161mK.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8131056,-116.6382000" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Tram Station - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/zU161mKl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/zU161mK.jpg" data-fancybox="gallery" data-caption="Tram Station - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Tram Station - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/rdgvMx0.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8035667,-116.6641472" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Round Valley - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/rdgvMx0l.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/rdgvMx0.jpg" data-fancybox="gallery" data-caption="Round Valley - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Round Valley - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/S7j6G2Y.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.7992861,-116.6740278" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Round Valley - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/S7j6G2Yl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/S7j6G2Y.jpg" data-fancybox="gallery" data-caption="Round Valley - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Round Valley - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/vNDPq0T.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.8146944,-116.6794444" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">San Jacinto Summit - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/vNDPq0Tl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/vNDPq0T.jpg" data-fancybox="gallery" data-caption="San Jacinto Summit - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>San Jacinto Summit - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
 
-<div class="img-container">
-  <img src="https://i.imgur.com/Oz3CsJE.jpg" alt="Not loaded." class="center-block">
-  <a href="https://www.google.com/maps/search/?api=1&query=33.7946972,-116.4774250" target="_blank">
-    <span class="img-caption-corner" style="display: inline;">Grandma&#x27;s House - Palm Springs, CA</span>
-  </a>  
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/Oz3CsJEl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/Oz3CsJE.jpg" data-fancybox="gallery" data-caption="Grandma&#x27;s House - Palm Springs, CA">
+      <div class="overlay">      
+        <h2>Grandma&#x27;s House - Palm Springs, CA</h2>
+      </div>
+    </a>
+  </div>
 </div> 
 
+
+</div>
+</div>
