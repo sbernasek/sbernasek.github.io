@@ -24,8 +24,8 @@ homeurl: "https://www.sbernasek.com"
 # --- BLOG OPTIONS --- #
 blog_title: Xtina & Seb
 blog_url: travel
-map_page: travel/map
-map_obj: travel/_map.html
+map_page: travel/maps
+map_obj: travel/map.html
 blog_avatar: "/img/site/blog_avatar.png"
 
 
