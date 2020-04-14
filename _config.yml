@@ -24,6 +24,8 @@ homeurl: "https://www.sbernasek.com"
 # --- BLOG OPTIONS --- #
 blog_title: Xtina & Seb
 blog_url: travel
+map_obj: travel/travelmap.html
+map_url: travel/map
 blog_avatar: "/img/site/blog_avatar.png"
 
 
@@ -156,7 +158,7 @@ date_format: "%B %-d, %Y"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
-paginate_path: "/blog/index/"
+paginate_path: "/travel/index/"
 
 # Output options (more information on Jekyll's site)
 timezone: "America/Vancouver"
