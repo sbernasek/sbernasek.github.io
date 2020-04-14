@@ -70,6 +70,9 @@
 <loc>/</loc>
 </url>
 <url>
+<loc>/travel/map/</loc>
+</url>
+<url>
 <loc>/nofilter</loc>
 </url>
 <url>
@@ -85,6 +88,10 @@
 <loc>/tags/</loc>
 </url>
 <url>
+<loc>/code/travelmap.html</loc>
+<lastmod>2020-04-13T18:33:39-07:00</lastmod>
+</url>
+<url>
 <loc>/cv/cv.pdf</loc>
 <lastmod>2020-03-30T09:46:16-07:00</lastmod>
 </url>
@@ -95,5 +102,13 @@
 <url>
 <loc>/docs/preview.pdf</loc>
 <lastmod>2020-03-18T11:51:44-07:00</lastmod>
+</url>
+<url>
+<loc>/travel/map.html</loc>
+<lastmod>2020-04-13T18:34:11-07:00</lastmod>
+</url>
+<url>
+<loc>/travel/travelmap.html</loc>
+<lastmod>2020-04-13T17:41:01-07:00</lastmod>
 </url>
 </urlset>

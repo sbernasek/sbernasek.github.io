@@ -1,0 +1,34 @@
+/*.map-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    width: 700;
+    height: 400;
+}
+*/
+
+.map-container {
+    position: relative;
+    top: 20px;
+    padding-bottom: 56.25%;
+    padding-top: 20%;
+    height: 0;
+    /*overflow: hidden;*/
+}
+
+.map-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
