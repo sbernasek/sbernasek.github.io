@@ -70,7 +70,7 @@
 <loc>/</loc>
 </url>
 <url>
-<loc>/travel/map/</loc>
+<loc>/travel/maps/</loc>
 </url>
 <url>
 <loc>/nofilter</loc>
@@ -102,5 +102,9 @@
 <url>
 <loc>/docs/preview.pdf</loc>
 <lastmod>2020-03-18T11:51:44-07:00</lastmod>
+</url>
+<url>
+<loc>/travel/map.html</loc>
+<lastmod>2020-04-13T19:37:03-07:00</lastmod>
 </url>
 </urlset>
