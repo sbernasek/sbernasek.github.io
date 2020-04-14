@@ -1,9 +1,5 @@
 import pandas as pd
 import folium
-from folium.plugins import HeatMapWithTime
-
-
-
 from folium.plugins import HeatMap, HeatMapWithTime
 
 
@@ -25,8 +21,11 @@ class FoliumMap:
             location = MID_ATLANTIC
         
         self.map = folium.Map(location=location,
+                      tiles=tiles,
                        zoom_start=zoom_start,
-                       tiles=tiles, **kwargs)
+                       **kwargs)
+
+        #folium.TileLayer(tiles, show=True).add_to(self.map)
     
     def add_bubbles(self, xycoords, 
                     popups=None, 

@@ -47,7 +47,7 @@ class ImagePopup:
             <img src="{:s}">
           </a>
         </div> 
-        """.format(self.img, self.img_medium)
+        """.format(self.img, self.img_large)
 
     # @property
     # def html(self):
