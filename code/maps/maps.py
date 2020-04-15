@@ -1,5 +1,6 @@
 import pandas as pd
 import folium
+from folium import TileLayer, Map, Circle
 from folium.plugins import HeatMap, HeatMapWithTime
 
 
@@ -14,19 +15,15 @@ class FoliumMap:
     def build_map(self, 
          location=None, 
          zoom_start=2, 
-         tiles='cartodbpositron', 
          **kwargs):
         
         if location is None:
             location = MID_ATLANTIC
         
-        self.map = folium.Map(location=location,
-                      tiles=tiles,
+        self.map = Map(location=location,
                        zoom_start=zoom_start,
                        **kwargs)
 
-        #folium.TileLayer(tiles, show=True).add_to(self.map)
-    
     def add_bubbles(self, xycoords, 
                     popups=None, 
                     radius=1,  
@@ -48,7 +45,7 @@ class FoliumMap:
             fill_color = [fill_color] * len(xycoords)
 
         for i, gps in enumerate(xycoords):
-            circle = folium.Circle(
+            circle = Circle(
                 location=gps, 
                 popup=popups[i], 
                 radius=radius[i],

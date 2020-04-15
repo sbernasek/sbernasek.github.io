@@ -3,13 +3,29 @@ from folium import Popup
 
 class ImagePopup:
     
-    def __init__(self, imgur_id, caption=None, gallery=None):
+    def __init__(self, imgur_id, 
+                 caption=None, 
+                 gallery=None):
         self.imgur_id = imgur_id
         if caption is None:
             caption = ''
         self.caption = caption
         self._gallery = gallery
-        self.popup = Popup(self.html)
+
+        options = dict(
+            minWidth=400,
+            minHeight=400,
+            maxWidth=600,
+            maxHeight=600,
+            #autoPanPadding=(50, 50),
+            autoPan=False,
+            className='smb-map-popup'
+        )
+
+        if gallery is None:
+            self.popup = Popup(self.html, **options)
+        else:
+            self.popup = Popup(self.html_gallery, **options)
 
     @property
     def gallery(self):
@@ -42,19 +58,17 @@ class ImagePopup:
     @property
     def html(self):
         return """
-        <div>
-          <a href="{:s}" target="_blank">
-            <img src="{:s}">
-          </a>
+        <div class="smb-map-image-container">
+            <img src="{:s}" style="width:100%; height:100%;">
         </div> 
         """.format(self.img, self.img_large)
 
-    # @property
-    # def html(self):
-    #     return """
-    #     <div class="hovereffect">
-    #         <a href="{:s}" data-fancybox{:s} data-caption="{:s}">
-    #             <img src="{:s}">
-    #         </a>
-    #     </div>
-    #     """.format(self.img, self.gallery, self.caption, self.img_large)
+    @property
+    def html_gallery(self):
+        return """
+        <div class="smb-map-image-container">
+            <a href="{:s}" data-fancybox{:s} data-caption="{:s}" target="_blank">
+                <img src="{:s}" style="width:100%; height:100%;">
+            </a>
+        </div>
+        """.format(self.img, self.gallery, self.caption, self.img_large)

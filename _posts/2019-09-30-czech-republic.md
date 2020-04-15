@@ -29,18 +29,6 @@ image: https://i.imgur.com/0t4daK7l.jpg
 
 <div class="grid-item grid-item--vertical">
   <div class="hovereffect">
-    <img src="https://i.imgur.com/CByPTc0l.jpg" alt="Not loaded.">
-    <a class="info" href="https://i.imgur.com/CByPTc0.jpg" data-fancybox="gallery" data-caption="Skřítek - Sobotín, CZ">
-      <div class="overlay">      
-        <h2>Skřítek - Sobotín, CZ</h2>
-      </div>
-    </a>
-  </div>
-</div> 
-
-
-<div class="grid-item grid-item--vertical">
-  <div class="hovereffect">
     <img src="https://i.imgur.com/SNPqPl5l.jpg" alt="Not loaded.">
     <a class="info" href="https://i.imgur.com/SNPqPl5.jpg" data-fancybox="gallery" data-caption="Sobotín, CZ">
       <div class="overlay">      
@@ -67,6 +55,18 @@ image: https://i.imgur.com/0t4daK7l.jpg
   <div class="hovereffect">
     <img src="https://i.imgur.com/RrJekQvl.jpg" alt="Not loaded.">
     <a class="info" href="https://i.imgur.com/RrJekQv.jpg" data-fancybox="gallery" data-caption="Skřítek - Sobotín, CZ">
+      <div class="overlay">      
+        <h2>Skřítek - Sobotín, CZ</h2>
+      </div>
+    </a>
+  </div>
+</div> 
+
+
+<div class="grid-item grid-item--vertical">
+  <div class="hovereffect">
+    <img src="https://i.imgur.com/CByPTc0l.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/CByPTc0.jpg" data-fancybox="gallery" data-caption="Skřítek - Sobotín, CZ">
       <div class="overlay">      
         <h2>Skřítek - Sobotín, CZ</h2>
       </div>
@@ -161,6 +161,18 @@ image: https://i.imgur.com/0t4daK7l.jpg
 
 <div class="grid-item grid-item--horizontal">
   <div class="hovereffect">
+    <img src="https://i.imgur.com/VHbWxCOl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/VHbWxCO.jpg" data-fancybox="gallery" data-caption="Malá Strana - Prague, CZ">
+      <div class="overlay">      
+        <h2>Malá Strana - Prague, CZ</h2>
+      </div>
+    </a>
+  </div>
+</div> 
+
+
+<div class="grid-item grid-item--horizontal">
+  <div class="hovereffect">
     <img src="https://i.imgur.com/ZxMu7Jll.jpg" alt="Not loaded.">
     <a class="info" href="https://i.imgur.com/ZxMu7Jl.jpg" data-fancybox="gallery" data-caption="Prague, CZ">
       <div class="overlay">      
@@ -233,6 +245,18 @@ image: https://i.imgur.com/0t4daK7l.jpg
 
 <div class="grid-item grid-item--horizontal">
   <div class="hovereffect">
+    <img src="https://i.imgur.com/j2whfFbl.jpg" alt="Not loaded.">
+    <a class="info" href="https://i.imgur.com/j2whfFb.jpg" data-fancybox="gallery" data-caption="Karlův Most - Prague, CZ">
+      <div class="overlay">      
+        <h2>Karlův Most - Prague, CZ</h2>
+      </div>
+    </a>
+  </div>
+</div> 
+
+
+<div class="grid-item grid-item--horizontal">
+  <div class="hovereffect">
     <img src="https://i.imgur.com/8tGX13Wl.jpg" alt="Not loaded.">
     <a class="info" href="https://i.imgur.com/8tGX13W.jpg" data-fancybox="gallery" data-caption="Prague, CZ">
       <div class="overlay">      
@@ -261,30 +285,6 @@ image: https://i.imgur.com/0t4daK7l.jpg
     <a class="info" href="https://i.imgur.com/52uy7dJ.jpg" data-fancybox="gallery" data-caption="Staroměstské náměstí - Prague, CZ">
       <div class="overlay">      
         <h2>Staroměstské náměstí - Prague, CZ</h2>
-      </div>
-    </a>
-  </div>
-</div> 
-
-
-<div class="grid-item grid-item--horizontal">
-  <div class="hovereffect">
-    <img src="https://i.imgur.com/VHbWxCOl.jpg" alt="Not loaded.">
-    <a class="info" href="https://i.imgur.com/VHbWxCO.jpg" data-fancybox="gallery" data-caption="Malá Strana - Prague, CZ">
-      <div class="overlay">      
-        <h2>Malá Strana - Prague, CZ</h2>
-      </div>
-    </a>
-  </div>
-</div> 
-
-
-<div class="grid-item grid-item--horizontal">
-  <div class="hovereffect">
-    <img src="https://i.imgur.com/j2whfFbl.jpg" alt="Not loaded.">
-    <a class="info" href="https://i.imgur.com/j2whfFb.jpg" data-fancybox="gallery" data-caption="Karlův Most - Prague, CZ">
-      <div class="overlay">      
-        <h2>Karlův Most - Prague, CZ</h2>
       </div>
     </a>
   </div>

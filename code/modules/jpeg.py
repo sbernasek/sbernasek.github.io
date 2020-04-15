@@ -43,16 +43,20 @@ class JPEG_Metadata:
     @property
     def time_shot_pst(self):
 
-        keywords = [str(x, 'utf-8') for x in self.iptc['keywords']]
-        for tz in ['pst', 'mst', 'gmt', 'cet', None]:
-            if tz in keywords:
-                break
-        if tz is None:
-            print(self.path)
-            print(self.iptc['keywords'])
-            raise ValueError('Timezone not found in file IPTC info.')
+        if not self.geotagged:
+            return self.time_shot_local
 
-        return localize_datetime(self.time_shot_local, tz)
+        else:
+            keywords = [str(x, 'utf-8') for x in self.iptc['keywords']]
+            for tz in ['pst', 'mst', 'gmt', 'cet', None]:
+                if tz in keywords:
+                    break
+            if tz is None:
+                print(self.path)
+                print(self.iptc['keywords'])
+                raise ValueError('Timezone not found in file IPTC info.')
+
+            return localize_datetime(self.time_shot_local, tz)
 
     @property
     def timestamp(self):
