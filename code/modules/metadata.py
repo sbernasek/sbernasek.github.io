@@ -29,7 +29,7 @@ class PhotoMetadata:
             'album',
             'path',
             'timestamp',
-            'time_shot_pst',
+            'time_shot_utc',
             'time_shot_local',
             'time_rendered',
             'geotagged',

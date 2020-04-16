@@ -1,12 +1,15 @@
+import numpy as np
 import pandas as pd
 from sklearn.cluster import MeanShift
 from folium import Map, TileLayer, Icon
 from folium import FeatureGroup, LayerControl, Marker
 from folium.plugins import MarkerCluster, BeautifyIcon
 
+from modules.utilities import haversine
 from maps.popup import ImagePopup
 from maps.maps import FoliumMap
 from maps.segments import TripSegment
+from maps.segments import TrainSegment, FlightSegment, DriveSegment
 
 
 class Trip:
@@ -52,13 +55,16 @@ class Trip:
             self.photos.loc[album.index, 'gallery'] = labels
 
     def build_map(self, 
-                  zoom_start=5):
+                  zoom_start=5,
+                  max_zoom=15,
+                  **kwargs):
 
         # create map
         m = Map(width='100%', height='100%',
                 tiles='cartodbpositron',
                 location=self.centroid, 
-                zoom_start=zoom_start)
+                zoom_start=zoom_start,
+                max_zoom=max_zoom, **kwargs)
 
         # add tiles
         TileLayer('openstreetmap', show=False, overlay=True).add_to(m)
@@ -104,14 +110,19 @@ class Trip:
             obj.add_to(self.fgs['land'])
             
         for drive in self.land:
-            obj = drive.get_antpath(color=drive_color, weight=weight)
+            options = {'smoothFactor': 10}
+            obj = drive.get_antpath(color=drive_color, weight=weight, options=options)
             obj.add_to(self.fgs['land'])
 
     def add_photos_to_map(self, 
                           clustered=True,
                           maxClusterRadius=20,
+                          disableClusteringAtZoom=15,
+                          zoomToBoundsOnClick=False,
+                          spiderfyOnMaxZoom=True,
                           icon_color='#b3334f',
-                          groupby=None):
+                          groupby=None,
+                          **kwargs):
 
         # add feature group
         self.fgs['photos'] = FeatureGroup('Photos', show=True).add_to(self.map)
@@ -120,10 +131,10 @@ class Trip:
         if clustered:
             dst = MarkerCluster(
                 maxClusterRadius=maxClusterRadius,
+                disableClusteringAtZoom=disableClusteringAtZoom,
                 showCoverageOnHover=False,
-                disableClusteringAtZoom=11,
-                zoomToBoundsOnClick=True,
-                spiderfyOnMaxZoom=True).add_to(self.fgs['photos'])
+                zoomToBoundsOnClick=zoomToBoundsOnClick,
+                spiderfyOnMaxZoom=spiderfyOnMaxZoom, **kwargs).add_to(self.fgs['photos'])
         else:
             dst = self.fgs['photos']
 
@@ -145,7 +156,8 @@ class Trip:
                                 background_color='transparent', 
                                 inner_icon_style='font-size:20px;padding-top:-1px;')
 
-            tooltip = photo.caption
+            tooltip = photo.caption + '\n' + photo.time_shot_utc + photo._name[1] + photo._name[2]
+
             Marker(xy, popup=popup, 
                    tooltip=tooltip, 
                    icon=icon,
@@ -179,3 +191,71 @@ class Trip:
 
     def save_map(self, path):
         self.map.save(path)
+
+
+def find_flights(pings):
+
+    SEMANTIC_GPS_INDEX = ['latitude_geocode', 'longitude_geocode']
+    
+    flights = [] 
+    gps = pings[SEMANTIC_GPS_INDEX].values.astype(float)
+    dx = np.array([haversine(*p) for p in zip(gps[:-1], gps[1:])])
+    dt = np.array((pings.index.values[1:] - pings.index.values[:-1]).tolist()) / 1e9 / 3600 # hours
+    for idx in np.logical_and(dx>250, dx/dt>25).nonzero()[0]:
+        flight = FlightSegment(pings.iloc[[idx, idx+1]])
+        flights.append(flight)    
+    flights = [flight for flight in flights if flight.international or flight.origin.country=='US']
+    return flights
+
+
+def find_drives(pings, transits):
+    gps = pings.flattened
+    transits = sorted(transits, key=lambda x: x.start)
+    drives = [DriveSegment(gps['2019-07-24': '2019-07-31'])]
+    for i, transit in enumerate(transits[:-1]):
+        drives.append(DriveSegment(gps[transit.stop: transits[i+1].start]))
+    drives.append(DriveSegment(gps['2020-02-25': '2020-03-17']))
+    return drives
+
+
+class TripGenerator:
+    
+    def __init__(self, pings, photos):
+        
+        self.pings = pings
+        self.photos = photos
+        
+        # find trains/planes/drives
+        rail = [
+            TrainSegment(pings.pings.loc['SMB'].loc['2019-08-16 05:31:30':'2019-08-16 14:23:57']),
+            TrainSegment(pings.pings.loc['CMB'].loc['2019-09-02 11:43:04':'2019-09-02 13:03:54'])]
+        air = find_flights(pings.pings.loc['SMB'])
+        land = find_drives(pings, rail+air)
+        
+        self.segments = {
+            'air': air,
+            'rail': rail,
+            'land': land}
+        
+    def get_trip_segments(self, *trip_ids):
+        trip_segments = {'air': [], 'rail': [], 'land': []} 
+        for trip_id in trip_ids:
+            for segment_type, segments in self.segments.items():
+                _ = [trip_segments[segment_type].append(x) for x in segments if trip_id in x.trip_ids]
+        return trip_segments
+    
+    def get_trip_pings(self, *trip_ids):
+        match = lambda x: len(set(trip_ids).intersection(set(x))) > 0
+        trip_pings = self.pings.flattened[self.pings.flattened.trip_id.apply(match)]
+        return trip_pings
+    
+    def get_trip_photos(self, trip_pings):
+        t0, t1 = trip_pings.index.min(), trip_pings.index.max()
+        trip_photos = self.photos[self.photos.timestamp.between(t0, t1)]
+        return trip_photos
+    
+    def get_trip(self, *trip_ids):
+        segments = self.get_trip_segments(*trip_ids)
+        pings = self.get_trip_pings(*trip_ids)
+        photos = self.get_trip_photos(pings)
+        return Trip(segments, pings, photos)

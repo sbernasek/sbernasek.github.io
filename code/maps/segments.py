@@ -7,7 +7,6 @@ from modules.utilities import haversine
 from folium import FeatureGroup, Icon, Marker, PolyLine, TileLayer, LayerControl
 from folium.features import CustomIcon
 from folium.plugins import MarkerCluster, AntPath, HeatMap, HeatMapWithTime
-from maps.popup import ImagePopup
 
 
 class TripSegment:
@@ -155,29 +154,7 @@ class DriveSegment(TripSegment):
         return [k for k,v in counts.items() if v > 3]
 
 
-def find_flights(pings):
 
-    SEMANTIC_GPS_INDEX = ['latitude_geocode', 'longitude_geocode']
-    
-    flights = [] 
-    gps = pings[SEMANTIC_GPS_INDEX].values.astype(float)
-    dx = np.array([haversine(*p) for p in zip(gps[:-1], gps[1:])])
-    dt = np.array((pings.index.values[1:] - pings.index.values[:-1]).tolist()) / 1e9 / 3600 # hours
-    for idx in np.logical_and(dx>250, dx/dt>25).nonzero()[0]:
-        flight = FlightSegment(pings.iloc[[idx, idx+1]])
-        flights.append(flight)    
-    flights = [flight for flight in flights if flight.international or flight.origin.country=='US']
-    return flights
-
-
-def find_drives(pings, transits):
-    gps = pings.flattened
-    transits = sorted(transits, key=lambda x: x.start)
-    drives = [DriveSegment(gps['2019-07-24': '2019-07-31'])]
-    for i, transit in enumerate(transits[:-1]):
-        drives.append(DriveSegment(gps[transit.stop: transits[i+1].start]))
-    drives.append(DriveSegment(gps['2020-02-25': '2020-03-17']))
-    return drives
 
 
 # from sklearn.cluster import MeanShift

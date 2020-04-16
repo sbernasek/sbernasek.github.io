@@ -14,7 +14,8 @@ class FoliumMap:
     
     def build_map(self, 
          location=None, 
-         zoom_start=2, 
+         zoom_start=6,
+         max_zoom=15, 
          **kwargs):
         
         if location is None:
@@ -26,6 +27,7 @@ class FoliumMap:
 
     def add_bubbles(self, xycoords, 
                     popups=None, 
+                    tooltips=None,
                     radius=1,  
                     color='crimson', 
                     fill_color='crimson',
@@ -34,6 +36,9 @@ class FoliumMap:
         
         if popups is None:
             popups = [None] * len(xycoords)
+
+        if tooltips is None:
+            tooltips = [None] * len(xycoords)
 
         if type(radius) == int:
             radius = [radius] * len(xycoords)
@@ -48,6 +53,7 @@ class FoliumMap:
             circle = Circle(
                 location=gps, 
                 popup=popups[i], 
+                tooltip=tooltips[i],
                 radius=radius[i],
                 color=color[i], 
                 fill=fill, 

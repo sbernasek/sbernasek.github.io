@@ -1,5 +1,6 @@
 import json
 from datetime import datetime, timedelta
+import pytz
 import math
 import numpy as np
 
@@ -9,10 +10,8 @@ def read_json(filepath):
         content = json.load(file)
     return content
 
-
-def posix_to_ts(t_posix):
-    return datetime.fromtimestamp(int(t_posix)/1000)
-
+def posix_to_utc(t_posix):
+    return datetime.utcfromtimestamp(int(t_posix)/1000)
 
 def str_to_datetime(time_str, fmt='%Y:%m:%d %H:%M:%S'):
     return datetime.strptime(time_str, fmt)
@@ -21,6 +20,8 @@ def str_to_datetime(time_str, fmt='%Y:%m:%d %H:%M:%S'):
 def datetime_to_str(ts, fmt='%Y:%m:%d %H:%M:%S'):
     return ts.strftime(fmt)
 
+def resample(df, resolution='T'):
+    return df.resample(resolution).mean().interpolate(limit_direction='both')
 
 def localize_datetime(time_str, tz, fmt='%Y:%m:%d %H:%M:%S'):
     shifts = {'pst': 0, 'mst': 1, 'gmt': 8, 'cet': 9}
