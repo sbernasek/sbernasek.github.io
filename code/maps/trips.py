@@ -1,9 +1,11 @@
 import numpy as np
 import pandas as pd
+from functools import reduce
+from operator import add
 from sklearn.cluster import MeanShift
 from folium import Map, TileLayer, Icon
 from folium import FeatureGroup, LayerControl, Marker
-from folium.plugins import MarkerCluster, BeautifyIcon
+from folium.plugins import MarkerCluster, BeautifyIcon, FeatureGroupSubGroup
 
 from modules.utilities import haversine
 from maps.popup import ImagePopup
@@ -16,10 +18,11 @@ class Trip:
 
     GPS_INDEX = ['latitude', 'longitude']
 
-    def __init__(self, segments, pings, photos):
+    def __init__(self, segments, pings, photos, trip_ids=None):
         self.segments = segments
         self.pings = pings
         self.photos = photos
+        self.trip_ids = trip_ids
 
     @property
     def air(self):
@@ -55,14 +58,18 @@ class Trip:
             self.photos.loc[album.index, 'gallery'] = labels
 
     def build_map(self, 
+                  location=None,
                   zoom_start=5,
                   max_zoom=15,
                   **kwargs):
 
+        if location is None:
+            location = self.centroid
+
         # create map
         m = Map(width='100%', height='100%',
                 tiles='cartodbpositron',
-                location=self.centroid, 
+                location=location, 
                 zoom_start=zoom_start,
                 max_zoom=max_zoom, **kwargs)
 
@@ -77,14 +84,17 @@ class Trip:
         LayerControl(**kwargs).add_to(self.map)
 
     def add_travel_to_map(self, 
-        flight_color='black',
-        train_color='blue',
-        drive_color='red',
-        weight=3):
+        flight_color='darkred',
+        train_color='green',
+        drive_color='black',
+        weight=3,
+        show=False,
+        drive_kwargs={}):
 
         # add feature group
-        self.fgs['air'] = FeatureGroup('Flights', show=False).add_to(self.map)
-        self.fgs['land'] = FeatureGroup('Road & Rail', show=True).add_to(self.map)
+        if self.trip_ids is not None:
+            for trip_id in self.trip_ids:
+                self.fgs[trip_id] = FeatureGroup(trip_id, show=show).add_to(self.map)
 
         # add start/finish
         icon_kw = dict(icon_shape='marker',
@@ -94,25 +104,67 @@ class Trip:
                         background_color='white', 
                         inner_icon_style='font-size:14px; padding-top:-1px;')
         start, finish = self.bounds
-        start_icon = BeautifyIcon('arrow-down', **icon_kw)
-        finish_icon = BeautifyIcon('plane', **icon_kw)
-        _ = Marker(start, icon=start_icon).add_to(self.fgs['land'])
-        _ = Marker(finish, icon=finish_icon).add_to(self.fgs['land'])
-
-
+        
         # add segments
+        arrived = {k: False for k in self.trip_ids}
         for flight in self.air:
-            obj = flight.get_line(color=flight_color, weight=weight, opacity=0.2)
-            obj.add_to(self.fgs['air'])
-            
+
+            for trip_id in flight.trip_ids:
+                
+                if trip_id not in self.fgs.keys():
+                    continue
+
+                if not arrived[trip_id] or trip_id == 'Return Flights':
+
+                    arrived[trip_id] = True
+                    for leg in flight.legs:
+
+                        obj = leg.get_line(
+                          color=flight_color, 
+                          weight=weight, 
+                          opacity=0.5).add_to(self.fgs[trip_id])
+
+                        if leg.is_connection:
+                            tooltip = 'Layover in {:s}'.format(leg.destination_str)
+                        else:
+                            tooltip = 'Arriving from {:s}'.format(leg.origin_str)
+
+                        # arrival icon
+                        _ = Marker(leg.destination[flight.GPS_INDEX].values, 
+                               icon=BeautifyIcon('arrow-down', **icon_kw),
+                               tooltip=tooltip,
+                               ).add_to(self.fgs[trip_id])
+
+                else:
+
+                    # departure icon
+                    _ = Marker(flight.origin[flight.GPS_INDEX].values, 
+                               icon=BeautifyIcon('plane', **icon_kw),
+                               tooltip='Departing to {:s}'.format(flight.destination_str),
+                               ).add_to(self.fgs[trip_id])
+
         for train in self.rail:
-            obj = train.get_line(color=train_color, weight=weight, opacity=0.2)
-            obj.add_to(self.fgs['land'])
+            for trip_id in train.trip_ids:
+                if trip_id not in self.fgs.keys():
+                    continue
+                obj = train.get_antpath(color=train_color, weight=weight, opacity=0.5)
+                obj.add_to(self.fgs[trip_id])
             
         for drive in self.land:
-            options = {'smoothFactor': 10}
-            obj = drive.get_antpath(color=drive_color, weight=weight, options=options)
-            obj.add_to(self.fgs['land'])
+
+            for trip_id in drive.trip_ids:
+                if trip_id not in self.fgs.keys():
+                    continue
+
+                options = {'smoothFactor': 10}
+                try:
+                    obj = drive.get_antpath(color=drive_color, 
+                                            weight=weight, 
+                                            options=options,
+                                            **drive_kwargs)
+                    obj.add_to(self.fgs[trip_id])
+                except:
+                    print('No drive segments found in {:s}'.format(drive.caption))
 
     def add_photos_to_map(self, 
                           clustered=True,
@@ -147,7 +199,10 @@ class Trip:
             else:
                 gallery = None
 
-            popup = ImagePopup(photo.imgur_id, photo.caption, gallery).popup
+            popup = ImagePopup(photo.imgur_id, 
+                               caption=photo.caption, 
+                               aspect=photo.image_aspect,
+                               gallery=gallery).popup
 
             icon = BeautifyIcon('camera', 
                                 border_width=0,
@@ -156,22 +211,15 @@ class Trip:
                                 background_color='transparent', 
                                 inner_icon_style='font-size:20px;padding-top:-1px;')
 
-            tooltip = photo.caption + '\n' + photo.time_shot_utc + photo._name[1] + photo._name[2]
-
             Marker(xy, popup=popup, 
-                   tooltip=tooltip, 
+                   tooltip=photo.caption, 
                    icon=icon,
                   ).add_to(dst)
 
-    def add_heatmap_to_map(self, **kwargs):
+    def add_heatmap_to_map(self, show=False, **kwargs):
 
         # add feature group
-        self.fgs['heatmap'] = FeatureGroup('Heatmap', show=False).add_to(self.map)
-
-        # add heatmaps
-        for train in self.rail:
-            obj = train.get_heatmap(**kwargs)
-            obj.add_to(self.fgs['heatmap'])
+        self.fgs['heatmap'] = FeatureGroup('Heatmap', show=show).add_to(self.map)
 
         for drive in self.land:
             obj = drive.get_heatmap(**kwargs)
@@ -195,13 +243,20 @@ class Trip:
 
 def find_flights(pings):
 
-    SEMANTIC_GPS_INDEX = ['latitude_geocode', 'longitude_geocode']
+    # SEMANTIC_GPS_INDEX = ['latitude_geocode', 'longitude_geocode']
     
-    flights = [] 
-    gps = pings[SEMANTIC_GPS_INDEX].values.astype(float)
+    # flights = [] 
+    # gps = pings[SEMANTIC_GPS_INDEX].values.astype(float)
+    # dx = np.array([haversine(*p) for p in zip(gps[:-1], gps[1:])])
+    # dt = np.array((pings.index.values[1:] - pings.index.values[:-1]).tolist()) / 1e9 / 3600 # hours
+    # for idx in np.logical_and(dx>250, dx/dt>25).nonzero()[0]:
+    GPS_INDEX = ['latitude', 'longitude']
+    gps = pings[GPS_INDEX].values.astype(float)
     dx = np.array([haversine(*p) for p in zip(gps[:-1], gps[1:])])
     dt = np.array((pings.index.values[1:] - pings.index.values[:-1]).tolist()) / 1e9 / 3600 # hours
-    for idx in np.logical_and(dx>250, dx/dt>25).nonzero()[0]:
+
+    flights = [] 
+    for idx in np.logical_and(dx > 250, (dx/dt)>50).nonzero()[0]:
         flight = FlightSegment(pings.iloc[[idx, idx+1]])
         flights.append(flight)    
     flights = [flight for flight in flights if flight.international or flight.origin.country=='US']
@@ -211,10 +266,13 @@ def find_flights(pings):
 def find_drives(pings, transits):
     gps = pings.flattened
     transits = sorted(transits, key=lambda x: x.start)
-    drives = [DriveSegment(gps['2019-07-24': '2019-07-31'])]
+    drives = [DriveSegment(gps['2019-07-24': '2019-08-01'])]
     for i, transit in enumerate(transits[:-1]):
+        # skip segments < 24h
+        if float(transits[i+1].start - transit.stop)/1e9 < (3600*48):
+            continue
         drives.append(DriveSegment(gps[transit.stop: transits[i+1].start]))
-    drives.append(DriveSegment(gps['2020-02-25': '2020-03-17']))
+    drives.append(DriveSegment(gps['2020-02-25': '2020-03-18']))
     return drives
 
 
@@ -228,34 +286,82 @@ class TripGenerator:
         # find trains/planes/drives
         rail = [
             TrainSegment(pings.pings.loc['SMB'].loc['2019-08-16 05:31:30':'2019-08-16 14:23:57']),
-            TrainSegment(pings.pings.loc['CMB'].loc['2019-09-02 11:43:04':'2019-09-02 13:03:54'])]
-        air = find_flights(pings.pings.loc['SMB'])
+            TrainSegment(pings.pings.loc['CMB'].loc['2019-09-02 11:43:04':'2019-09-02 13:03:54']),
+            TrainSegment(pings.flattened.loc['2019-09-25 14:31:48': '2019-09-25 17:50:00']),
+            TrainSegment(pings.pings.loc['CMB'].loc['2019-09-30 12:00:00': '2019-09-30 17:50:00'])
+            ]
+        air = find_flights(pings.flattened)
         land = find_drives(pings, rail+air)
         
         self.segments = {
             'air': air,
             'rail': rail,
             'land': land}
-        
-    def get_trip_segments(self, *trip_ids):
+
+        self.add_connections()
+    
+    @property
+    def ordered_segments(self):
+        return sorted(reduce(add, list(self.segments.values())), key=lambda x: x.start)
+
+    def get_trip_segments(self, *trip_ids, timespans=None):
         trip_segments = {'air': [], 'rail': [], 'land': []} 
-        for trip_id in trip_ids:
-            for segment_type, segments in self.segments.items():
-                _ = [trip_segments[segment_type].append(x) for x in segments if trip_id in x.trip_ids]
+        for segment_type, segments in self.segments.items():
+            for segment in segments:
+                if len(set(segment.trip_ids).intersection(set(trip_ids))) > 0:
+
+                    if timespans is not None:
+                        for timespan in timespans:
+                            if segment.within(timespan):
+                                trip_segments[segment_type].append(segment)
+                                break
+                    else:
+                        trip_segments[segment_type].append(segment)
+
         return trip_segments
     
-    def get_trip_pings(self, *trip_ids):
+    def add_connections(self):
+        r_segments = self.ordered_segments[::-1]
+        for idx, flag in enumerate(np.diff(np.array([x.is_flight for x in r_segments], dtype=int))):
+            if flag == 1:
+                arriving_flight = r_segments[idx+1]
+                on_segment = True
+            elif flag == 0 and on_segment:
+                connecting_flight = r_segments[idx+1]
+                connecting_flight.is_connection = True
+                arriving_flight.add_connection(connecting_flight)        
+            else:
+                arriving_flight = None
+                on_segment = False
+
+    def get_trip_pings(self, *trip_ids, timespans=None):
         match = lambda x: len(set(trip_ids).intersection(set(x))) > 0
         trip_pings = self.pings.flattened[self.pings.flattened.trip_id.apply(match)]
+
+        if timespans is not None:
+            dfs = []
+            for timespan in timespans:
+                start, stop = timespan
+                dfs.append(trip_pings.loc[start: stop])
+            trip_pings = pd.concat(dfs)
+
         return trip_pings
     
-    def get_trip_photos(self, trip_pings):
+    def get_trip_photos(self, trip_pings, timespans=None):
         t0, t1 = trip_pings.index.min(), trip_pings.index.max()
         trip_photos = self.photos[self.photos.timestamp.between(t0, t1)]
+
+        if timespans is not None:
+            dfs = []
+            for timespan in timespans:
+                dfs.append(trip_photos[trip_photos.timestamp.between(*timespan)])
+            trip_photos = pd.concat(dfs)
+
         return trip_photos
     
-    def get_trip(self, *trip_ids):
-        segments = self.get_trip_segments(*trip_ids)
-        pings = self.get_trip_pings(*trip_ids)
-        photos = self.get_trip_photos(pings)
-        return Trip(segments, pings, photos)
+    def get_trip(self, *trip_ids, timespans=None):
+        segments = self.get_trip_segments(*trip_ids, timespans=timespans)
+        pings = self.get_trip_pings(*trip_ids, timespans=timespans)
+        photos = self.get_trip_photos(pings, timespans=timespans)
+
+        return Trip(segments, pings, photos, trip_ids=trip_ids)

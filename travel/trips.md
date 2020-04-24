@@ -2,31 +2,67 @@
 layout: blog
 navbar: false
 show_avatar: true
-title: Map
-title_slug: map
-subtitle: 
+title: Recent Trips
+title_slug: recent_trips
+subtitle:
 ---
 
-<h2> France </h2>
+<h1> Travel maps </h1>
 
+We combined our photos and tracking data to summarize our recent trips below. The menu in the top right corner controls what is shown. There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
+
+In each map:
+* The blue/red shading (heatmap) shows where we were
+* Red lines are flights
+* Green lines are trains
+* Black lines are driving routes
+<br>
+<br>
+<hr>
+
+### Spring 2020
+We went skiing. When the snow ran out, we drove a very long way to find more of it.
 <div class="map-container">
-    <iframe src="{{ site.map_objs | absolute_url }}/france.html" allowfullscreen="" frameborder="0">
+    <iframe src="{{ site.map_objs | absolute_url }}/2020_spring.html" allowfullscreen="" frameborder="0">
     </iframe>
 </div>
+<br>
+<br>
 
 
-<h2> Italian Coast </h2>
+### Winter 2019
+After a long roadtrip through Morocco, we went skiing with Mike&trade; in the Alps.
+<p>
+  <div class="map-container">
+      <iframe src="{{ site.map_objs | absolute_url }}/2019_winter.html" allowfullscreen="" frameborder="0">
+      </iframe>
+  </div>
+</p>
+<br>
+<br>
 
-<div class="map-container">
-    <iframe src="{{ site.map_objs | absolute_url }}/italian-coast.html" allowfullscreen="" frameborder="0">
-    </iframe>
-</div>
+
+### Fall 2019
+We met up with friends and looked at very old buildings in Europe.
+<p>
+  <div class="map-container">
+      <iframe src="{{ site.map_objs | absolute_url }}/2019_fall.html" allowfullscreen="" frameborder="0">
+      </iframe>
+  </div>
+</p>
+<br>
+<br>
 
 
-<h2> Central Europe </h2>
+### Summer 2019
+We took the scenic route from Palm Springs to the Bay Area.
+<p>
+  <div class="map-container">
+      <iframe src="{{ site.map_objs | absolute_url }}/2019_summer.html" allowfullscreen="" frameborder="0">
+      </iframe>
+  </div>
+</p>
+<br>
+<br>
 
-<div class="map-container">
-    <iframe src="{{ site.map_objs | absolute_url }}/central-europe.html" allowfullscreen="" frameborder="0">
-    </iframe>
-</div>
 

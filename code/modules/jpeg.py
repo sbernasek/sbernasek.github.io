@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, time
 import pytz
 
 from exif import Image as ExifImage
@@ -114,9 +114,17 @@ class JPEG_Metadata:
         if self.geotagged:
             
             try:
+
                 UTC_DATE = self.exif.gps_datestamp
                 UTC_TIME = self.exif.gps_timestamp
                 UTC_TIMESTAMP = UTC_DATE + ' ' + '{:02d}:{:02d}:{:02d}'.format(*[int(t) for t in UTC_TIME])
+
+                # make sure GPS time matches local time (rare, but happens)
+                to_time = lambda x: time(int(x[0]), int(x[1]), int(x[2]//1))
+                LOCAL_TIME = str_to_datetime(self.exif.datetime_original)
+                delta = lambda x,y: abs((x.minute-y.minute)*60 + (x.second-y.second))
+                if delta(to_time(UTC_TIME), LOCAL_TIME.time()) > 60:
+                    raise ValueError('GPS Timestamp is off.')
 
             except:
                 location = (self.latitude, self.longitude)
