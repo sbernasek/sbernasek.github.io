@@ -9,13 +9,16 @@ subtitle:
 
 <h1> Travel maps </h1>
 
-We combined our photos and tracking data to summarize our recent trips below. The menu in the top right corner controls what is shown. There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
+We combined our photos and tracking data to summarize our recent trips below. There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
 
 In each map:
 * The blue/red shading (heatmap) shows where we were
 * Red lines are flights
 * Green lines are trains
 * Black lines are driving routes
+
+The menu in the top right corner controls which segments of the itinerary are shown.
+
 <br>
 <br>
 <hr>
