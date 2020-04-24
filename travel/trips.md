@@ -21,7 +21,7 @@ In each map:
 <hr>
 
 ### Spring 2020
-We went skiing. When the snow ran out, we drove a very long way to find more of it.
+Seb hiked a long way, then we went skiing. When the snow ran out, we drove a long way to find more of it.
 <div class="map-container">
     <iframe src="{{ site.map_objs | absolute_url }}/2020_spring.html" allowfullscreen="" frameborder="0">
     </iframe>
