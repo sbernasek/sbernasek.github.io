@@ -9,8 +9,12 @@ subtitle:
 
 <div style="margin-top: -20px"></div>
 
-The sections below combine photos and mobile tracking data to summarize our recent travels. Each map contains a few different things. Colored shading, also called a "heatmap," shows where we were. Lines reflect routes we took; flights are red, trains are green, and road trips are black. The menu in the top right corner of each map controls which segments of an itinerary are shown. The circles contain photos geotagged to a particular area - zoom in further to see exactly where they were shot. If you're more interested in the big picture, there's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
+The sections below combine photos and mobile tracking data to summarize our recent travels. Each map contains a few different things: 
+*Colored shading, also called a "heatmap," shows where we were.
+*Lines reflect routes we took. Flights are red, trains are green, and road trips are black. The menu in the top right corner of each map controls which segments of an itinerary are shown. 
+*The circles contain photos geotagged to a particular area - zoom in further to see exactly where they were shot. 
 
+If you're more interested in the big picture, there's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
 
 ## Spring 2020
 
