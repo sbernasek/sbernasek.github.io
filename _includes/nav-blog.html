@@ -30,10 +30,10 @@
       <!-- RIGHT: Navigation bar for web browsers *** THIS BLOCK PUSHES AVATAR DOWN -->
       {% if page.navbar %} 
 
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right smb-navbar-right">
           <li><a href="{{ site.map_page | absolute_url }}">Itineraries</a></li>
           <li class="navlinks-container">
-              <a class="navlinks-parent" href="javascript:void(0)">Photos</a>
+              <a class="navlinks-parent smb-navlinks-parent" href="javascript:void(0)">Photos</a>
               <div class="navlinks-children">
                 {% for post in paginator.posts %}
                 <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
@@ -41,7 +41,7 @@
               </div>
           </li>
         </ul>
-        
+
       <!-- Need container on right side... -->
       {% else %}
           <div class="nav navbar-nav navbar-right">
