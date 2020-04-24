@@ -1,5 +1,5 @@
 
-from .utilities import posix_to_ts, isblank
+from .utilities import posix_to_utc, isblank
 
 
 class Visit:
@@ -49,11 +49,11 @@ class Visit:
 
     @property
     def time_start(self):
-        return posix_to_ts(self.x['duration']['startTimestampMs'])
+        return posix_to_utc(self.x['duration']['startTimestampMs'])
 
     @property
     def time_stop(self):
-        return posix_to_ts(self.x['duration']['endTimestampMs'])
+        return posix_to_utc(self.x['duration']['endTimestampMs'])
 
     def to_record(self):
         return {

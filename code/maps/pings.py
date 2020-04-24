@@ -24,6 +24,14 @@ class Pings:
         return self._pings.join(self.locations, rsuffix='_geocode')
 
     @property
+    def flattened(self):
+        return self.pings.droplevel(0).sort_index()
+    
+    @property
+    def foo(self):
+        return self._foo
+    
+    @property
     def num_pings(self):
         return len(self._pings)
 
@@ -85,4 +93,30 @@ class Pings:
         geocodes.columns = columns
         self.geocodes = geocodes
 
+    def label_timespans(self, attr, labels):
+
+        """
+        attr (str) - name of attribute
+        labels (dict) - { attr_value: (t0, t1) }
+        """
+
+        self._pings[attr] = [[] for _ in range(len(self._pings))]
+        for label, (t0, t1) in labels.items():
+            after_start = self._pings.index.get_level_values(1) >= t0
+            before_end = self._pings.index.get_level_values(1) <= t1
+
+            self._pings.loc[after_start&before_end, attr].apply(lambda x: x.append(label))
+
+    # def label_timespans(self, attr, labels):
+
+    #     """
+    #     attr (str) - name of attribute
+    #     labels (dict) - { attr_value: (t0, t1) }
+    #     """
+
+    #     self._pings[attr] = None
+    #     for label, (t0, t1) in labels.items():
+    #         after_start = self._pings.index.get_level_values(1) >= t0
+    #         before_end = self._pings.index.get_level_values(1) <= t1
+    #         self._pings.loc[after_start&before_end, attr] = label
 

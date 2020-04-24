@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_334a3df1f64647d89bbd76196dda1498 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <link rel="stylesheet" href="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.css"/>
+    <script src="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_334a3df1f64647d89bbd76196dda1498" ></div>
+        
+</body>
+<script>    
+    
+            var map_334a3df1f64647d89bbd76196dda1498 = L.map(
+                "map_334a3df1f64647d89bbd76196dda1498",
+                {
+                    center: [39.371827, 1.987188],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c16cbcded6554f2594a00a248f3708f9 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 16, "maxZoom": 16, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var tile_layer_5f0c1f1e5fb443868d753f137c16ab15 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var feature_group_8ddcecc9f476437cae192b11cfb8a4c2 = L.featureGroup(
+                {}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var marker_cluster_55da4874574e400da762ae76c424c596 = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 10, "maxClusterRadius": 50, "showCoverageOnHover": false, "spiderfyOnMaxZoom": true, "zoomToBoundsOnClick": true}
+            );
+            feature_group_8ddcecc9f476437cae192b11cfb8a4c2.addLayer(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var marker_8344c9adc331464cafa28df9670cc923 = L.marker(
+                [34.06173611166667, -5.007019445],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_7d9793f56b5c4f1ab16f349ad4aa183a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_8344c9adc331464cafa28df9670cc923.setIcon(beautify_icon_7d9793f56b5c4f1ab16f349ad4aa183a);
+        
+    
+        var popup_71df6f6e9d2e4860b71ea0be10f038b6 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_a540d9150f314ca78dac175518cab751 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0k0Q1BVMkEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_71df6f6e9d2e4860b71ea0be10f038b6.setContent(i_frame_a540d9150f314ca78dac175518cab751);
+        
+
+        marker_8344c9adc331464cafa28df9670cc923.bindPopup(popup_71df6f6e9d2e4860b71ea0be10f038b6)
+        ;
+
+        
+    
+    
+            marker_8344c9adc331464cafa28df9670cc923.bindTooltip(
+                `<div>
+                     Horrifying walk to hotel - Fez, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_919eb52f64e44b63bb04f7302a59bb05 = L.marker(
+                [34.062308333333334, -4.983161111666667],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_42b8410ae80346b58971908f79b311b5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_919eb52f64e44b63bb04f7302a59bb05.setIcon(beautify_icon_42b8410ae80346b58971908f79b311b5);
+        
+    
+        var popup_cdf96ebe3ec64dc4adec8b3718f1294a = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_842a229e54184fafb5a0caab2bb0cba9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzQ1WnFRQjYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_cdf96ebe3ec64dc4adec8b3718f1294a.setContent(i_frame_842a229e54184fafb5a0caab2bb0cba9);
+        
+
+        marker_919eb52f64e44b63bb04f7302a59bb05.bindPopup(popup_cdf96ebe3ec64dc4adec8b3718f1294a)
+        ;
+
+        
+    
+    
+            marker_919eb52f64e44b63bb04f7302a59bb05.bindTooltip(
+                `<div>
+                     Cafe Clock - Fez, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aa3b558d6cf43b894fa0eb24b58e4c1 = L.marker(
+                [34.06605277833334, -4.9711083333333335],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_4c90c0f7796f4d79b1dca33790c09bb6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_2aa3b558d6cf43b894fa0eb24b58e4c1.setIcon(beautify_icon_4c90c0f7796f4d79b1dca33790c09bb6);
+        
+    
+        var popup_083c259b84114e90b08c57a605212f10 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_679693e66e954d4ba1c783926ce4dd08 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL29kOXNQMGIuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_083c259b84114e90b08c57a605212f10.setContent(i_frame_679693e66e954d4ba1c783926ce4dd08);
+        
+
+        marker_2aa3b558d6cf43b894fa0eb24b58e4c1.bindPopup(popup_083c259b84114e90b08c57a605212f10)
+        ;
+
+        
+    
+    
+            marker_2aa3b558d6cf43b894fa0eb24b58e4c1.bindTooltip(
+                `<div>
+                     Chouara Tannery - Fez, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6d2592628f34df2b801654358548645 = L.marker(
+                [34.062169445, -4.984805555],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_cdb2e1ba5b2946bab44b7dff7934bd26 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_b6d2592628f34df2b801654358548645.setIcon(beautify_icon_cdb2e1ba5b2946bab44b7dff7934bd26);
+        
+    
+        var popup_862bd8ff2b794fd7a974a975c7468b3f = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_d213a59509f942f3a20b2cd0a1bc3a8a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2JHa05VWjkuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_862bd8ff2b794fd7a974a975c7468b3f.setContent(i_frame_d213a59509f942f3a20b2cd0a1bc3a8a);
+        
+
+        marker_b6d2592628f34df2b801654358548645.bindPopup(popup_862bd8ff2b794fd7a974a975c7468b3f)
+        ;
+
+        
+    
+    
+            marker_b6d2592628f34df2b801654358548645.bindTooltip(
+                `<div>
+                     Fez, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e2244bb3b134ac6b723b460f5ec8836 = L.marker(
+                [34.052977778333336, -4.993802778333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_0ae6555a5a31476184fa6db3172e5da4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_3e2244bb3b134ac6b723b460f5ec8836.setIcon(beautify_icon_0ae6555a5a31476184fa6db3172e5da4);
+        
+    
+        var popup_8c431a85afe4441f97c0cdc07a3f42e0 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_757653e6588b43dcb46eddfdc776237f = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1ZBZ3lxM3IuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_8c431a85afe4441f97c0cdc07a3f42e0.setContent(i_frame_757653e6588b43dcb46eddfdc776237f);
+        
+
+        marker_3e2244bb3b134ac6b723b460f5ec8836.bindPopup(popup_8c431a85afe4441f97c0cdc07a3f42e0)
+        ;
+
+        
+    
+    
+            marker_3e2244bb3b134ac6b723b460f5ec8836.bindTooltip(
+                `<div>
+                     The Royal Palace In Fez - Fes, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6647479b2cb4cccabe12871df895d35 = L.marker(
+                [31.188377778333333, -4.021808333333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_7425e19ff97b4b3b8a5e49fb4f4b3bed = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_e6647479b2cb4cccabe12871df895d35.setIcon(beautify_icon_7425e19ff97b4b3b8a5e49fb4f4b3bed);
+        
+    
+        var popup_8acb488862dc49ea9ef49da19d4ceeeb = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_a81a3c2d060b4ab0b048669bdb648ae2 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2VnQzdNZlQuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_8acb488862dc49ea9ef49da19d4ceeeb.setContent(i_frame_a81a3c2d060b4ab0b048669bdb648ae2);
+        
+
+        marker_e6647479b2cb4cccabe12871df895d35.bindPopup(popup_8acb488862dc49ea9ef49da19d4ceeeb)
+        ;
+
+        
+    
+    
+            marker_e6647479b2cb4cccabe12871df895d35.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee88023d8fd44d7bb3cffd06de5571af = L.marker(
+                [31.187436111666667, -4.019577778333334],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_ccbbc1c1a6654deba2ed1a5ca372b492 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_ee88023d8fd44d7bb3cffd06de5571af.setIcon(beautify_icon_ccbbc1c1a6654deba2ed1a5ca372b492);
+        
+    
+        var popup_65575d5bea8849f68bf86349b4cbcddb = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_26eb80e1d7e942b7b910a5e2a88115f0 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0JmbGh0TlouanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_65575d5bea8849f68bf86349b4cbcddb.setContent(i_frame_26eb80e1d7e942b7b910a5e2a88115f0);
+        
+
+        marker_ee88023d8fd44d7bb3cffd06de5571af.bindPopup(popup_65575d5bea8849f68bf86349b4cbcddb)
+        ;
+
+        
+    
+    
+            marker_ee88023d8fd44d7bb3cffd06de5571af.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94bd9bfc95454aa196a2d7cb66262a08 = L.marker(
+                [31.1858, -4.015644445],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_da7476d8a49e4eb4a2dd1eae7f64b3f0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_94bd9bfc95454aa196a2d7cb66262a08.setIcon(beautify_icon_da7476d8a49e4eb4a2dd1eae7f64b3f0);
+        
+    
+        var popup_859c4a208daf40a094372ea5008fd187 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_0e473d4c07ee401995fb853b53a50bba = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1huc0FhWEwuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_859c4a208daf40a094372ea5008fd187.setContent(i_frame_0e473d4c07ee401995fb853b53a50bba);
+        
+
+        marker_94bd9bfc95454aa196a2d7cb66262a08.bindPopup(popup_859c4a208daf40a094372ea5008fd187)
+        ;
+
+        
+    
+    
+            marker_94bd9bfc95454aa196a2d7cb66262a08.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4ef9b3037884edead948e95dbaa0440 = L.marker(
+                [31.185705555, -4.015602778333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_bc2c74a9c85a468bb852591f14fa02b7 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_d4ef9b3037884edead948e95dbaa0440.setIcon(beautify_icon_bc2c74a9c85a468bb852591f14fa02b7);
+        
+    
+        var popup_c7a09dd9705644d3920bd1c7914519fe = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_24ae867e2bde41a5b152fe54fdf19426 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL29jUjRaeEcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_c7a09dd9705644d3920bd1c7914519fe.setContent(i_frame_24ae867e2bde41a5b152fe54fdf19426);
+        
+
+        marker_d4ef9b3037884edead948e95dbaa0440.bindPopup(popup_c7a09dd9705644d3920bd1c7914519fe)
+        ;
+
+        
+    
+    
+            marker_d4ef9b3037884edead948e95dbaa0440.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3028a7838904735abcfbcc21085c9ee = L.marker(
+                [31.1857, -4.015575],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_de59e88542954c729d2d9a1899d289bf = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_e3028a7838904735abcfbcc21085c9ee.setIcon(beautify_icon_de59e88542954c729d2d9a1899d289bf);
+        
+    
+        var popup_970b521eea98493f98210136cd95f6a3 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_a2823d7392a54b72a9803a07b0bfb8dc = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0JoMTNCVGYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_970b521eea98493f98210136cd95f6a3.setContent(i_frame_a2823d7392a54b72a9803a07b0bfb8dc);
+        
+
+        marker_e3028a7838904735abcfbcc21085c9ee.bindPopup(popup_970b521eea98493f98210136cd95f6a3)
+        ;
+
+        
+    
+    
+            marker_e3028a7838904735abcfbcc21085c9ee.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5336d7cb6d444e0a487515501f48377 = L.marker(
+                [31.189742, -4.0232747],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_f087b3c1fd684abda1e5a5744095d934 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_d5336d7cb6d444e0a487515501f48377.setIcon(beautify_icon_f087b3c1fd684abda1e5a5744095d934);
+        
+    
+        var popup_1937d91d92c34098bf5c68e02e243eb9 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_e670652b40ca4fae8ffed583b9507d7a = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3RuaWFidW8uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_1937d91d92c34098bf5c68e02e243eb9.setContent(i_frame_e670652b40ca4fae8ffed583b9507d7a);
+        
+
+        marker_d5336d7cb6d444e0a487515501f48377.bindPopup(popup_1937d91d92c34098bf5c68e02e243eb9)
+        ;
+
+        
+    
+    
+            marker_d5336d7cb6d444e0a487515501f48377.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01bf40a3829e478695c08f4ebfc27993 = L.marker(
+                [31.189833333333333, -4.024119445],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_2b4f9e728bec4dda91cc9cf0258eaefc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_01bf40a3829e478695c08f4ebfc27993.setIcon(beautify_icon_2b4f9e728bec4dda91cc9cf0258eaefc);
+        
+    
+        var popup_3100c817461741a0b147eb2133a6dd87 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_d650d6b11f7b4c579852a8e5909a121d = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL05icGxKUmQuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_3100c817461741a0b147eb2133a6dd87.setContent(i_frame_d650d6b11f7b4c579852a8e5909a121d);
+        
+
+        marker_01bf40a3829e478695c08f4ebfc27993.bindPopup(popup_3100c817461741a0b147eb2133a6dd87)
+        ;
+
+        
+    
+    
+            marker_01bf40a3829e478695c08f4ebfc27993.bindTooltip(
+                `<div>
+                     Erg Chebbi, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4f6b3a59c034fcc833ededbe95ece99 = L.marker(
+                [31.2489199, -4.6068821],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_e12806774dd04d74a748b978d045b1f4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_e4f6b3a59c034fcc833ededbe95ece99.setIcon(beautify_icon_e12806774dd04d74a748b978d045b1f4);
+        
+    
+        var popup_ba1a9c33f02c47cb9fb5f888ba481d1f = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_c3730277840a49ea98c7d1d75dfc835b = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL05YbHdkUkQuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_ba1a9c33f02c47cb9fb5f888ba481d1f.setContent(i_frame_c3730277840a49ea98c7d1d75dfc835b);
+        
+
+        marker_e4f6b3a59c034fcc833ededbe95ece99.bindPopup(popup_ba1a9c33f02c47cb9fb5f888ba481d1f)
+        ;
+
+        
+    
+    
+            marker_e4f6b3a59c034fcc833ededbe95ece99.bindTooltip(
+                `<div>
+                     Errachidia, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_badd1d6d12b64dd39ded61633fd34bdb = L.marker(
+                [31.5255927, -5.5338151],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_54a487460173459eb1cadcd7c43df5dd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_badd1d6d12b64dd39ded61633fd34bdb.setIcon(beautify_icon_54a487460173459eb1cadcd7c43df5dd);
+        
+    
+        var popup_df1affacd00749cbb233ce7e4e85e8e1 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_f5ec05832a0843fdbffe1c73c0ee8caa = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3JkVkxNcUMuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_df1affacd00749cbb233ce7e4e85e8e1.setContent(i_frame_f5ec05832a0843fdbffe1c73c0ee8caa);
+        
+
+        marker_badd1d6d12b64dd39ded61633fd34bdb.bindPopup(popup_df1affacd00749cbb233ce7e4e85e8e1)
+        ;
+
+        
+    
+    
+            marker_badd1d6d12b64dd39ded61633fd34bdb.bindTooltip(
+                `<div>
+                     Tinghir, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c342dbdc516b42dc99ed3abd4cd3bb2b = L.marker(
+                [31.5308214, -5.5484927],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_f2720ac3356f457eabd14638c89f4cc8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_c342dbdc516b42dc99ed3abd4cd3bb2b.setIcon(beautify_icon_f2720ac3356f457eabd14638c89f4cc8);
+        
+    
+        var popup_a81cc07d7e0147bca4ac0f2a4fdbf61e = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_567d47de7a4945638c45d33ad9df704f = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzJ4NTZWRFkuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_a81cc07d7e0147bca4ac0f2a4fdbf61e.setContent(i_frame_567d47de7a4945638c45d33ad9df704f);
+        
+
+        marker_c342dbdc516b42dc99ed3abd4cd3bb2b.bindPopup(popup_a81cc07d7e0147bca4ac0f2a4fdbf61e)
+        ;
+
+        
+    
+    
+            marker_c342dbdc516b42dc99ed3abd4cd3bb2b.bindTooltip(
+                `<div>
+                     Tinghir, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13d108ded0c944d7a85f66f5de8c6b31 = L.marker(
+                [31.5418757, -5.5663165],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_004b29ece29144cf908d57b9af1b7875 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_13d108ded0c944d7a85f66f5de8c6b31.setIcon(beautify_icon_004b29ece29144cf908d57b9af1b7875);
+        
+    
+        var popup_a40fc99067c34e9da9d5e86923089a84 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_f1ea6bdab464488da896e11548f727e8 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2ZudXBSc3UuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_a40fc99067c34e9da9d5e86923089a84.setContent(i_frame_f1ea6bdab464488da896e11548f727e8);
+        
+
+        marker_13d108ded0c944d7a85f66f5de8c6b31.bindPopup(popup_a40fc99067c34e9da9d5e86923089a84)
+        ;
+
+        
+    
+    
+            marker_13d108ded0c944d7a85f66f5de8c6b31.bindTooltip(
+                `<div>
+                     Tinghir, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e055b893bb7b4d7eb061f6bc1581bc97 = L.marker(
+                [31.5892684, -5.5962708],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_66b74b4dfdfc43488987f7db2a3d3bfa = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_e055b893bb7b4d7eb061f6bc1581bc97.setIcon(beautify_icon_66b74b4dfdfc43488987f7db2a3d3bfa);
+        
+    
+        var popup_7fbd5b4b77eb4238af41c7ec4c1efedf = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_9be8df40e6e24d33a459caeb1f0f1e66 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3BEWEVZNTcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_7fbd5b4b77eb4238af41c7ec4c1efedf.setContent(i_frame_9be8df40e6e24d33a459caeb1f0f1e66);
+        
+
+        marker_e055b893bb7b4d7eb061f6bc1581bc97.bindPopup(popup_7fbd5b4b77eb4238af41c7ec4c1efedf)
+        ;
+
+        
+    
+    
+            marker_e055b893bb7b4d7eb061f6bc1581bc97.bindTooltip(
+                `<div>
+                     Todgha Gorges - High Atlas, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fdfbbfe91f14966bf08793d6b7fb92a = L.marker(
+                [31.5892684, -5.5962708],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_2167fbbde64d400cabb4f31020a2a4cd = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_2fdfbbfe91f14966bf08793d6b7fb92a.setIcon(beautify_icon_2167fbbde64d400cabb4f31020a2a4cd);
+        
+    
+        var popup_072a88e608ba46e892f5650cc31ae901 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_1e625423e2fe460c9c248e42f1eb95d1 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3U2WkoxYlAuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_072a88e608ba46e892f5650cc31ae901.setContent(i_frame_1e625423e2fe460c9c248e42f1eb95d1);
+        
+
+        marker_2fdfbbfe91f14966bf08793d6b7fb92a.bindPopup(popup_072a88e608ba46e892f5650cc31ae901)
+        ;
+
+        
+    
+    
+            marker_2fdfbbfe91f14966bf08793d6b7fb92a.bindTooltip(
+                `<div>
+                     Todgha Gorges - High Atlas, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_731bb4555a144ec9b595d14073176edb = L.marker(
+                [31.3742793, -5.9893633],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_bc767413057a4f7fba53a6c8ad6839f4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_731bb4555a144ec9b595d14073176edb.setIcon(beautify_icon_bc767413057a4f7fba53a6c8ad6839f4);
+        
+    
+        var popup_b21e25cbdf884b73bbd513895483f401 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_4785dfc27eb8444c85ec795312d427bd = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3cwWFlkVXQuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_b21e25cbdf884b73bbd513895483f401.setContent(i_frame_4785dfc27eb8444c85ec795312d427bd);
+        
+
+        marker_731bb4555a144ec9b595d14073176edb.bindPopup(popup_b21e25cbdf884b73bbd513895483f401)
+        ;
+
+        
+    
+    
+            marker_731bb4555a144ec9b595d14073176edb.bindTooltip(
+                `<div>
+                     Tamellalt, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c50152eabca04f62a4f7db6c414c767c = L.marker(
+                [31.4449112, -5.9821131],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_82d566cfd6f24143a9c0d6ed3f3309c9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_c50152eabca04f62a4f7db6c414c767c.setIcon(beautify_icon_82d566cfd6f24143a9c0d6ed3f3309c9);
+        
+    
+        var popup_4f3b285eee3a4ed49e1a6c602dc4bdcd = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_b915977ffe83493389f446ada7980a65 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2FYeWdIQWguanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="200px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_4f3b285eee3a4ed49e1a6c602dc4bdcd.setContent(i_frame_b915977ffe83493389f446ada7980a65);
+        
+
+        marker_c50152eabca04f62a4f7db6c414c767c.bindPopup(popup_4f3b285eee3a4ed49e1a6c602dc4bdcd)
+        ;
+
+        
+    
+    
+            marker_c50152eabca04f62a4f7db6c414c767c.bindTooltip(
+                `<div>
+                     Tamellalt, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_884b25188dd24ef991cf8efa1b17ae28 = L.marker(
+                [31.444938888333333, -5.981994445],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_a366bd1c0f9a44f08bab14209c7e149a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_884b25188dd24ef991cf8efa1b17ae28.setIcon(beautify_icon_a366bd1c0f9a44f08bab14209c7e149a);
+        
+    
+        var popup_722caa481e784179bb3f1e08cd48e6cf = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_13c919369fa24301943c036246c2ea53 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL21MMkgweUcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_722caa481e784179bb3f1e08cd48e6cf.setContent(i_frame_13c919369fa24301943c036246c2ea53);
+        
+
+        marker_884b25188dd24ef991cf8efa1b17ae28.bindPopup(popup_722caa481e784179bb3f1e08cd48e6cf)
+        ;
+
+        
+    
+    
+            marker_884b25188dd24ef991cf8efa1b17ae28.bindTooltip(
+                `<div>
+                     Tafsut Guesthouse - Tamellalt, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dd7241a4aa54acf94ff4fba0afc48a9 = L.marker(
+                [31.047666666666668, -7.129863888333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_4a57052791a24fccb4c11e183d6b5116 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_2dd7241a4aa54acf94ff4fba0afc48a9.setIcon(beautify_icon_4a57052791a24fccb4c11e183d6b5116);
+        
+    
+        var popup_35c1bcc068414e0aa57b28dae6a1dbe1 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_14eecef9d6224a169ac760de6307aecf = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0JrVVViSk4uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_35c1bcc068414e0aa57b28dae6a1dbe1.setContent(i_frame_14eecef9d6224a169ac760de6307aecf);
+        
+
+        marker_2dd7241a4aa54acf94ff4fba0afc48a9.bindPopup(popup_35c1bcc068414e0aa57b28dae6a1dbe1)
+        ;
+
+        
+    
+    
+            marker_2dd7241a4aa54acf94ff4fba0afc48a9.bindTooltip(
+                `<div>
+                     Aït Benhaddou, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_663de3b788b54e1186484d55172774cb = L.marker(
+                [31.047352778333334, -7.129855555],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_6e6343f2cdb44634af134714327b4972 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_663de3b788b54e1186484d55172774cb.setIcon(beautify_icon_6e6343f2cdb44634af134714327b4972);
+        
+    
+        var popup_f770c89bc2d845dc9b79368dfb2a02f1 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_95fd2825e95b4025a868e45e2d4f3858 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzdWb2dJQXEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f770c89bc2d845dc9b79368dfb2a02f1.setContent(i_frame_95fd2825e95b4025a868e45e2d4f3858);
+        
+
+        marker_663de3b788b54e1186484d55172774cb.bindPopup(popup_f770c89bc2d845dc9b79368dfb2a02f1)
+        ;
+
+        
+    
+    
+            marker_663de3b788b54e1186484d55172774cb.bindTooltip(
+                `<div>
+                     Aït Benhaddou, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1c59273be63463ab3d2667413344583 = L.marker(
+                [31.047011111666666, -7.127338888333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_050b29fae7064b5cbf0264655897ef96 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_e1c59273be63463ab3d2667413344583.setIcon(beautify_icon_050b29fae7064b5cbf0264655897ef96);
+        
+    
+        var popup_aab48fab0aa0455c961c6df78bab0e3d = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_e1cee051b2d242208f5209fb1d1c9343 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2lBc1NzSHkuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_aab48fab0aa0455c961c6df78bab0e3d.setContent(i_frame_e1cee051b2d242208f5209fb1d1c9343);
+        
+
+        marker_e1c59273be63463ab3d2667413344583.bindPopup(popup_aab48fab0aa0455c961c6df78bab0e3d)
+        ;
+
+        
+    
+    
+            marker_e1c59273be63463ab3d2667413344583.bindTooltip(
+                `<div>
+                     Aït Benhaddou, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa36dec52b8e41a7bc010f0675e616f0 = L.marker(
+                [31.046972221666667, -7.127377778333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_e8f3fb2940644f7e88dc704c83845068 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_aa36dec52b8e41a7bc010f0675e616f0.setIcon(beautify_icon_e8f3fb2940644f7e88dc704c83845068);
+        
+    
+        var popup_6640f64f0aa349b2a3099e1529b9dede = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_dfdf5ff56c4d4c99a4762c4dc536c003 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2JyZkFNenMuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_6640f64f0aa349b2a3099e1529b9dede.setContent(i_frame_dfdf5ff56c4d4c99a4762c4dc536c003);
+        
+
+        marker_aa36dec52b8e41a7bc010f0675e616f0.bindPopup(popup_6640f64f0aa349b2a3099e1529b9dede)
+        ;
+
+        
+    
+    
+            marker_aa36dec52b8e41a7bc010f0675e616f0.bindTooltip(
+                `<div>
+                     Aït Benhaddou, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b82927e406cb4d62a645b8a30c34130e = L.marker(
+                [31.045463888333334, -7.129047221666666],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_b04b90af9a7f4724ab83f254ab1e82e9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_b82927e406cb4d62a645b8a30c34130e.setIcon(beautify_icon_b04b90af9a7f4724ab83f254ab1e82e9);
+        
+    
+        var popup_dc9bfed3732c49bd9ae0271efe38d418 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_35930d7e75144657bd2dd1df35b5de1c = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2hTazE4WHMuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_dc9bfed3732c49bd9ae0271efe38d418.setContent(i_frame_35930d7e75144657bd2dd1df35b5de1c);
+        
+
+        marker_b82927e406cb4d62a645b8a30c34130e.bindPopup(popup_dc9bfed3732c49bd9ae0271efe38d418)
+        ;
+
+        
+    
+    
+            marker_b82927e406cb4d62a645b8a30c34130e.bindTooltip(
+                `<div>
+                     Aït Ben Haddou, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb11a43238ca48f4891596cdae93b621 = L.marker(
+                [31.1956175, -7.1304886],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_7c27de8f91424a499abd5e40625cc9ee = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_fb11a43238ca48f4891596cdae93b621.setIcon(beautify_icon_7c27de8f91424a499abd5e40625cc9ee);
+        
+    
+        var popup_e9045f0e436c4064a5440b4b2e465478 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_23ac07e873724a9786dbc7613116d840 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3g4ZHhocWcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_e9045f0e436c4064a5440b4b2e465478.setContent(i_frame_23ac07e873724a9786dbc7613116d840);
+        
+
+        marker_fb11a43238ca48f4891596cdae93b621.bindPopup(popup_e9045f0e436c4064a5440b4b2e465478)
+        ;
+
+        
+    
+    
+            marker_fb11a43238ca48f4891596cdae93b621.bindTooltip(
+                `<div>
+                     Tinghir, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80baf31c338f4454bf223fdd547750bd = L.marker(
+                [31.2888844, -7.2420932],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_37fa3eeb3eae41daa197be2bd14e24d4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_80baf31c338f4454bf223fdd547750bd.setIcon(beautify_icon_37fa3eeb3eae41daa197be2bd14e24d4);
+        
+    
+        var popup_635b51a2dba949a6b1298f14acc17972 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_9d38ad7c79244dd8b911ad3331d42e21 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3dpMXA4N0ouanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_635b51a2dba949a6b1298f14acc17972.setContent(i_frame_9d38ad7c79244dd8b911ad3331d42e21);
+        
+
+        marker_80baf31c338f4454bf223fdd547750bd.bindPopup(popup_635b51a2dba949a6b1298f14acc17972)
+        ;
+
+        
+    
+    
+            marker_80baf31c338f4454bf223fdd547750bd.bindTooltip(
+                `<div>
+                     Telouet, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c826f0842dab41e3b88ac5bea300d9d1 = L.marker(
+                [31.3283413, -7.3822687],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_38c1b6c6fa324645b0e0b0fa242c6cf9 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_c826f0842dab41e3b88ac5bea300d9d1.setIcon(beautify_icon_38c1b6c6fa324645b0e0b0fa242c6cf9);
+        
+    
+        var popup_9db22797f10a40ae951bb7cb6e2ab51b = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_bf9d5080192444c39b786a4c316cc6f5 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1FtcHRyUTYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_9db22797f10a40ae951bb7cb6e2ab51b.setContent(i_frame_bf9d5080192444c39b786a4c316cc6f5);
+        
+
+        marker_c826f0842dab41e3b88ac5bea300d9d1.bindPopup(popup_9db22797f10a40ae951bb7cb6e2ab51b)
+        ;
+
+        
+    
+    
+            marker_c826f0842dab41e3b88ac5bea300d9d1.bindTooltip(
+                `<div>
+                     Tizi N'Tichka Mountain Pass - High Atlas, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b5fd0f7980846f59abd595c2fe88a55 = L.marker(
+                [31.4298038, -7.4187004],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_0872eb2861e64347a5b6301aec9b7261 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_1b5fd0f7980846f59abd595c2fe88a55.setIcon(beautify_icon_0872eb2861e64347a5b6301aec9b7261);
+        
+    
+        var popup_7b1ac54f60b846abaeec3781c06c96f6 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_7d679ae9a7b6494e8ebbaa5cc03a8959 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2NyWEtvN2QuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_7b1ac54f60b846abaeec3781c06c96f6.setContent(i_frame_7d679ae9a7b6494e8ebbaa5cc03a8959);
+        
+
+        marker_1b5fd0f7980846f59abd595c2fe88a55.bindPopup(popup_7b1ac54f60b846abaeec3781c06c96f6)
+        ;
+
+        
+    
+    
+            marker_1b5fd0f7980846f59abd595c2fe88a55.bindTooltip(
+                `<div>
+                     Tizi N'Tichka Mountain Pass - High Atlas, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46e2c542292547fa8c977c1ddbe06aaf = L.marker(
+                [31.4322573, -7.4293729],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_1467dcab2eeb47f5aef3b23960276cde = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_46e2c542292547fa8c977c1ddbe06aaf.setIcon(beautify_icon_1467dcab2eeb47f5aef3b23960276cde);
+        
+    
+        var popup_f19b34e155704839802aca68c9457b32 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_d1b537932e284ec7a4a71ba5fd5cc6ff = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2FCQ2E1SHguanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f19b34e155704839802aca68c9457b32.setContent(i_frame_d1b537932e284ec7a4a71ba5fd5cc6ff);
+        
+
+        marker_46e2c542292547fa8c977c1ddbe06aaf.bindPopup(popup_f19b34e155704839802aca68c9457b32)
+        ;
+
+        
+    
+    
+            marker_46e2c542292547fa8c977c1ddbe06aaf.bindTooltip(
+                `<div>
+                     Tizi N'Tichka Mountain Pass - High Atlas, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa3cc459103a41c3818eede069cc002c = L.marker(
+                [31.4211654, -7.453541],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_af7ddb99e4e84d64857a3f6ea758d8f2 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_aa3cc459103a41c3818eede069cc002c.setIcon(beautify_icon_af7ddb99e4e84d64857a3f6ea758d8f2);
+        
+    
+        var popup_5832f6ea9738477b8a23c7f6a92e4d21 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_346f27b87dcc49178b5673826f5a032f = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2xXa0l1REIuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_5832f6ea9738477b8a23c7f6a92e4d21.setContent(i_frame_346f27b87dcc49178b5673826f5a032f);
+        
+
+        marker_aa3cc459103a41c3818eede069cc002c.bindPopup(popup_5832f6ea9738477b8a23c7f6a92e4d21)
+        ;
+
+        
+    
+    
+            marker_aa3cc459103a41c3818eede069cc002c.bindTooltip(
+                `<div>
+                     Tizi N'Tichka Mountain Pass - High Atlas, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_206a78d11ffb4381be4915b0271f9a27 = L.marker(
+                [31.625538888333335, -7.989063888333334],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_f9007d09d8d441889d3cebf780559753 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_206a78d11ffb4381be4915b0271f9a27.setIcon(beautify_icon_f9007d09d8d441889d3cebf780559753);
+        
+    
+        var popup_9cc9485ef18a4e429b32b92fbaa28a18 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_e18d13583e6845d5ae99e4b88cc99216 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2xlNWNEblkuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_9cc9485ef18a4e429b32b92fbaa28a18.setContent(i_frame_e18d13583e6845d5ae99e4b88cc99216);
+        
+
+        marker_206a78d11ffb4381be4915b0271f9a27.bindPopup(popup_9cc9485ef18a4e429b32b92fbaa28a18)
+        ;
+
+        
+    
+    
+            marker_206a78d11ffb4381be4915b0271f9a27.bindTooltip(
+                `<div>
+                     Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea1643acffcc4783bd27582cb62c2508 = L.marker(
+                [31.628905555, -7.980452778333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_977826f8754b4029a299bd0401b45215 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_ea1643acffcc4783bd27582cb62c2508.setIcon(beautify_icon_977826f8754b4029a299bd0401b45215);
+        
+    
+        var popup_b614d7a78e99413d8024ed85b31fc7aa = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_9979bdf47e3a43ada593337d9a571c00 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2tSZVpqSVQuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_b614d7a78e99413d8024ed85b31fc7aa.setContent(i_frame_9979bdf47e3a43ada593337d9a571c00);
+        
+
+        marker_ea1643acffcc4783bd27582cb62c2508.bindPopup(popup_b614d7a78e99413d8024ed85b31fc7aa)
+        ;
+
+        
+    
+    
+            marker_ea1643acffcc4783bd27582cb62c2508.bindTooltip(
+                `<div>
+                     Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_645b6a7f54ca4f9da1afaae65df20ae5 = L.marker(
+                [31.6235169, -7.9941238],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_c97f1d758783451cb300b0331252aa29 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_645b6a7f54ca4f9da1afaae65df20ae5.setIcon(beautify_icon_c97f1d758783451cb300b0331252aa29);
+        
+    
+        var popup_556b6344d9b9450b8f58288127852cdd = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_9541c94b4700473d994c6321efc9ea41 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1hZS0FJWHYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_556b6344d9b9450b8f58288127852cdd.setContent(i_frame_9541c94b4700473d994c6321efc9ea41);
+        
+
+        marker_645b6a7f54ca4f9da1afaae65df20ae5.bindPopup(popup_556b6344d9b9450b8f58288127852cdd)
+        ;
+
+        
+    
+    
+            marker_645b6a7f54ca4f9da1afaae65df20ae5.bindTooltip(
+                `<div>
+                     Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5813111c46c6423d8082651aa5445c36 = L.marker(
+                [31.6300166, -7.9892718],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_4853b305fca240ffa79a8a645ac3a698 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_5813111c46c6423d8082651aa5445c36.setIcon(beautify_icon_4853b305fca240ffa79a8a645ac3a698);
+        
+    
+        var popup_cb4feaae36f441bcb11ed32ea66998d2 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_a46926dedcb14d65b0bde77f5d3c5722 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:67%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL25zdnczVVQuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_cb4feaae36f441bcb11ed32ea66998d2.setContent(i_frame_a46926dedcb14d65b0bde77f5d3c5722);
+        
+
+        marker_5813111c46c6423d8082651aa5445c36.bindPopup(popup_cb4feaae36f441bcb11ed32ea66998d2)
+        ;
+
+        
+    
+    
+            marker_5813111c46c6423d8082651aa5445c36.bindTooltip(
+                `<div>
+                     Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc6a99c962104e6e9d83c40a0118fd95 = L.marker(
+                [31.625983333333334, -7.989219445],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_4231dfe638c4438a9e6cee1e52b6681e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_dc6a99c962104e6e9d83c40a0118fd95.setIcon(beautify_icon_4231dfe638c4438a9e6cee1e52b6681e);
+        
+    
+        var popup_fbe82cfc5d424a68a49d008e94c92782 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_6d310b735a254a96bdd0d66b7e557b9b = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzFZUFl4dTIuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_fbe82cfc5d424a68a49d008e94c92782.setContent(i_frame_6d310b735a254a96bdd0d66b7e557b9b);
+        
+
+        marker_dc6a99c962104e6e9d83c40a0118fd95.bindPopup(popup_fbe82cfc5d424a68a49d008e94c92782)
+        ;
+
+        
+    
+    
+            marker_dc6a99c962104e6e9d83c40a0118fd95.bindTooltip(
+                `<div>
+                     Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18dd3baaa49f4c5bbf4824556988ed72 = L.marker(
+                [31.628283333333332, -7.980463888333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_d7321e4c5d284f00b2eb66781460c1e4 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_18dd3baaa49f4c5bbf4824556988ed72.setIcon(beautify_icon_d7321e4c5d284f00b2eb66781460c1e4);
+        
+    
+        var popup_3eb2f783ca7f41118814c3e9e25a78cf = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_3e696b8e4b804a259f58dfb28e7296b1 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1g2VFN5MVUuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_3eb2f783ca7f41118814c3e9e25a78cf.setContent(i_frame_3e696b8e4b804a259f58dfb28e7296b1);
+        
+
+        marker_18dd3baaa49f4c5bbf4824556988ed72.bindPopup(popup_3eb2f783ca7f41118814c3e9e25a78cf)
+        ;
+
+        
+    
+    
+            marker_18dd3baaa49f4c5bbf4824556988ed72.bindTooltip(
+                `<div>
+                     Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a36bee207d24898b2d3946b4c87ee6c = L.marker(
+                [31.618119445, -7.985177778333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_8898c6c9788348e6bac0feb9230ad54f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_0a36bee207d24898b2d3946b4c87ee6c.setIcon(beautify_icon_8898c6c9788348e6bac0feb9230ad54f);
+        
+    
+        var popup_a93020efa1994338b4fc9ff8ca385458 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_75c66ed259ef4ad8925ef0dd0987b329 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL05QZDZZWkUuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_a93020efa1994338b4fc9ff8ca385458.setContent(i_frame_75c66ed259ef4ad8925ef0dd0987b329);
+        
+
+        marker_0a36bee207d24898b2d3946b4c87ee6c.bindPopup(popup_a93020efa1994338b4fc9ff8ca385458)
+        ;
+
+        
+    
+    
+            marker_0a36bee207d24898b2d3946b4c87ee6c.bindTooltip(
+                `<div>
+                     El Badii Palace - Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47415e2352ed4e94bed0ba3d1248d08b = L.marker(
+                [45.02694722166667, 6.858383333333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_a814894fa332458e971499fdf1fff712 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_47415e2352ed4e94bed0ba3d1248d08b.setIcon(beautify_icon_a814894fa332458e971499fdf1fff712);
+        
+    
+        var popup_d62b65709aac4b78baeccb24ec5a27cb = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_c1ee44458223433eaa43b1587e8746a0 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2xRd0dBaUcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_d62b65709aac4b78baeccb24ec5a27cb.setContent(i_frame_c1ee44458223433eaa43b1587e8746a0);
+        
+
+        marker_47415e2352ed4e94bed0ba3d1248d08b.bindPopup(popup_d62b65709aac4b78baeccb24ec5a27cb)
+        ;
+
+        
+    
+    
+            marker_47415e2352ed4e94bed0ba3d1248d08b.bindTooltip(
+                `<div>
+                     Sauze D'Oulx, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f84f4bf6efa49698b8cb763b876e346 = L.marker(
+                [45.027122221666666, 6.858325],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_e05908b06784454b9d3dfe2bc7c80943 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_2f84f4bf6efa49698b8cb763b876e346.setIcon(beautify_icon_e05908b06784454b9d3dfe2bc7c80943);
+        
+    
+        var popup_5330f7782eed41c881b3cd308713b57a = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_661cf48749824b98896554bf0c780d2b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1dUQm92YUouanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_5330f7782eed41c881b3cd308713b57a.setContent(i_frame_661cf48749824b98896554bf0c780d2b);
+        
+
+        marker_2f84f4bf6efa49698b8cb763b876e346.bindPopup(popup_5330f7782eed41c881b3cd308713b57a)
+        ;
+
+        
+    
+    
+            marker_2f84f4bf6efa49698b8cb763b876e346.bindTooltip(
+                `<div>
+                     Sauze D'Oulx, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8d21268660348fdbc1856482de80561 = L.marker(
+                [45.02574166666667, 6.855819445],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_8ff1a817e6594cd68feeb459bd85d442 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_f8d21268660348fdbc1856482de80561.setIcon(beautify_icon_8ff1a817e6594cd68feeb459bd85d442);
+        
+    
+        var popup_6367ab9cc1be4caaafddcad62d16271c = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_70face37b9bf4756a2fcbac31426b413 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1UwNVlTVkouanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_6367ab9cc1be4caaafddcad62d16271c.setContent(i_frame_70face37b9bf4756a2fcbac31426b413);
+        
+
+        marker_f8d21268660348fdbc1856482de80561.bindPopup(popup_6367ab9cc1be4caaafddcad62d16271c)
+        ;
+
+        
+    
+    
+            marker_f8d21268660348fdbc1856482de80561.bindTooltip(
+                `<div>
+                     Sauze D'Oulx, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3113c5437a87453f895ff696849e4ab6 = L.marker(
+                [44.936213888333334, 6.746552778333333],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_369636b664384e60a3c1abf754faac18 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_3113c5437a87453f895ff696849e4ab6.setIcon(beautify_icon_369636b664384e60a3c1abf754faac18);
+        
+    
+        var popup_6944bc4e98444f03906f5763b7766e61 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_a52768d081cf4c5f9ae1a495b096d1e7 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3Z5THBhYk4uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_6944bc4e98444f03906f5763b7766e61.setContent(i_frame_a52768d081cf4c5f9ae1a495b096d1e7);
+        
+
+        marker_3113c5437a87453f895ff696849e4ab6.bindPopup(popup_6944bc4e98444f03906f5763b7766e61)
+        ;
+
+        
+    
+    
+            marker_3113c5437a87453f895ff696849e4ab6.bindTooltip(
+                `<div>
+                     Montgenèvre, FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edc11bdc41af45ffb5d8a796e04d9398 = L.marker(
+                [44.90653611166667, 6.749530555],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_8ccfd01c6f8b4b52927d559127a198cc = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_edc11bdc41af45ffb5d8a796e04d9398.setIcon(beautify_icon_8ccfd01c6f8b4b52927d559127a198cc);
+        
+    
+        var popup_f13829b9c06e40dea4372474c698ce8a = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_eb28bbba898d4511a35d75806b5a0523 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2lGbXVpRksuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f13829b9c06e40dea4372474c698ce8a.setContent(i_frame_eb28bbba898d4511a35d75806b5a0523);
+        
+
+        marker_edc11bdc41af45ffb5d8a796e04d9398.bindPopup(popup_f13829b9c06e40dea4372474c698ce8a)
+        ;
+
+        
+    
+    
+            marker_edc11bdc41af45ffb5d8a796e04d9398.bindTooltip(
+                `<div>
+                     Montgenèvre, FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46146d4db3104d77b38274b30eaa8262 = L.marker(
+                [45.025866666666666, 6.855558333333334],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_01ed0aa7460e47b1adfdca6c69861751 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_46146d4db3104d77b38274b30eaa8262.setIcon(beautify_icon_01ed0aa7460e47b1adfdca6c69861751);
+        
+    
+        var popup_903e356727344425b8322fbff9ce57b4 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_4bfd4ed7495a4ee7ad869d0eb5e61156 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1MzYU9CYTUuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_903e356727344425b8322fbff9ce57b4.setContent(i_frame_4bfd4ed7495a4ee7ad869d0eb5e61156);
+        
+
+        marker_46146d4db3104d77b38274b30eaa8262.bindPopup(popup_903e356727344425b8322fbff9ce57b4)
+        ;
+
+        
+    
+    
+            marker_46146d4db3104d77b38274b30eaa8262.bindTooltip(
+                `<div>
+                     Sauze D'Oulx, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5307f84de66a4ecaa89e7883d4cd86a3 = L.marker(
+                [45.065913888333334, 7.689116666666667],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_dce296de33a840a5b8d7de0f4f746b78 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_5307f84de66a4ecaa89e7883d4cd86a3.setIcon(beautify_icon_dce296de33a840a5b8d7de0f4f746b78);
+        
+    
+        var popup_6d408cc93bbc4ee4b3e44006af1f41df = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_5b80b3c0626943a7b538198a2c711d8a = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2xQdmdHRUYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_6d408cc93bbc4ee4b3e44006af1f41df.setContent(i_frame_5b80b3c0626943a7b538198a2c711d8a);
+        
+
+        marker_5307f84de66a4ecaa89e7883d4cd86a3.bindPopup(popup_6d408cc93bbc4ee4b3e44006af1f41df)
+        ;
+
+        
+    
+    
+            marker_5307f84de66a4ecaa89e7883d4cd86a3.bindTooltip(
+                `<div>
+                     Hotel NH Piazza Carlina - Turin, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_688552f267d942f2905ba9ccceff98ed = L.marker(
+                [45.076355555, 7.679022221666667],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_08ffcbaa38c243c8b6061aa335f60870 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_688552f267d942f2905ba9ccceff98ed.setIcon(beautify_icon_08ffcbaa38c243c8b6061aa335f60870);
+        
+    
+        var popup_2e4e599b189f4f59907834d3a7febf5c = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_0f59c8ee70c94ad2a06b2fb247a939a9 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzNPQXFjYlYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_2e4e599b189f4f59907834d3a7febf5c.setContent(i_frame_0f59c8ee70c94ad2a06b2fb247a939a9);
+        
+
+        marker_688552f267d942f2905ba9ccceff98ed.bindPopup(popup_2e4e599b189f4f59907834d3a7febf5c)
+        ;
+
+        
+    
+    
+            marker_688552f267d942f2905ba9ccceff98ed.bindTooltip(
+                `<div>
+                     Al Bicerin - Turin, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9d26be4e35d43a283fb1f9980bbf96a = L.marker(
+                [45.934113888333336, 7.7080444450000005],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_f6812f86afc2414fa5940d225a2b508f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_e9d26be4e35d43a283fb1f9980bbf96a.setIcon(beautify_icon_f6812f86afc2414fa5940d225a2b508f);
+        
+    
+        var popup_ceaddc01c86f4c0e85e3307f8459682d = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_5803172b008a4cd78bbd754e55485801 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzd1a285U1AuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_ceaddc01c86f4c0e85e3307f8459682d.setContent(i_frame_5803172b008a4cd78bbd754e55485801);
+        
+
+        marker_e9d26be4e35d43a283fb1f9980bbf96a.bindPopup(popup_ceaddc01c86f4c0e85e3307f8459682d)
+        ;
+
+        
+    
+    
+            marker_e9d26be4e35d43a283fb1f9980bbf96a.bindTooltip(
+                `<div>
+                     Plateau Rosa - Breuil-Cervinia, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1728ea983d824012b67df306271109d9 = L.marker(
+                [45.933880555, 7.7081],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_c5e8f4bc0ef84524be6dd76c7c1917ca = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_1728ea983d824012b67df306271109d9.setIcon(beautify_icon_c5e8f4bc0ef84524be6dd76c7c1917ca);
+        
+    
+        var popup_f892c535cc9c415fa9171eb2063d40a5 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_0930250c030d4af18ba740522b43f0c4 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3RucnM3eVEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_f892c535cc9c415fa9171eb2063d40a5.setContent(i_frame_0930250c030d4af18ba740522b43f0c4);
+        
+
+        marker_1728ea983d824012b67df306271109d9.bindPopup(popup_f892c535cc9c415fa9171eb2063d40a5)
+        ;
+
+        
+    
+    
+            marker_1728ea983d824012b67df306271109d9.bindTooltip(
+                `<div>
+                     Spaghetti Carbonara at 3,500m - Breuil-Cervinia, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6350df37d964e71a8870e430daf02e9 = L.marker(
+                [45.920775, 7.682252778333334],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_1da1e43c848242128908d3baaa6259b5 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_c6350df37d964e71a8870e430daf02e9.setIcon(beautify_icon_1da1e43c848242128908d3baaa6259b5);
+        
+    
+        var popup_d1d6fc49997c4deaabd66e385f066629 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_d3024b8dc7464c59b24f0a7d11dc106c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0lSdkFBTlcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_d1d6fc49997c4deaabd66e385f066629.setContent(i_frame_d3024b8dc7464c59b24f0a7d11dc106c);
+        
+
+        marker_c6350df37d964e71a8870e430daf02e9.bindPopup(popup_d1d6fc49997c4deaabd66e385f066629)
+        ;
+
+        
+    
+    
+            marker_c6350df37d964e71a8870e430daf02e9.bindTooltip(
+                `<div>
+                     Breuil-Cervinia, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_048f41d58c9a42c29fae37d651eeeede = L.marker(
+                [45.943905555, 7.708591666666667],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_02d152b5327f49998d4111db6f67b537 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_048f41d58c9a42c29fae37d651eeeede.setIcon(beautify_icon_02d152b5327f49998d4111db6f67b537);
+        
+    
+        var popup_c05970b8a14d4acda70995b54bc2ef84 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_91126e17d44a477cb5e66d3d573d0ead = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0hwMUdGOXYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_c05970b8a14d4acda70995b54bc2ef84.setContent(i_frame_91126e17d44a477cb5e66d3d573d0ead);
+        
+
+        marker_048f41d58c9a42c29fae37d651eeeede.bindPopup(popup_c05970b8a14d4acda70995b54bc2ef84)
+        ;
+
+        
+    
+    
+            marker_048f41d58c9a42c29fae37d651eeeede.bindTooltip(
+                `<div>
+                     Theodulpass - Cervinia, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b8ce22d6ee84514a6be40b5b4b629f5 = L.marker(
+                [45.948044445, 7.694616666666667],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_7ecba9fd89bb45868760de6e25ba81bb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_7b8ce22d6ee84514a6be40b5b4b629f5.setIcon(beautify_icon_7ecba9fd89bb45868760de6e25ba81bb);
+        
+    
+        var popup_ba19d3130d9a431db1b2c58dcec58d1a = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_af5f53efc88243a68f52928147811af3 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3RQVmlHMnYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_ba19d3130d9a431db1b2c58dcec58d1a.setContent(i_frame_af5f53efc88243a68f52928147811af3);
+        
+
+        marker_7b8ce22d6ee84514a6be40b5b4b629f5.bindPopup(popup_ba19d3130d9a431db1b2c58dcec58d1a)
+        ;
+
+        
+    
+    
+            marker_7b8ce22d6ee84514a6be40b5b4b629f5.bindTooltip(
+                `<div>
+                     Breuil-Cervinia, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b367f975087d47a4b30a60afa319922e = L.marker(
+                [45.94513611166666, 7.708536111666667],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_403dcb284633441fbd87c683014e12b1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_b367f975087d47a4b30a60afa319922e.setIcon(beautify_icon_403dcb284633441fbd87c683014e12b1);
+        
+    
+        var popup_6eb9c58d04734e1dac0fb93f1e2e6776 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_8220a98042464e3b9abf8bda0e4bb503 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3hlYWlaRmYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_6eb9c58d04734e1dac0fb93f1e2e6776.setContent(i_frame_8220a98042464e3b9abf8bda0e4bb503);
+        
+
+        marker_b367f975087d47a4b30a60afa319922e.bindPopup(popup_6eb9c58d04734e1dac0fb93f1e2e6776)
+        ;
+
+        
+    
+    
+            marker_b367f975087d47a4b30a60afa319922e.bindTooltip(
+                `<div>
+                     The Matterhorn - Breuil-Cervinia, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d40497dad63043b3a477a5173886f845 = L.marker(
+                [45.977925, 9.254316666666666],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_bc1d78a3ea8e4ede93011c06a8b3b103 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_d40497dad63043b3a477a5173886f845.setIcon(beautify_icon_bc1d78a3ea8e4ede93011c06a8b3b103);
+        
+    
+        var popup_33a9651f6d2a4908ab886488c6013ef2 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_fc6e410d24474f56a971d35cf3e49b75 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3JGYlN0a1cuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_33a9651f6d2a4908ab886488c6013ef2.setContent(i_frame_fc6e410d24474f56a971d35cf3e49b75);
+        
+
+        marker_d40497dad63043b3a477a5173886f845.bindPopup(popup_33a9651f6d2a4908ab886488c6013ef2)
+        ;
+
+        
+    
+    
+            marker_d40497dad63043b3a477a5173886f845.bindTooltip(
+                `<div>
+                     Bellagio, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07110f83a3e74fdd94aaaa6737416bf9 = L.marker(
+                [45.81212222166667, 9.08265],
+                {}
+            ).addTo(marker_cluster_55da4874574e400da762ae76c424c596);
+        
+    
+            var beautify_icon_38806b60cc33452a8f124888cd94ac0d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_07110f83a3e74fdd94aaaa6737416bf9.setIcon(beautify_icon_38806b60cc33452a8f124888cd94ac0d);
+        
+    
+        var popup_d15d585e1b7649c4ab1322ad69ed099d = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_f8d87f089bf8437ca6cecc7576f34f84 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL01YcDhhc0kuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_d15d585e1b7649c4ab1322ad69ed099d.setContent(i_frame_f8d87f089bf8437ca6cecc7576f34f84);
+        
+
+        marker_07110f83a3e74fdd94aaaa6737416bf9.bindPopup(popup_d15d585e1b7649c4ab1322ad69ed099d)
+        ;
+
+        
+    
+    
+            marker_07110f83a3e74fdd94aaaa6737416bf9.bindTooltip(
+                `<div>
+                     Como, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_9c09d06492d1443c800629994ce15cdf = L.featureGroup(
+                {}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var heat_map_f5571323564b49f1887708214101fa12 = L.heatLayer(
+                [[34.0672543, -4.9773988], [34.067158345833334, -4.977329764583333], [34.06706239166667, -4.977260729166666], [34.0669664375, -4.977191693749999], [34.06687048333333, -4.977122658333332], [34.06677452916667, -4.977053622916666], [34.066678575000005, -4.9769845875], [34.06658262083334, -4.976915552083333], [34.06648666666667, -4.976846516666666], [34.06649555555556, -4.976839333333334], [34.062153689999995, -4.9806751899999995], [34.058173822222216, -4.98548041111111], [34.06062685, -4.985917933333333], [34.06230983571429, -4.9830868428571415], [34.063881716666664, -4.979433316666667], [34.06493883, -4.97664476], [34.06347281666667, -4.981378933333334], [34.066450371428566, -4.976713657142858], [34.066489966666666, -4.9768262000000005], [34.06544486666667, -4.9765465833333336], [34.0639787, -4.9756599], [34.06605946666667, -4.976472333333334], [34.0664829, -4.9768117], [34.066487875, -4.9768217], [34.06649285, -4.9768317], [34.066461999145304, -4.976868363247863], [34.066431148290604, -4.976905026495727], [34.0664002974359, -4.976941689743589], [34.0663694465812, -4.976978352991453], [34.0663385957265, -4.977015016239316], [34.0663077448718, -4.97705167948718], [34.06627689401709, -4.977088342735042], [34.066246043162394, -4.977125005982906], [34.066215192307695, -4.977161669230769], [34.0638252, -4.981007], [34.0611129, -4.98591575], [34.05396667777777, -4.991810955555554], [34.062220275, -4.97925295], [34.06411828, -4.9794746000000005], [34.06527944, -4.985086600000001], [34.06203185, -4.9835582], [34.0619934, -4.9814219], [34.06409455, -4.977927525], [34.004816857142856, -4.977055804761905], [33.94553916428571, -4.976184084523809], [33.88626147142857, -4.975312364285714], [33.82698377857143, -4.974440644047619], [33.76770608571429, -4.973568923809524], [33.708428392857144, -4.972697203571428], [33.6491507, -4.971825483333333], [33.589873007142856, -4.970953763095238], [33.53059531428571, -4.970082042857142], [33.47131762142857, -4.969210322619047], [33.41203992857143, -4.968338602380952], [33.35276223571429, -4.967466882142857], [33.29348454285714, -4.9665951619047615], [33.23420685, -4.9657234416666665], [33.174929157142856, -4.9648517214285715], [33.11565146428571, -4.9639800011904756], [33.05637377142857, -4.9631082809523805], [32.99709607857143, -4.9622365607142855], [32.93781838571429, -4.9613648404761905], [32.87854069285714, -4.960493120238095], [32.819263, -4.9596214], [32.6829913, -4.7407299], [32.68299156, -4.7407304], [32.679479395833326, -4.739086854166666], [32.681162835416664, -4.740273302083333], [32.682846275, -4.74145975], [32.682977214285714, -4.7407259999999996], [32.68298098571429, -4.740726974999999], [32.68298475714286, -4.74072795], [32.68298852857143, -4.740728925], [32.6829923, -4.7407299], [32.68299214, -4.74073], [32.682991980000004, -4.7407301], [32.68299182, -4.7407302], [32.68299166, -4.7407303], [32.6829915, -4.7407304], [32.682991550000004, -4.74073035], [32.6797462, -4.7263166], [32.2624454, -4.4474334], [31.9890357, -4.375174433333334], [31.715625999999997, -4.302915466666667], [31.4422163, -4.2306565], [31.44210065, -4.230462], [31.356670033333334, -4.1589221], [31.271239416666667, -4.0873822], [31.1858088, -4.0158423], [31.18891399, -4.022856190000001], [31.19201918, -4.02987008], [31.1918827, -4.029407], [31.1919032, -4.0295404999999995], [31.1919237, -4.029674], [31.191923216666666, -4.029662505555556], [31.191922733333335, -4.0296510111111115], [31.19192225, -4.029639516666666], [31.191921766666667, -4.029628022222222], [31.191921283333336, -4.029616527777778], [31.191920800000002, -4.0296050333333335], [31.191287211111113, -4.0280774], [31.190653622222225, -4.026549766666667], [31.190020033333337, -4.025022133333334], [31.19172535, -4.0291469499999994], [31.191948925000002, -4.0295523625000005], [31.1936864375, -4.041855197916667], [31.195423949999995, -4.054158033333334], [31.287781766666665, -4.265043666666667], [31.2174939, -4.76854026], [31.2738364, -5.256188828571427], [31.517704157142855, -5.507654985714287], [31.563162714285713, -5.579292142857143], [31.4042481375, -5.8714694624999995], [31.44488144, -5.98202256], [31.444865582222224, -5.982029356666667], [31.444849724444445, -5.9820361533333335], [31.44483386666667, -5.98204295], [31.444873225, -5.9820610499999995], [31.444873670454545, -5.9820602568181815], [31.44487411590909, -5.9820594636363635], [31.444874561363633, -5.982058670454545], [31.44487500681818, -5.982057877272727], [31.444875452272726, -5.982057084090909], [31.44487589772727, -5.982056290909091], [31.444876343181818, -5.982055497727273], [31.444876788636364, -5.982054704545455], [31.444877234090907, -5.982053911363636], [31.444877679545453, -5.982053118181818], [31.444878125, -5.982052325], [31.444873925, -5.982097749999999], [31.379420434375, -6.099008652083333], [31.31396694375, -6.215919554166666], [31.248513453125, -6.33283045625], [31.183059962499996, -6.449741358333333], [31.117606471874996, -6.566652260416666], [31.052152981249996, -6.6835631625000005], [30.986699490624996, -6.800474064583334], [30.921245999999996, -6.917384966666667], [30.920983783333337, -6.9141361833333335], [30.921060025000003, -6.921897], [30.921206803750003, -6.92228419], [30.921353582500004, -6.922671380000001], [30.921500361250004, -6.92305857], [30.921647140000005, -6.92344576], [30.921651400000002, -6.923458025], [30.921635433333336, -6.923362016666667], [30.92161946666667, -6.923266008333333], [30.921603500000003, -6.92317], [30.921587533333337, -6.923073991666667], [30.92157156666667, -6.922977983333333], [30.921555600000005, -6.922881974999999], [30.92153963333334, -6.922785966666666], [30.9216942, -6.9234628], [30.98610458, -7.061351499999999], [31.047388520000005, -7.129019500000001], [31.08412045, -7.132787899999999], [31.24853465, -7.170293375], [31.327665233333335, -7.3864181111111105], [31.4232439625, -7.453912825], [31.523875139999994, -7.57213528], [31.596871342857135, -7.885753028571429], [31.632874700000002, -7.980476550000001], [31.630848958333335, -7.982424150000001], [31.628823216666664, -7.98437175], [31.626797474999996, -7.9863193500000005], [31.6260992, -7.9874847], [31.628895200000002, -7.98044445], [31.62889615, -7.980444], [31.628896757142854, -7.980444342857142], [31.628896718095238, -7.980444321904762], [31.628896679047617, -7.980444300952381], [31.62889664, -7.98044428], [31.628897180000003, -7.9804446], [31.628896866666665, -7.9804444], [31.62889702083333, -7.9804445], [31.628897175, -7.9804446], [31.6288481, -7.9804259], [31.6276326, -7.9821518], [31.62714986363636, -7.993134127272728], [31.63714317142857, -8.002074814285715], [31.638451057142856, -7.999806957142858], [31.632512000000002, -7.989353583333333], [31.628952225, -7.984954175], [31.6288963, -7.9804441], [31.6288962, -7.9804441], [31.62825324285714, -7.981274757142857], [31.62755555, -7.986142875], [31.625879683333334, -7.988622400000001], [31.627963833333336, -7.982060016666666], [31.6288963, -7.9804441], [31.62889887878788, -7.980443693939393], [31.628901457575758, -7.980443287878788], [31.628904036363636, -7.980442881818181], [31.628906615151514, -7.980442475757576], [31.628909193939393, -7.980442069696969], [31.628911772727275, -7.9804416636363635], [31.628914351515153, -7.980441257575757], [31.62891693030303, -7.9804408515151515], [31.62891950909091, -7.980440445454545], [31.628922087878788, -7.980440039393939], [31.628924666666666, -7.980439633333333], [31.6288883, -7.9804465], [31.625219583333333, -7.9829058], [31.621550866666666, -7.9853651], [31.62341825833333, -7.984697425], [31.62528565, -7.9840297499999995], [31.626192175, -7.984375375], [31.627098699999998, -7.984721], [31.60238, -8.024822775], [31.602477033333333, -8.024660800000001], [31.6025172, -8.0256428]],
+                {"blur": 30, "max": 3.0, "maxZoom": 12, "minOpacity": 0.0, "radius": 20}
+            ).addTo(feature_group_9c09d06492d1443c800629994ce15cdf);
+        
+    
+            var heat_map_b6b08016916b46278064ec3635321f08 = L.heatLayer(
+                [[45.041961799999996, 7.63964455], [45.036593591666666, 7.378283916666667], [45.03122538333333, 7.116923283333334], [45.025857175, 6.85556265], [45.02597586, 6.8575372], [45.02585592, 6.8555606], [45.02585241, 6.855589925], [45.0258489, 6.85561925], [45.025850207894734, 6.855617442105263], [45.025851515789476, 6.855615634210526], [45.02585282368421, 6.85561382631579], [45.025854131578946, 6.855612018421053], [45.02585543947369, 6.855610210526316], [45.02585674736842, 6.855608402631579], [45.02585805526316, 6.855606594736842], [45.0258593631579, 6.855604786842106], [45.025860671052634, 6.855602978947369], [45.02586197894737, 6.855601171052632], [45.0258632868421, 6.855599363157895], [45.025864594736845, 6.8555975552631585], [45.02586590263158, 6.8555957473684215], [45.025867210526314, 6.8555939394736845], [45.025868518421056, 6.855592131578947], [45.02586982631579, 6.85559032368421], [45.025871134210526, 6.855588515789474], [45.02587244210527, 6.855586707894737], [45.02587375, 6.8555849], [45.02586958461538, 6.855584938461538], [45.02587485, 6.85558305], [45.027968233531745, 6.883849038690476], [45.030061617063495, 6.912115027380953], [45.03215500059524, 6.940381016071428], [45.03424838412698, 6.9686470047619045], [45.03634176765873, 6.996912993452381], [45.03843515119048, 7.025178982142857], [45.04052853472222, 7.0534449708333335], [45.04262191825397, 7.08171095952381], [45.044715301785715, 7.109976948214285], [45.046808685317465, 7.138242936904762], [45.04890206884921, 7.166508925595238], [45.05099545238095, 7.1947749142857145], [45.0530888359127, 7.223040902976191], [45.05518221944445, 7.251306891666667], [45.05727560297619, 7.279572880357143], [45.05936898650794, 7.307838869047619], [45.061462370039685, 7.336104857738095], [45.06355575357143, 7.364370846428572], [45.06564913710318, 7.392636835119048], [45.06774252063492, 7.420902823809524], [45.069835904166666, 7.4491688125], [45.07192928769842, 7.477434801190476], [45.07402267123016, 7.505700789880953], [45.07611605476191, 7.533966778571429], [45.078209438293655, 7.562232767261905], [45.0803028218254, 7.590498755952381], [45.08239620535715, 7.618764744642857], [45.08448958888889, 7.647030733333334], [45.08464199000001, 7.647815490000001], [45.065972566666666, 7.689146133333334], [45.065936887999996, 7.68923787], [45.06590120933333, 7.689329606666667], [45.06586553066666, 7.689421343333334], [45.065829852, 7.68951308], [45.06579417333333, 7.689604816666666], [45.06575849466666, 7.689696553333333], [45.065722816, 7.689788289999999], [45.06568713733333, 7.689880026666666], [45.065651458666665, 7.689971763333332], [45.065615779999995, 7.690063499999999], [45.065816379999994, 7.689335906666666], [45.06601697999999, 7.688608313333333], [45.06621757999999, 7.68788072], [45.0673987, 7.6821441], [45.0650005, 7.681491], [45.0626023, 7.6808379], [45.219552783333334, 7.722365575], [45.376503266666674, 7.76389325], [45.53345375000001, 7.805420925], [45.83687287272727, 7.619655163636364], [45.93570173333333, 7.6365701], [45.93561277222222, 7.636669366666666], [45.93552381111111, 7.636768633333333], [45.93543485, 7.6368678999999995], [45.935987876923086, 7.636535492307693], [45.9356504, 7.63736885], [45.9356504, 7.6373688], [45.9356504, 7.6373688], [45.9356504, 7.6373688], [45.9356504, 7.6373688], [45.9356504, 7.6373688], [45.9370668, 7.641814525], [45.9384832, 7.64626025], [45.939899600000004, 7.650705975], [45.941316, 7.6551517], [45.94057097557604, 7.652464865898618], [45.93982595115208, 7.6497780317972355], [45.93908092672812, 7.647091197695853], [45.93833590230415, 7.64440436359447], [45.93759087788019, 7.6417175294930875], [45.936845853456234, 7.639030695391705], [45.93610082903227, 7.636343861290323], [45.93542745, 7.636220716666667], [45.934716949999995, 7.6306379], [45.93512073333333, 7.630456], [45.935228499999994, 7.63694635], [45.9354165, 7.6377221], [45.9354158, 7.6377214], [45.935415516666666, 7.637721133333334], [45.93541558571429, 7.637721242857143], [45.935415654761904, 7.637721352380953], [45.93541572380953, 7.637721461904762], [45.93541579285714, 7.637721571428571], [45.935415861904765, 7.637721680952381], [45.93541593095238, 7.63772179047619], [45.935416000000004, 7.6377219], [45.9349446, 7.6354054], [45.9344732, 7.6330889], [45.9340018, 7.6307724], [45.9347173, 7.634232475], [45.9354328, 7.637692550000001], [45.93522955, 7.63688085], [45.9354174, 7.6376372], [45.8777243, 7.6233442], [45.9354224, 7.6376575], [45.93541245, 7.63761665], [45.935425925000004, 7.637642275], [45.9354394, 7.6376679], [45.9358659, 7.636948028571427], [45.9368817, 7.6282614], [45.936141, 7.6328901], [45.9354003, 7.6375188], [45.935439, 7.637666933333333], [45.93544131666667, 7.637668605555555], [45.935443633333335, 7.637670277777778], [45.93544595, 7.63767195], [45.9354175375, 7.6375475375], [45.935389125, 7.637423125], [45.9353607125, 7.6372987125], [45.9353323, 7.6371743], [45.93492178571429, 7.636089071428572], [45.94132865, 7.6552378999999995], [45.93693814166667, 7.652321316666667], [45.932547633333336, 7.649404733333333], [45.935332374999994, 7.695942024999999], [45.93352295, 7.7081165], [45.9364357, 7.683688375], [45.93934845, 7.65926025], [45.9342393, 7.6347267], [45.93556922727272, 7.637287645454546], [45.935429979999995, 7.637245], [45.91770031583333, 7.637448104166666], [45.89997065166666, 7.637651208333334], [45.8822409875, 7.6378543125], [45.86451132333333, 7.638057416666666], [45.84678165916666, 7.638260520833334], [45.82905199499999, 7.638463625], [45.81132233083333, 7.638666729166666], [45.79359266666666, 7.638869833333334], [45.775863002499996, 7.6390729375], [45.75813333833333, 7.639276041666667], [45.740403674166664, 7.6394791458333335], [45.72267401, 7.63968225], [45.70494434583333, 7.639885354166667], [45.68721468166667, 7.6400884583333335], [45.669485017499994, 7.6402915625], [45.65175535333333, 7.640494666666667], [45.63402568916666, 7.6406977708333335], [45.616296025, 7.640900875], [45.59856636083333, 7.641103979166667], [45.580836696666665, 7.641307083333333], [45.5631070325, 7.6415101875], [45.545377368333334, 7.641713291666667], [45.52764770416667, 7.641916395833333], [45.50991804, 7.6421195], [45.49218837583333, 7.642322604166667], [45.474458711666664, 7.642525708333333], [45.4567290475, 7.642728812500001], [45.43899938333333, 7.642931916666667], [45.421269719166666, 7.643135020833333], [45.403540055, 7.6433381250000005], [45.385810390833335, 7.643541229166667], [45.36808072666667, 7.643744333333333], [45.3503510625, 7.6439474375000005], [45.33262139833333, 7.644150541666667], [45.314891734166665, 7.644353645833333], [45.29716207, 7.6445567500000005], [45.27943240583333, 7.644759854166667], [45.26170274166667, 7.644962958333333], [45.2439730775, 7.6451660625], [45.226243413333336, 7.645369166666667], [45.20851374916667, 7.645572270833334], [45.190784085000004, 7.645775375], [45.17305442083334, 7.645978479166667], [45.155324756666666, 7.646181583333334], [45.1375950925, 7.6463846875], [45.119865428333334, 7.646587791666667], [45.10213576416667, 7.646790895833334], [45.0844061, 7.646994], [45.273682, 8.311638633333333], [45.462957900000006, 8.976283266666666], [45.652233800000005, 9.6409279], [45.65177645, 9.63638095], [45.6513191, 9.631834], [45.65268841666667, 9.638923833333333], [45.65405773333333, 9.646013666666667], [45.65542705, 9.6531035], [45.65679636666667, 9.660193333333332], [45.65816568333333, 9.667283166666666], [45.659535, 9.674373], [45.65679714666667, 9.660193273333332], [45.65405929333333, 9.646013546666667], [45.651321440000004, 9.63183382], [45.65132129333334, 9.631835713333334], [45.65132114666667, 9.631837606666666], [45.651321, 9.6318395], [45.660756346, 9.590533029], [45.670191692, 9.549226558], [45.67962703800001, 9.507920087], [45.689062384, 9.466613616], [45.69849773, 9.425307145000001], [45.707933076, 9.384000674000001], [45.71736842200001, 9.342694203], [45.726803768, 9.301387732], [45.736239114, 9.260081261000002], [45.745674460000004, 9.218774790000001], [45.74569733, 9.218730903333334], [45.7457202, 9.218687016666665], [45.7456646, 9.2187794], [45.745661042857144, 9.218789328571429], [45.74565748571428, 9.218799257142857], [45.74565392857143, 9.218809185714285], [45.745650371428574, 9.218819114285715], [45.74564681428572, 9.218829042857143], [45.74564325714286, 9.218838971428571], [45.745639700000005, 9.2188489], [45.609108750000004, 9.26257955], [45.4725778, 9.3063102]],
+                {"blur": 30, "max": 3.0, "maxZoom": 12, "minOpacity": 0.0, "radius": 20}
+            ).addTo(feature_group_9c09d06492d1443c800629994ce15cdf);
+        
+    
+            var feature_group_612daf347437407c86db5cfd6b4599a3 = L.featureGroup(
+                {}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var poly_line_be02e87211d14d668810e32e48900f2a = L.polyline(
+                [[49.4580239, 2.1122107], [48.97016073827425, 1.8207197930322718], [48.48153378093373, 1.5348662940334103], [47.99216867339682, 1.2544557625239237], [47.502089940318164, 0.9793018248655097], [47.011321046415965, 0.7092257750277562], [46.51988445358781, 0.4440561971180981], [46.02780167456605, 0.18362860843354722], [45.53509332334517, -0.0722148781403833], [45.04177916259672, -0.3236258734939277], [44.54787814827228, -0.5707500144686959], [44.05340847157984, -0.8137272498340291], [43.558387598506364, -1.0526921109965808], [43.062832307046435, -1.2877739683221643], [42.566758722285904, -1.5190972738975632], [42.07018234947869, -1.7467817915116872], [41.57311810524531, -1.9709428145896646], [41.075580347012746, -2.1916913727699314], [40.57758290080665, -2.4091344277737234], [40.07913908749951, -2.6233750591775267], [39.580261747611196, -2.834512640662872], [39.080963264751496, -3.0426430072835253], [38.58125558778834, -3.2478586142579355], [38.081150251819736, -3.4502486877645375], [37.58065839802206, -3.649899368188913], [37.079790792442545, -3.8468938462452953], [36.578557843799324, -4.041312492369471], [36.07696962034815, -4.233232979756801], [35.57503586587101, -4.422730401396796], [35.07276601483827, -4.609877381434922], [34.57016920679263, -4.794744181172865], [34.0672543, -4.9773988]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_612daf347437407c86db5cfd6b4599a3);
+        
+    
+            poly_line_be02e87211d14d668810e32e48900f2a.bindTooltip(
+                `<div>
+                     Flight from Paris, FR to Fes, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe461bc6e6e448f0be40187ac8118cf0 = L.marker(
+                [34.0672543, -4.9773988],
+                {}
+            ).addTo(feature_group_612daf347437407c86db5cfd6b4599a3);
+        
+    
+            var beautify_icon_77aee76bc2f848adbe92ab3f4c438791 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "arrow-down", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_fe461bc6e6e448f0be40187ac8118cf0.setIcon(beautify_icon_77aee76bc2f848adbe92ab3f4c438791);
+        
+    
+            marker_fe461bc6e6e448f0be40187ac8118cf0.bindTooltip(
+                `<div>
+                     Arriving from Paris, FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7dc980c9560c441fa40c584f809d18d5 = L.polyline(
+                [[33.9371988, -118.4065537], [36.10675535517283, -116.5494275965597], [38.24513211776732, -114.58802421354332], [40.34799524458283, -112.50921649656586], [42.410366526874405, -110.2984443981595], [44.42651121679279, -107.93962945918904], [46.38981135819199, -105.41514665301612], [48.292626404156934, -102.70589384004082], [50.12614591186045, -99.79151645606699], [51.88024388775461, -96.65086580098749], [53.543351478117685, -93.2627906957978], [55.102374526793916, -89.60737736928205], [56.5426947280574, -85.66774770418786], [57.848305834581055, -81.43247978077686], [59.002145165571704, -76.89859973737137], [59.986677633793434, -72.0748893697002], [60.78476433204864, -66.98497095092355], [61.38079208211218, -61.66934767728512], [61.76195674295873, -56.185455130285526], [61.91950389392758, -50.605006320982284], [61.84967753528554, -45.00856997507087], [61.55415255479191, -39.47822877687189], [61.039839980858986, -34.08989446517327], [60.31811565034651, -28.906994544292644], [59.40366213058203, -23.976707337913354], [58.313174390352614, -19.329025592134244], [57.06415298248184, -14.9781372768323], [55.67392771443048, -10.925216574784713], [54.158965119606385, -7.161726072459203], [52.53444536609706, -3.6725751565243883], [50.81405791302701, -0.4387765182941479], [49.0099549, 2.5605182]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_612daf347437407c86db5cfd6b4599a3);
+        
+    
+            poly_line_7dc980c9560c441fa40c584f809d18d5.bindTooltip(
+                `<div>
+                     Flight from Los Angeles, US to Paris, FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87a1d6f89990480e895f28b4020f0805 = L.marker(
+                [49.0099549, 2.5605182],
+                {}
+            ).addTo(feature_group_612daf347437407c86db5cfd6b4599a3);
+        
+    
+            var beautify_icon_1523efbb9d964c0daaff10690dfb61bb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "arrow-down", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_87a1d6f89990480e895f28b4020f0805.setIcon(beautify_icon_1523efbb9d964c0daaff10690dfb61bb);
+        
+    
+            marker_87a1d6f89990480e895f28b4020f0805.bindTooltip(
+                `<div>
+                     Layover in Paris, FR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a85bf66d38b445f7bd0a6445e0abdfdd = L.marker(
+                [31.6025172, -8.0256428],
+                {}
+            ).addTo(feature_group_612daf347437407c86db5cfd6b4599a3);
+        
+    
+            var beautify_icon_f21953238d204c1caebc96bf706b67eb = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "plane", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_a85bf66d38b445f7bd0a6445e0abdfdd.setIcon(beautify_icon_f21953238d204c1caebc96bf706b67eb);
+        
+    
+            marker_a85bf66d38b445f7bd0a6445e0abdfdd.bindTooltip(
+                `<div>
+                     Departing to Valencia, ES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_bdd7ad9ab88b4bde8ddd0ce23a110288 = L.polyline.antPath(
+              [[34.0672543, -4.9773988], [32.819263, -4.9596214], [32.6829913, -4.7407299], [32.2624454, -4.4474334], [31.4422163, -4.2306565], [31.1858088, -4.0158423], [31.2228931, -4.1231692], [31.2911545, -4.2514746], [31.2615239, -4.4646829], [31.2489199, -4.6068821], [31.2191788, -4.8090505], [31.1888047, -4.9463529], [31.1224661, -5.144773], [31.2066669, -5.2465838], [31.3292942, -5.2838641], [31.4421169, -5.3416071], [31.4909968, -5.4412589], [31.5315948, -5.5199663], [31.5858114, -5.5906061], [31.5192524, -5.5344882], [31.4395649, -5.641071], [31.3707733, -5.7856419], [31.3742793, -5.9893633], [30.9209228, -6.9216408], [30.9472456, -7.0205307], [31.0407492, -7.1278354], [31.1481691, -7.13589], [31.2215878, -7.1430799], [31.2888844, -7.2420932], [31.2623199, -7.3473308], [31.3283413, -7.3822687], [31.4136008, -7.3966705], [31.4195752, -7.5216507], [31.5129345, -7.5366184], [31.5458766, -7.6346676], [31.5711813, -7.7556879], [31.5781681, -7.8612485], [31.62101, -7.9662227], [31.6025172, -8.0256428]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(feature_group_612daf347437407c86db5cfd6b4599a3);
+        
+    
+            ant_path_bdd7ad9ab88b4bde8ddd0ce23a110288.bindTooltip(
+                `<div>
+                     Roadtrip from Fes, MA --> Marrakech, MA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_c9ccd415c270413099ac601c7ffa94e4 = L.featureGroup(
+                {}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var poly_line_4cdc5aa71d05427992d0692a6cf8b159 = L.polyline(
+                [[39.4904817, -0.4738408], [39.67809140968406, -0.23347354230636574], [39.8651948623852, 0.008196131407814833], [40.05178603862327, 0.25118046320681603], [40.23785884894704, 0.49549175082831615], [40.4234071332023, 0.7411423459948632], [40.60842465980249, 0.9881446526309923], [40.792905125002335, 1.2365111249831982], [40.97684215217503, 1.4862542656395719], [41.16022929109369, 1.7373866234462128], [41.343060017217546, 1.9899207913172008], [41.52532773098352, 2.2438694039350446], [41.70702575710403, 2.4992451353382963], [41.888147343871445, 2.7560606963932535], [42.06868566247023, 3.0143288321462], [42.24863380629716, 3.274062319053093], [42.427984790290715, 3.5352739620830724], [42.60673155027037, 3.7979765916925774], [42.78486694228644, 4.062183060666367], [42.96238374198173, 4.327906240822206], [43.13927464396547, 4.595159019575442], [43.31553226120085, 4.863954296360062], [43.4911491244069, 5.134304978902643], [43.66611768147577, 5.406223979345448], [43.8404302969066, 5.6797242102153005], [44.01407925125685, 5.9548185802343445], [44.18705674061236, 6.23151998996925], [44.359354876077305, 6.509841327315228], [44.53096568328498, 6.78979546281109], [44.701881101931214, 7.071395244781898], [44.872092985330966, 7.354653494305596], [45.0415931, 7.639583]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c9ccd415c270413099ac601c7ffa94e4);
+        
+    
+            poly_line_4cdc5aa71d05427992d0692a6cf8b159.bindTooltip(
+                `<div>
+                     Flight from Valencia, ES to Turin, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_201a7e40cacf48348d216e7c347f0be3 = L.marker(
+                [45.0415931, 7.639583],
+                {}
+            ).addTo(feature_group_c9ccd415c270413099ac601c7ffa94e4);
+        
+    
+            var beautify_icon_9bd58345a8274308b5a8880608758532 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "arrow-down", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_201a7e40cacf48348d216e7c347f0be3.setIcon(beautify_icon_9bd58345a8274308b5a8880608758532);
+        
+    
+            marker_201a7e40cacf48348d216e7c347f0be3.bindTooltip(
+                `<div>
+                     Arriving from Valencia, ES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_389a192224234032847b6eebad0d4d48 = L.polyline(
+                [[31.6025172, -8.0256428], [31.864002283435596, -7.80368104655783], [32.12508702703403, -7.580463508575791], [32.385765230463974, -7.355972113139425], [32.64603060153651, -7.130188575869457], [32.90587675441649, -6.903094398459569], [33.16529720780313, -6.674670866235679], [33.42428538307955, -6.44489904573979], [33.682834602430724, -6.2137597823417074], [33.940938086929634, -5.981233697882222], [34.19858895459144, -5.747301188351274], [34.455780218395105, -5.511942421605173], [34.712504784272305, -5.275137335126885], [34.968755449063586, -5.036865633833717], [35.22452489844106, -4.797106787936942], [35.47980570479796, -4.555840030858263], [35.73459032510432, -4.313044357208058], [35.9888710987291, -4.068698520830743], [36.24264024522828, -3.822781032922893], [36.49588986209896, -3.5752701602299366], [36.748611922499315, -3.326143923327586], [37.00079827293444, -3.07538009499452], [37.25244063090808, -2.8229561986829914], [37.503530582540115, -2.5688495070946855], [37.75405958015014, -2.3130370408689807], [38.00401893980703, -2.0554955673917767], [38.25339983884485, -1.796201599732715], [38.50219331334519, -1.5351313957196409], [38.750390255586225, -1.2722609571591033], [38.997981411459115, -1.0075660292122812], [39.244957377851634, -0.7410220999361314], [39.4913086, -0.4726044]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_c9ccd415c270413099ac601c7ffa94e4);
+        
+    
+            poly_line_389a192224234032847b6eebad0d4d48.bindTooltip(
+                `<div>
+                     Flight from Marrakech, MA to Valencia, ES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa0f67cb329d4a648158032206ac0c1e = L.marker(
+                [39.4913086, -0.4726044],
+                {}
+            ).addTo(feature_group_c9ccd415c270413099ac601c7ffa94e4);
+        
+    
+            var beautify_icon_8348bec432ea4ef7b41b065158c4f049 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "arrow-down", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_aa0f67cb329d4a648158032206ac0c1e.setIcon(beautify_icon_8348bec432ea4ef7b41b065158c4f049);
+        
+    
+            marker_aa0f67cb329d4a648158032206ac0c1e.bindTooltip(
+                `<div>
+                     Layover in Valencia, ES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b57c6cd76814100b16ecbccaee268cc = L.marker(
+                [45.4725778, 9.3063102],
+                {}
+            ).addTo(feature_group_c9ccd415c270413099ac601c7ffa94e4);
+        
+    
+            var beautify_icon_5f0a0471f67a4c2da596f1a5886e19f0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "plane", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_2b57c6cd76814100b16ecbccaee268cc.setIcon(beautify_icon_5f0a0471f67a4c2da596f1a5886e19f0);
+        
+    
+            marker_2b57c6cd76814100b16ecbccaee268cc.bindTooltip(
+                `<div>
+                     Departing to Chicago, US
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_e287c8ca8019479198bed26fc4d0ba87 = L.polyline.antPath(
+              [[45.0415931, 7.639583], [45.025857, 6.8555661], [45.0844956, 7.6471189], [45.4469411, 7.8504576], [45.5770419, 7.8018765], [45.7049611, 7.6685326], [45.7701443, 7.5984595], [45.8621691, 7.6086706], [45.9354872, 7.6352424], [45.0844061, 7.646994], [45.6512242, 9.6318624], [45.7457299, 9.2186759], [45.4725778, 9.3063102], [45.4725778, 9.3063102]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(feature_group_c9ccd415c270413099ac601c7ffa94e4);
+        
+    
+            ant_path_e287c8ca8019479198bed26fc4d0ba87.bindTooltip(
+                `<div>
+                     Roadtrip from Turin, IT --> Milan, IT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_72fb72d4d4c34ce9a6bd451b6573485b = L.featureGroup(
+                {}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+        
+    
+            var poly_line_4a044d4fb8ff48e286766d0f35c7790d = L.polyline(
+                [[41.9738678, -87.9006521], [41.84929773332447, -88.97962940005556], [41.714629194291845, -90.05425952773183], [41.569950985202325, -91.12424692837412], [41.4153574447233, -92.18930783779116], [41.25094817698985, -93.24917078096912], [41.07682777187989, -94.30357700341546], [40.8931055182021, -95.35228083497275], [40.6998951115138, -96.39504998654724], [40.497314358249575, -97.43166578076334], [40.28548487778952, -98.4619233180794], [40.06453180403157, -99.4856315803753], [39.834583487955896, -100.5026134744455], [39.59577120258327, -101.51270581820039], [39.3482288516353, -102.51575927269128], [39.09209268310368, -103.51163822333183], [38.82750100883102, -104.50022061388984], [38.55459393109738, -105.48139773697231], [38.27351307709752, -106.45507398482287], [37.98440134208455, -107.4211665643005], [37.687402641847264, -108.37960517991282], [37.38266167508306, -109.33033168874151], [37.07032369612628, -110.27329973102573], [36.75053429839356, -111.20847434006531], [36.42343920881511, -112.13583153497493], [36.0891840934337, -113.05535789966599], [35.74791437427164, -113.96705015126037], [35.39977505749084, -114.87091470095262], [35.04491057280313, -115.76696721013906], [34.68346462402527, -116.65523214442614], [34.31558005061807, -117.53574232792165], [33.9413987, -118.4085385]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_72fb72d4d4c34ce9a6bd451b6573485b);
+        
+    
+            poly_line_4a044d4fb8ff48e286766d0f35c7790d.bindTooltip(
+                `<div>
+                     Flight from Chicago, US to Los Angeles, US
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c14d0097eded42d2a509f031ff0a7513 = L.marker(
+                [33.9413987, -118.4085385],
+                {}
+            ).addTo(feature_group_72fb72d4d4c34ce9a6bd451b6573485b);
+        
+    
+            var beautify_icon_cc1a55401969437fb24d52da4aa7b081 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "arrow-down", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_c14d0097eded42d2a509f031ff0a7513.setIcon(beautify_icon_cc1a55401969437fb24d52da4aa7b081);
+        
+    
+            marker_c14d0097eded42d2a509f031ff0a7513.bindTooltip(
+                `<div>
+                     Arriving from Chicago, US
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_43636615099446ad8b1e285d149b3b6a = L.polyline(
+                [[45.4725778, 9.3063102], [46.69534718636696, 6.806533313065183], [47.86077539542847, 4.19409264784126], [48.963860993378916, 1.46516889955491], [49.99934194550763, -1.382954316687865], [50.9617452451465, -4.3515587551115935], [51.845458111215905, -7.440137288992089], [52.64482297033056, -10.646038587506949], [53.35425690341761, -13.964141085651486], [53.968393948563396, -17.38659454118359], [54.482245694385284, -20.90267218358384], [54.89137226479071, -24.49877539641755], [55.19205261187056, -28.158623891245384], [55.381440700644546, -31.863646676208845], [55.45769341286736, -35.59356432675294], [55.42005733913726, -39.32712524143524], [55.2689051610717, -43.04293369851144], [55.00571758867787, -46.72029177489444], [54.63301286608939, -50.339974753512564], [54.15423151293843, -53.88487119679525], [53.57358816772251, -57.340441274597296], [52.895904501193506, -60.6949744785193], [52.12643708222602, -63.939654258270664], [51.27071220427001, -67.068457496862], [50.33437670121911, -70.07792868210826], [49.32307042896192, -72.96687219064093], [48.24232295924276, -75.73600306452778], [47.097474498404736, -78.38758954586675], [45.89361925366943, -80.92511185120789], [44.635568401445795, -83.35295303843522], [43.32782934285626, -85.67613044271097], [41.9745979, -87.9000705]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_72fb72d4d4c34ce9a6bd451b6573485b);
+        
+    
+            poly_line_43636615099446ad8b1e285d149b3b6a.bindTooltip(
+                `<div>
+                     Flight from Milan, IT to Chicago, US
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ff048eff7674690859753a31f374f02 = L.marker(
+                [41.9745979, -87.9000705],
+                {}
+            ).addTo(feature_group_72fb72d4d4c34ce9a6bd451b6573485b);
+        
+    
+            var beautify_icon_cbb9931c862b4b84b403bc1242953340 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 2, "icon": "arrow-down", "iconShape": "marker", "innerIconStyle": "font-size:14px; padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "black"}
+            )
+            marker_4ff048eff7674690859753a31f374f02.setIcon(beautify_icon_cbb9931c862b4b84b403bc1242953340);
+        
+    
+            marker_4ff048eff7674690859753a31f374f02.bindTooltip(
+                `<div>
+                     Layover in Chicago, US
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_6f271b4569124275ac4b878626cbc125 = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_c16cbcded6554f2594a00a248f3708f9,
+                },
+                overlays :  {
+                    "openstreetmap" : tile_layer_5f0c1f1e5fb443868d753f137c16ab15,
+                    "Photos" : feature_group_8ddcecc9f476437cae192b11cfb8a4c2,
+                    "Heatmap" : feature_group_9c09d06492d1443c800629994ce15cdf,
+                    "Morocco" : feature_group_612daf347437407c86db5cfd6b4599a3,
+                    "Italian Alps" : feature_group_c9ccd415c270413099ac601c7ffa94e4,
+                    "Return Flights" : feature_group_72fb72d4d4c34ce9a6bd451b6573485b,
+                },
+            };
+            L.control.layers(
+                layer_control_6f271b4569124275ac4b878626cbc125.base_layers,
+                layer_control_6f271b4569124275ac4b878626cbc125.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_334a3df1f64647d89bbd76196dda1498);
+            tile_layer_5f0c1f1e5fb443868d753f137c16ab15.remove();
+            feature_group_612daf347437407c86db5cfd6b4599a3.remove();
+            feature_group_c9ccd415c270413099ac601c7ffa94e4.remove();
+            feature_group_72fb72d4d4c34ce9a6bd451b6573485b.remove();
+        
+</script>

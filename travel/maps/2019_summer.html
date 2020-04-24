@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_375fec848d6a432caa32d23561da6fbf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <link rel="stylesheet" href="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.css"/>
+    <script src="https://rawcdn.githack.com/marslan390/BeautifyMarker/master/leaflet-beautify-marker-icon.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_375fec848d6a432caa32d23561da6fbf" ></div>
+        
+</body>
+<script>    
+    
+            var map_375fec848d6a432caa32d23561da6fbf = L.map(
+                "map_375fec848d6a432caa32d23561da6fbf",
+                {
+                    center: [34.513106392369735, -119.1530956900653],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a5a359b74b2f4ce1a35078093e6c1d54 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 16, "maxZoom": 16, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_375fec848d6a432caa32d23561da6fbf);
+        
+    
+            var tile_layer_83ea38c13a1b4960961d92262f40d59a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_375fec848d6a432caa32d23561da6fbf);
+        
+    
+            var feature_group_57a2d125883e411195c7bce750a08529 = L.featureGroup(
+                {}
+            ).addTo(map_375fec848d6a432caa32d23561da6fbf);
+        
+    
+            var marker_cluster_62f35e42f01642dea78620bae6290946 = L.markerClusterGroup(
+                {"disableClusteringAtZoom": 10, "maxClusterRadius": 50, "showCoverageOnHover": false, "spiderfyOnMaxZoom": true, "zoomToBoundsOnClick": true}
+            );
+            feature_group_57a2d125883e411195c7bce750a08529.addLayer(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var marker_a89cb065563c45e2b6344c235a27633f = L.marker(
+                [32.683436111666666, -117.18724722166667],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_9477d8779eb848d6b40af9d37054c6ef = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_a89cb065563c45e2b6344c235a27633f.setIcon(beautify_icon_9477d8779eb848d6b40af9d37054c6ef);
+        
+    
+        var popup_ce21a3f53cde40e68919f1bc66ce5107 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_1dbeb2ffb8c4447f97b11f7c89e90f44 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2pxdXJLNnAuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_ce21a3f53cde40e68919f1bc66ce5107.setContent(i_frame_1dbeb2ffb8c4447f97b11f7c89e90f44);
+        
+
+        marker_a89cb065563c45e2b6344c235a27633f.bindPopup(popup_ce21a3f53cde40e68919f1bc66ce5107)
+        ;
+
+        
+    
+    
+            marker_a89cb065563c45e2b6344c235a27633f.bindTooltip(
+                `<div>
+                     Coronado Beach - San Diego, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ed3f3969e804911983b3548a1aa5f36 = L.marker(
+                [32.684577778333335, -117.17955],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_ef94af1d97ff490bb2ffe57cdf660260 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_4ed3f3969e804911983b3548a1aa5f36.setIcon(beautify_icon_ef94af1d97ff490bb2ffe57cdf660260);
+        
+    
+        var popup_e04b20dee7b44f8481941a0d3be8560b = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_11a90e32fef04361a41e97a74f3d3af2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2NQTU5IUjguanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_e04b20dee7b44f8481941a0d3be8560b.setContent(i_frame_11a90e32fef04361a41e97a74f3d3af2);
+        
+
+        marker_4ed3f3969e804911983b3548a1aa5f36.bindPopup(popup_e04b20dee7b44f8481941a0d3be8560b)
+        ;
+
+        
+    
+    
+            marker_4ed3f3969e804911983b3548a1aa5f36.bindTooltip(
+                `<div>
+                     Coronado Beach - San Diego, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77fe36649c614600af50860bd3fe4ea6 = L.marker(
+                [32.717802778333336, -117.15853888833334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_7d28ccef8187434ca10cc185ad39bf35 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_77fe36649c614600af50860bd3fe4ea6.setIcon(beautify_icon_7d28ccef8187434ca10cc185ad39bf35);
+        
+    
+        var popup_7c709c207b424df599abca126de25309 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_528a6d2cff0b40b6aa758dfea471da05 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3JORHVyT2suanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_7c709c207b424df599abca126de25309.setContent(i_frame_528a6d2cff0b40b6aa758dfea471da05);
+        
+
+        marker_77fe36649c614600af50860bd3fe4ea6.bindPopup(popup_7c709c207b424df599abca126de25309)
+        ;
+
+        
+    
+    
+            marker_77fe36649c614600af50860bd3fe4ea6.bindTooltip(
+                `<div>
+                     The Taco Stand - San Diego, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6022c8f485514ae5b578e22de14582ac = L.marker(
+                [32.84155, -117.28173888833334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_c81a8147430a41bf85d980487faee1ae = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_6022c8f485514ae5b578e22de14582ac.setIcon(beautify_icon_c81a8147430a41bf85d980487faee1ae);
+        
+    
+        var popup_eaede0bcd89d46a3823da4eec781b016 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_5ef1a816491c4b75b0e1604e890cc2be = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1Nic25qWW0uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_eaede0bcd89d46a3823da4eec781b016.setContent(i_frame_5ef1a816491c4b75b0e1604e890cc2be);
+        
+
+        marker_6022c8f485514ae5b578e22de14582ac.bindPopup(popup_eaede0bcd89d46a3823da4eec781b016)
+        ;
+
+        
+    
+    
+            marker_6022c8f485514ae5b578e22de14582ac.bindTooltip(
+                `<div>
+                     La Jolla Tide Pools - La Jolla, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b13a51f1e0794c419edbda75e14bb3b0 = L.marker(
+                [32.84164722166667, -117.28175277833333],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_65e5450ea5284cc6919039e28f093c1a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_b13a51f1e0794c419edbda75e14bb3b0.setIcon(beautify_icon_65e5450ea5284cc6919039e28f093c1a);
+        
+    
+        var popup_a258b0d6136845deb46b5fc8a0a2f8f4 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_cefbe6c60c9046d7907acdf86479ffef = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzdxSWptOWkuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_a258b0d6136845deb46b5fc8a0a2f8f4.setContent(i_frame_cefbe6c60c9046d7907acdf86479ffef);
+        
+
+        marker_b13a51f1e0794c419edbda75e14bb3b0.bindPopup(popup_a258b0d6136845deb46b5fc8a0a2f8f4)
+        ;
+
+        
+    
+    
+            marker_b13a51f1e0794c419edbda75e14bb3b0.bindTooltip(
+                `<div>
+                     La Jolla Tide Pools - La Jolla, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18f85f73c75448d6a806882cf2530922 = L.marker(
+                [33.50224166666667, -117.662255555],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_9206962ed96b46f1b2b9af7498e75a21 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_18f85f73c75448d6a806882cf2530922.setIcon(beautify_icon_9206962ed96b46f1b2b9af7498e75a21);
+        
+    
+        var popup_e3e561241ef34b52886650e035e7dfc8 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_0d4c7069a8a64840a50868dda29f077a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzhjanJvdFkuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_e3e561241ef34b52886650e035e7dfc8.setContent(i_frame_0d4c7069a8a64840a50868dda29f077a);
+        
+
+        marker_18f85f73c75448d6a806882cf2530922.bindPopup(popup_e3e561241ef34b52886650e035e7dfc8)
+        ;
+
+        
+    
+    
+            marker_18f85f73c75448d6a806882cf2530922.bindTooltip(
+                `<div>
+                     Mission San Juan Capistrano - San Juan Capistrano, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c5f3db5f8e54586a5ae76cc0535cd48 = L.marker(
+                [33.502480555, -117.66226111166667],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_85361a284a114130a33d42fb2d11c18d = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_4c5f3db5f8e54586a5ae76cc0535cd48.setIcon(beautify_icon_85361a284a114130a33d42fb2d11c18d);
+        
+    
+        var popup_b1997e0ea3b442ca89dfb320621ff0f1 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_c699870b13f844d4af32d4874f87fe04 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0dyalFhbjEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_b1997e0ea3b442ca89dfb320621ff0f1.setContent(i_frame_c699870b13f844d4af32d4874f87fe04);
+        
+
+        marker_4c5f3db5f8e54586a5ae76cc0535cd48.bindPopup(popup_b1997e0ea3b442ca89dfb320621ff0f1)
+        ;
+
+        
+    
+    
+            marker_4c5f3db5f8e54586a5ae76cc0535cd48.bindTooltip(
+                `<div>
+                     Mission San Juan Capistrano - San Juan Capistrano, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15ea101a5c0d4800bab1265ac6d733d1 = L.marker(
+                [33.50277777833333, -117.66268888833334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_175996222ee64d329b67dfe00b35f5ff = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_15ea101a5c0d4800bab1265ac6d733d1.setIcon(beautify_icon_175996222ee64d329b67dfe00b35f5ff);
+        
+    
+        var popup_85a2f2d842ba4b88ae1c465e61897898 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_743f9d9f90e647aa9a18e0cd65e5a8b4 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2puT0VEdTcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_85a2f2d842ba4b88ae1c465e61897898.setContent(i_frame_743f9d9f90e647aa9a18e0cd65e5a8b4);
+        
+
+        marker_15ea101a5c0d4800bab1265ac6d733d1.bindPopup(popup_85a2f2d842ba4b88ae1c465e61897898)
+        ;
+
+        
+    
+    
+            marker_15ea101a5c0d4800bab1265ac6d733d1.bindTooltip(
+                `<div>
+                     Mission San Juan Capistrano - San Juan Capistrano, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92be24030308421899bba1a75028b663 = L.marker(
+                [33.538788888333336, -117.78141666666667],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_78164a146ec24c11ae38278fab189a5e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_92be24030308421899bba1a75028b663.setIcon(beautify_icon_78164a146ec24c11ae38278fab189a5e);
+        
+    
+        var popup_fb157cc8f96c4ec1b46d3a278167813a = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_8d2fc991f30445f185de16383902c32c = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2ZJaUhTRjEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_fb157cc8f96c4ec1b46d3a278167813a.setContent(i_frame_8d2fc991f30445f185de16383902c32c);
+        
+
+        marker_92be24030308421899bba1a75028b663.bindPopup(popup_fb157cc8f96c4ec1b46d3a278167813a)
+        ;
+
+        
+    
+    
+            marker_92be24030308421899bba1a75028b663.bindTooltip(
+                `<div>
+                     Laguna Beach, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d725ba7943694d06bbc2b77308b829e0 = L.marker(
+                [34.504330555, -119.78774166666666],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_d3d015e1895f4961b628fbbe61c984da = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_d725ba7943694d06bbc2b77308b829e0.setIcon(beautify_icon_d3d015e1895f4961b628fbbe61c984da);
+        
+    
+        var popup_f9fea7b9969e4c2cb880c299594a3aab = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_7646646346d44b5b8cdb0a41450dccba = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL254M1BrU0UuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f9fea7b9969e4c2cb880c299594a3aab.setContent(i_frame_7646646346d44b5b8cdb0a41450dccba);
+        
+
+        marker_d725ba7943694d06bbc2b77308b829e0.bindPopup(popup_f9fea7b9969e4c2cb880c299594a3aab)
+        ;
+
+        
+    
+    
+            marker_d725ba7943694d06bbc2b77308b829e0.bindTooltip(
+                `<div>
+                     Chumash Painted Cave - Santa Barbara, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c641eb84f48477db7a1d65a4383ccfc = L.marker(
+                [34.523133333333334, -119.793280555],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_5147088ca67446c58962b1b275fb2163 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_9c641eb84f48477db7a1d65a4383ccfc.setIcon(beautify_icon_5147088ca67446c58962b1b275fb2163);
+        
+    
+        var popup_f6a6fd1f1b98446a957d8bb7acec6bb0 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_07fe03580215444895a136c7149e3225 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0VqUmVuU1AuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_f6a6fd1f1b98446a957d8bb7acec6bb0.setContent(i_frame_07fe03580215444895a136c7149e3225);
+        
+
+        marker_9c641eb84f48477db7a1d65a4383ccfc.bindPopup(popup_f6a6fd1f1b98446a957d8bb7acec6bb0)
+        ;
+
+        
+    
+    
+            marker_9c641eb84f48477db7a1d65a4383ccfc.bindTooltip(
+                `<div>
+                     Knapp's Castle - Santa Barbara, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb5a4444dc2745b08a8f25a4864cbe3b = L.marker(
+                [34.523227778333336, -119.79328888833334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_5c0a56e1637c4652ad9299e80c9d9a51 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_bb5a4444dc2745b08a8f25a4864cbe3b.setIcon(beautify_icon_5c0a56e1637c4652ad9299e80c9d9a51);
+        
+    
+        var popup_02945fb4502d4012b5592e2f3d5e9cf9 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_d3da1222dd8c4f7b9030b963f1f35070 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:78%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2lvaFhNZXcuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_02945fb4502d4012b5592e2f3d5e9cf9.setContent(i_frame_d3da1222dd8c4f7b9030b963f1f35070);
+        
+
+        marker_bb5a4444dc2745b08a8f25a4864cbe3b.bindPopup(popup_02945fb4502d4012b5592e2f3d5e9cf9)
+        ;
+
+        
+    
+    
+            marker_bb5a4444dc2745b08a8f25a4864cbe3b.bindTooltip(
+                `<div>
+                     Knapp's Castle - Santa Barbara, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa7dbe0214e94ddaa278c8ef8c559abb = L.marker(
+                [34.62786388833333, -120.11436388833333],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_a997bb4724d34d1dad9eee2d50c681d1 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_aa7dbe0214e94ddaa278c8ef8c559abb.setIcon(beautify_icon_a997bb4724d34d1dad9eee2d50c681d1);
+        
+    
+        var popup_c73137c1cbf84904b16b314b52707c1f = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_2e4eb55f67ed463da3823bb80fe829ac = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzNBdERjTUYuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_c73137c1cbf84904b16b314b52707c1f.setContent(i_frame_2e4eb55f67ed463da3823bb80fe829ac);
+        
+
+        marker_aa7dbe0214e94ddaa278c8ef8c559abb.bindPopup(popup_c73137c1cbf84904b16b314b52707c1f)
+        ;
+
+        
+    
+    
+            marker_aa7dbe0214e94ddaa278c8ef8c559abb.bindTooltip(
+                `<div>
+                     Rideau Vineyard - Solvang, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a40a0e1c911f406e888640d4afa89dde = L.marker(
+                [35.138405555, -120.6428],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_bfd9602ad2a44315bdd70761f46f2e63 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_a40a0e1c911f406e888640d4afa89dde.setIcon(beautify_icon_bfd9602ad2a44315bdd70761f46f2e63);
+        
+    
+        var popup_e632f830881740e48b1d8ab32b3b3ad3 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_5291872768994f2a91e8ac880ae0e183 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL1RKdEdVVmUuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_e632f830881740e48b1d8ab32b3b3ad3.setContent(i_frame_5291872768994f2a91e8ac880ae0e183);
+        
+
+        marker_a40a0e1c911f406e888640d4afa89dde.bindPopup(popup_e632f830881740e48b1d8ab32b3b3ad3)
+        ;
+
+        
+    
+    
+            marker_a40a0e1c911f406e888640d4afa89dde.bindTooltip(
+                `<div>
+                     Pismo Beach, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a91ced4a2a540d7b5e9dd34b256bbf6 = L.marker(
+                [35.138375, -120.64276111166667],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_54d189be8ba74f4f860cac2daf9517d8 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_0a91ced4a2a540d7b5e9dd34b256bbf6.setIcon(beautify_icon_54d189be8ba74f4f860cac2daf9517d8);
+        
+    
+        var popup_d88caffac80f4b058ca0470ba3439864 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_1831cbc8277c4d8ea7a25989c81e8524 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzNiQ25DQUUuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_d88caffac80f4b058ca0470ba3439864.setContent(i_frame_1831cbc8277c4d8ea7a25989c81e8524);
+        
+
+        marker_0a91ced4a2a540d7b5e9dd34b256bbf6.bindPopup(popup_d88caffac80f4b058ca0470ba3439864)
+        ;
+
+        
+    
+    
+            marker_0a91ced4a2a540d7b5e9dd34b256bbf6.bindTooltip(
+                `<div>
+                     Pismo Beach, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ad3ed2febc54373a818edbfebc989c9 = L.marker(
+                [35.267338888333335, -120.674569445],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_3ad9cf28450f45a587dd0778e0118c3f = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_3ad3ed2febc54373a818edbfebc989c9.setIcon(beautify_icon_3ad9cf28450f45a587dd0778e0118c3f);
+        
+    
+        var popup_8f13d0742411416baa24e102c66fe47c = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_e19ba2cdf9bc42bda8a712550bf96f3f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2s1OHBScXguanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_8f13d0742411416baa24e102c66fe47c.setContent(i_frame_e19ba2cdf9bc42bda8a712550bf96f3f);
+        
+
+        marker_3ad3ed2febc54373a818edbfebc989c9.bindPopup(popup_8f13d0742411416baa24e102c66fe47c)
+        ;
+
+        
+    
+    
+            marker_3ad3ed2febc54373a818edbfebc989c9.bindTooltip(
+                `<div>
+                     Madonna Inn - San Luis Obispo, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d8980e673b14f05bd40f4e2de593508 = L.marker(
+                [35.279183333333336, -120.66390277833334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_ff39e983a0fb45d9aead6d913f7f7543 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_2d8980e673b14f05bd40f4e2de593508.setIcon(beautify_icon_ff39e983a0fb45d9aead6d913f7f7543);
+        
+    
+        var popup_5c9e6197ba8f430192d03522b7f3f123 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_c1ec7f9b24f64be79fbe9d96d67e2b8c = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2VwR2p0ajIuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_5c9e6197ba8f430192d03522b7f3f123.setContent(i_frame_c1ec7f9b24f64be79fbe9d96d67e2b8c);
+        
+
+        marker_2d8980e673b14f05bd40f4e2de593508.bindPopup(popup_5c9e6197ba8f430192d03522b7f3f123)
+        ;
+
+        
+    
+    
+            marker_2d8980e673b14f05bd40f4e2de593508.bindTooltip(
+                `<div>
+                     Bubblegum Alley - San Luis Obispo, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd24d8a5460b4d599b0a333ecb1f7a23 = L.marker(
+                [35.64150277833333, -120.78402777833334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_8b0154721c1547cdb80f589c956a2bb0 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_cd24d8a5460b4d599b0a333ecb1f7a23.setIcon(beautify_icon_8b0154721c1547cdb80f589c956a2bb0);
+        
+    
+        var popup_5b58638972fc455f8e946c3b7bf78a4b = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_2a1963f1b34249afad4e7fc17703f7d0 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3NqWUJCbVEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_5b58638972fc455f8e946c3b7bf78a4b.setContent(i_frame_2a1963f1b34249afad4e7fc17703f7d0);
+        
+
+        marker_cd24d8a5460b4d599b0a333ecb1f7a23.bindPopup(popup_5b58638972fc455f8e946c3b7bf78a4b)
+        ;
+
+        
+    
+    
+            marker_cd24d8a5460b4d599b0a333ecb1f7a23.bindTooltip(
+                `<div>
+                     Daou Vineyards - Paso Robles, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29f5344935d345b084b2e6cda64c905a = L.marker(
+                [35.508555555, -121.02285833333333],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_b94d9a436950485280f8304e5f7e6fc3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_29f5344935d345b084b2e6cda64c905a.setIcon(beautify_icon_b94d9a436950485280f8304e5f7e6fc3);
+        
+    
+        var popup_b51a3bdb5b234800abe22bd02e9f7ca9 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_bc73f2129b2d49bd8d6b5d3f0fadb3cf = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0VObDBqd08uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_b51a3bdb5b234800abe22bd02e9f7ca9.setContent(i_frame_bc73f2129b2d49bd8d6b5d3f0fadb3cf);
+        
+
+        marker_29f5344935d345b084b2e6cda64c905a.bindPopup(popup_b51a3bdb5b234800abe22bd02e9f7ca9)
+        ;
+
+        
+    
+    
+            marker_29f5344935d345b084b2e6cda64c905a.bindTooltip(
+                `<div>
+                     Harmony, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79121c8bdc0c4757a3e96e1dd48f9d8c = L.marker(
+                [35.367630555, -120.85424722166667],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_d65a3b7e696245fc97d0812ad292c71e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_79121c8bdc0c4757a3e96e1dd48f9d8c.setIcon(beautify_icon_d65a3b7e696245fc97d0812ad292c71e);
+        
+    
+        var popup_6c6756713a724b70a42a0e3224a830ef = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_9aef90f13f4848779e7511c961129e08 = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL2VjQ1hKdnEuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_6c6756713a724b70a42a0e3224a830ef.setContent(i_frame_9aef90f13f4848779e7511c961129e08);
+        
+
+        marker_79121c8bdc0c4757a3e96e1dd48f9d8c.bindPopup(popup_6c6756713a724b70a42a0e3224a830ef)
+        ;
+
+        
+    
+    
+            marker_79121c8bdc0c4757a3e96e1dd48f9d8c.bindTooltip(
+                `<div>
+                     Morro Bay, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3bdcd087c394f04a9b58c66e0075ffd = L.marker(
+                [35.178344445, -120.732955555],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_cdbdf2d79c8941de99afb10fd0fea026 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_b3bdcd087c394f04a9b58c66e0075ffd.setIcon(beautify_icon_cdbdf2d79c8941de99afb10fd0fea026);
+        
+    
+        var popup_37e9007354464faea13d815d9d083262 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_049fb4c87e0441a8a7680b80e39211cf = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL29oTnJuMU0uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_37e9007354464faea13d815d9d083262.setContent(i_frame_049fb4c87e0441a8a7680b80e39211cf);
+        
+
+        marker_b3bdcd087c394f04a9b58c66e0075ffd.bindPopup(popup_37e9007354464faea13d815d9d083262)
+        ;
+
+        
+    
+    
+            marker_b3bdcd087c394f04a9b58c66e0075ffd.bindTooltip(
+                `<div>
+                     Avila Beach, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14fdc7ebf9024c6481a4e5a5d3b9867e = L.marker(
+                [35.17420833333333, -120.71687222166666],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_ad00f124bc754261a7c6beacd2d04898 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_14fdc7ebf9024c6481a4e5a5d3b9867e.setIcon(beautify_icon_ad00f124bc754261a7c6beacd2d04898);
+        
+    
+        var popup_8c55980575104ea3accb8bbbef487485 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_fb8489beed78485e8501b93791ae046b = $(`<div style="width:300px;"><div style="position:relative;width:100%;height:0;padding-bottom:75%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL20weEJuZ0guanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+            popup_8c55980575104ea3accb8bbbef487485.setContent(i_frame_fb8489beed78485e8501b93791ae046b);
+        
+
+        marker_14fdc7ebf9024c6481a4e5a5d3b9867e.bindPopup(popup_8c55980575104ea3accb8bbbef487485)
+        ;
+
+        
+    
+    
+            marker_14fdc7ebf9024c6481a4e5a5d3b9867e.bindTooltip(
+                `<div>
+                     Smuggler's Cave - San Luis Obispo, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_416822667bd74d2c929793c0e40c79bd = L.marker(
+                [35.6853, -121.168280555],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_cdd544f1584e4a9ea10e22e07102fcca = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_416822667bd74d2c929793c0e40c79bd.setIcon(beautify_icon_cdd544f1584e4a9ea10e22e07102fcca);
+        
+    
+        var popup_70b6f9f56ef143278a94a06743005069 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_6a806c72319d4b60a8c7565a8c0681ec = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3hjUlpHbW8uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_70b6f9f56ef143278a94a06743005069.setContent(i_frame_6a806c72319d4b60a8c7565a8c0681ec);
+        
+
+        marker_416822667bd74d2c929793c0e40c79bd.bindPopup(popup_70b6f9f56ef143278a94a06743005069)
+        ;
+
+        
+    
+    
+            marker_416822667bd74d2c929793c0e40c79bd.bindTooltip(
+                `<div>
+                     Hearst Castle - San Simeon, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_040f4c6dea9143f08c0d371e01a6d2a6 = L.marker(
+                [35.68615, -121.16722777833333],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_431591b656b44fecb6a0d2b53d3c8379 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_040f4c6dea9143f08c0d371e01a6d2a6.setIcon(beautify_icon_431591b656b44fecb6a0d2b53d3c8379);
+        
+    
+        var popup_01cb124d1bf1460eade2b947212c91ed = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_484b515e2c4048d19d9b3c8960f0300c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzVzREg2U00uanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_01cb124d1bf1460eade2b947212c91ed.setContent(i_frame_484b515e2c4048d19d9b3c8960f0300c);
+        
+
+        marker_040f4c6dea9143f08c0d371e01a6d2a6.bindPopup(popup_01cb124d1bf1460eade2b947212c91ed)
+        ;
+
+        
+    
+    
+            marker_040f4c6dea9143f08c0d371e01a6d2a6.bindTooltip(
+                `<div>
+                     Hearst Castle - San Simeon, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d48a021d8214b18b4aefb71fd3cffd3 = L.marker(
+                [35.65298333333333, -121.24236388833333],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_a5dd75c4c4e742418f7c77ad63a1e93a = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_3d48a021d8214b18b4aefb71fd3cffd3.setIcon(beautify_icon_a5dd75c4c4e742418f7c77ad63a1e93a);
+        
+    
+        var popup_731746bbda174807a337ed1fa7a3678b = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_c612abbdaf8e45079644e6b007d58f92 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL0NZTUo4alouanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_731746bbda174807a337ed1fa7a3678b.setContent(i_frame_c612abbdaf8e45079644e6b007d58f92);
+        
+
+        marker_3d48a021d8214b18b4aefb71fd3cffd3.bindPopup(popup_731746bbda174807a337ed1fa7a3678b)
+        ;
+
+        
+    
+    
+            marker_3d48a021d8214b18b4aefb71fd3cffd3.bindTooltip(
+                `<div>
+                     Vista Point - San Simeon, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9216ed4116fe4069aff2993e0cd18b21 = L.marker(
+                [36.06933333333333, -121.59853333333334],
+                {}
+            ).addTo(marker_cluster_62f35e42f01642dea78620bae6290946);
+        
+    
+            var beautify_icon_5555ab0c90bb44d6ab4d25ee7d792604 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "transparent", "borderColor": "#b3334f", "borderWidth": 0, "icon": "camera", "innerIconStyle": "font-size:20px;padding-top:-1px;", "isAlphaNumericIcon": false, "spin": false, "textColor": "#b3334f"}
+            )
+            marker_9216ed4116fe4069aff2993e0cd18b21.setIcon(beautify_icon_5555ab0c90bb44d6ab4d25ee7d792604);
+        
+    
+        var popup_22d17ccb12ce4de6a54bb56ab25b78e8 = L.popup({"autoPan": false, "className": "smb-map-popup", "maxWidth": "100%"});
+
+        
+            var i_frame_ce4aa1531a1d4546b4daeae25e22710b = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgICAgICA8ZGl2IGNsYXNzPSJzbWItbWFwLWltYWdlLWNvbnRhaW5lciI+CiAgICAgICAgICAgIDxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzNqSHZnODUuanBnIiBzdHlsZT0id2lkdGg6MTAwJTsgaGVpZ2h0OjEwMCU7Ij4KICAgICAgICA8L2Rpdj4gCiAgICAgICAg" width="225px" style="border:none !important;" height="300px"></iframe>`)[0];
+            popup_22d17ccb12ce4de6a54bb56ab25b78e8.setContent(i_frame_ce4aa1531a1d4546b4daeae25e22710b);
+        
+
+        marker_9216ed4116fe4069aff2993e0cd18b21.bindPopup(popup_22d17ccb12ce4de6a54bb56ab25b78e8)
+        ;
+
+        
+    
+    
+            marker_9216ed4116fe4069aff2993e0cd18b21.bindTooltip(
+                `<div>
+                     Bixby Creek Bridge - Big Sur, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_7b3ff9c23d384341a7414a35da18937f = L.featureGroup(
+                {}
+            ).addTo(map_375fec848d6a432caa32d23561da6fbf);
+        
+    
+            var heat_map_8681a9bcacda4c8887fa0c849a3bff61 = L.heatLayer(
+                [[33.788605266666664, -116.33555768333333], [33.82588025, -116.37284045], [33.82573698653846, -116.37276804423077], [33.82559372307693, -116.37269563846154], [33.774990246875, -116.31400988124997], [33.75880463343749, -116.29933903062499], [33.74261901999999, -116.28466818], [33.7426124525, -116.2846630725], [33.742605884999996, -116.28465796500001], [33.742599317499995, -116.2846528575], [33.74259275, -116.28464775], [33.742604716071426, -116.28465154464286], [33.74261668214286, -116.2846553392857], [33.74262864821429, -116.28465913392857], [33.74264061428572, -116.28466292857142], [33.7425599, -116.284665], [33.88368726578949, -116.64817850789471], [33.647708404819284, -117.19047093373496], [32.86673266, -117.13333272625002], [32.74471410465115, -117.15895950930236], [32.73565915102041, -117.15634490612246], [32.7316983, -117.15298590000002], [32.77951152307692, -117.15706997692307], [32.80329641111111, -117.1532467888889], [32.732754426666645, -117.14196385142854], [32.683787814285715, -117.18093157142854], [32.70078344250001, -117.16570246999997], [32.71735392653061, -117.16303835714285], [32.745865609375, -117.16403274687501], [32.75221994537037, -117.16287689907408], [32.758574281365746, -117.16172105127315], [32.764928617361115, -117.16056520347223], [32.77128295335648, -117.1594093556713], [32.77763728935186, -117.15825350787037], [32.78399162534723, -117.15709766006944], [32.790345961342595, -117.15594181226852], [32.79670029733797, -117.15478596446759], [32.80305463333334, -117.15363011666666], [32.803129, -117.15360894], [32.8031238, -117.15463233749998], [32.81619782790697, -117.17288454883723], [32.80884799166667, -117.17174595333331], [32.831065307843126, -117.22068521111112], [32.84357392631579, -117.27430463947367], [32.84817973265306, -117.27384227142858], [32.84844236666667, -117.27431846666667], [32.843775915, -117.27872847499998], [32.84451833666667, -117.27192016333336], [32.827176055952364, -117.1815112916667], [32.77178440499999, -117.17784523875], [32.75119287763158, -117.2309812210526], [32.74728225555556, -117.25192126666668], [32.768835332, -117.19405110799998], [32.803104390909084, -117.15343660909092], [32.802959490612, -117.15358169239454], [32.80281459031491, -117.15372677569816], [32.80266969001782, -117.15387185900178], [32.802524789720735, -117.1540169423054], [32.80237988942364, -117.15416202560904], [32.80223498912655, -117.15430710891266], [32.802090088829466, -117.15445219221628], [32.80194518853238, -117.1545972755199], [32.80180028823529, -117.15474235882353], [32.773424902564095, -117.20253748205134], [32.78002870588235, -117.17791259411764], [32.874460984210536, -117.19667924473683], [33.046084184615374, -117.28385315576921], [33.16151840714286, -117.35110692142855], [33.347282093846154, -117.52201645384616], [33.49716235483869, -117.69531774408597], [33.53785162399999, -117.77955836400001], [33.58156777327587, -117.85011199310337], [33.679850838129504, -118.0236165395683], [33.74106228214285, -118.07742812321429], [33.987773864795926, -118.17969767551017], [34.08242178, -118.31825334], [34.07730987500001, -118.31552860000001], [34.0749332925, -118.31854279499998], [34.07962331034482, -118.31691649999998], [34.07996286530172, -118.31707473749998], [34.08030242025862, -118.31723297499998], [34.080641975215514, -118.31739121249998], [34.08098153017241, -118.31754944999999], [34.08132108512931, -118.31770768749999], [34.081660640086206, -118.31786592499999], [34.08200019504311, -118.3180241625], [34.08233975, -118.3181824], [34.08412108541666, -118.28885629583334], [34.0850684171875, -118.29066143437502], [34.0823855, -118.31821230000001], [34.07842510454546, -118.32114801818179], [34.0832986, -118.317922], [34.04336307916667, -118.38402289375001], [34.016254179166665, -118.4901416], [34.034072326570026, -118.66902074734294], [34.12836238721803, -119.06690632857139], [34.209197888888895, -119.16805766296297], [34.20322591071429, -119.18093801428574], [34.327424904615384, -119.38246273384617], [34.40903180588235, -119.57698847058825], [34.4181391, -119.6703169], [34.4180465, -119.67026175000001], [34.41801866666667, -119.67022507777779], [34.417990833333334, -119.67018840555556], [34.417963, -119.67015173333334], [34.417935166666666, -119.67011506111112], [34.41790733333334, -119.6700783888889], [34.417879500000005, -119.67004171666667], [34.41785166666667, -119.67000504444445], [34.41782383333334, -119.66996837222223], [34.417796, -119.6699317], [34.418189312500004, -119.67160203750001], [34.418582625, -119.673272375], [34.419948833333336, -119.69724723939393], [34.4192310689655, -119.69934228965519], [34.421911959999996, -119.70264983333335], [34.4238071, -119.70380127142857], [34.43160528235294, -119.80925597647058], [34.41555750909091, -119.86334054545453], [34.41305127777778, -119.85556825555555], [34.420097958333336, -119.80570847500002], [34.41810834545454, -119.6713228818182], [34.41888713636364, -119.6748996909091], [34.415971856249996, -119.68590102499998], [34.41833222857143, -119.69736344285717], [34.41908624, -119.69868661999999], [34.41901858571429, -119.68815935714285], [34.41891345625, -119.68592125625], [34.418808326785715, -119.68368315535714], [34.41870319732143, -119.68144505446429], [34.41859806785715, -119.67920695357142], [34.41849293839286, -119.67696885267857], [34.41838780892857, -119.67473075178572], [34.41828267946428, -119.67249265089286], [34.418177549999996, -119.67025455000001], [34.4182878, -119.67019965], [34.41820588, -119.67001956000001], [34.42908396666667, -119.74392494], [34.4354886031579, -119.82740447473688], [34.51376176705883, -119.78522748117646], [34.5155794, -119.80364001714284], [34.57922187567568, -120.02705092432427], [34.60381829473685, -120.15086733052634], [34.74350774350649, -120.24459955454546], [35.12321672631579, -120.61231027368419], [35.1413107, -120.59689398333335], [35.1414385, -120.5973095], [35.1412664, -120.59729675], [35.1410943, -120.597284], [35.141207300000005, -120.5971546], [35.1412525, -120.5971094], [35.14124510625, -120.59712203749999], [35.1412377125, -120.59713467499999], [35.141230318750004, -120.5971473125], [35.141222925, -120.59715994999999], [35.141187, -120.5972231], [35.1411919, -120.59722625], [35.1411968, -120.5972294], [35.14124578888888, -120.5972579111111], [35.14125836666667, -120.59727223333334], [35.20021208356166, -120.65901954520542], [35.28919382615384, -120.66098485846153], [35.412708718012404, -120.66044361304351], [35.60797583714285, -120.69196092285713], [35.639618525, -120.71194703124998], [35.64796115, -120.77779927500002], [35.57912115937499, -120.8627202125], [35.42223610196079, -120.89795659215683], [35.36766692, -120.85416748], [35.26018783666666, -120.73957371000002], [35.17811647692307, -120.71591653076923], [35.159667825961535, -120.65652834038463], [35.141219174999996, -120.59714015], [35.1412111625, -120.59714664166667], [35.141203149999996, -120.59715313333334], [35.1411951375, -120.597159625], [35.141187125, -120.59716611666667], [35.1411791125, -120.59717260833334], [35.1411711, -120.5971791], [35.1411779, -120.59719845000001], [35.14120965, -120.597177225], [35.1412414, -120.597156], [35.14122722222223, -120.59718407777778], [35.20059105510204, -120.656391744898], [35.5038542811881, -121.0050366188119], [35.64650294428572, -121.17037044285709], [35.6856092, -121.1680106], [35.6648916287129, -121.20691422871289], [35.83575018571428, -121.39243659523812], [36.06316771904762, -121.58294636666668], [36.26284785384616, -121.79569404615387], [36.51566354117647, -121.91765395294118], [36.566016242857145, -121.89624292857143], [36.82861408, -121.74195577333333], [37.51432798907563, -121.90903405966385], [37.901153797872354, -122.07039481702128], [37.9414106, -122.09395563999999], [37.941572475, -122.09310367500001], [37.94139716666667, -122.0939601], [37.94152550166667, -122.09392101666667], [37.94165383666667, -122.09388193333334], [37.94178217166667, -122.09384284999999], [37.94191050666667, -122.09380376666665], [37.94203884166667, -122.09376468333332], [37.94216717666667, -122.09372559999997], [37.94229551166667, -122.09368651666664], [37.94242384666667, -122.0936474333333], [37.94141185, -122.09400675], [37.941397385, -122.093964015], [37.941382919999995, -122.09392127999999], [37.94143942857143, -122.09392205714288], [37.941361211111115, -122.09393467777778], [37.94138784285714, -122.09394737142857], [37.941378, -122.0939834], [37.94139614166667, -122.09389154166666], [37.94148241666667, -122.09404246666668]],
+                {"blur": 30, "max": 3.0, "maxZoom": 12, "minOpacity": 0.0, "radius": 20}
+            ).addTo(feature_group_7b3ff9c23d384341a7414a35da18937f);
+        
+    
+            var feature_group_faec413cea5b4f69bf993b609cc1d575 = L.featureGroup(
+                {}
+            ).addTo(map_375fec848d6a432caa32d23561da6fbf);
+        
+    
+            ant_path_165593218f444b94ab93069f29b04ebe = L.polyline.antPath(
+              [[33.7430194, -116.2860034], [33.8185248, -116.3733277], [33.7632913, -116.3007507], [33.7995347, -116.3775383], [33.8536254, -116.4653718], [33.9008366, -116.531114], [33.9182496, -116.6222921], [33.9238214, -116.7286447], [33.9306523, -116.8205411], [33.9268793, -116.9410268], [33.9330682, -117.0307802], [33.9362837, -117.1191408], [33.9403611, -117.2293774], [33.8697103, -117.2629293], [33.7869327, -117.220848], [33.7179093, -117.1893045], [33.6364138, -117.171228], [33.5571918, -117.1809586], [33.4851012, -117.1425813], [33.4055339, -117.1661327], [33.3134782, -117.1524485], [33.229575, -117.1461125], [33.1646143, -117.107142], [33.0927971, -117.0832567], [33.0098049, -117.0804694], [32.9401862, -117.1105416], [32.8581642, -117.1149488], [32.7953585, -117.1578533], [32.7339023, -117.1121718], [32.6899713, -117.1798593], [32.7647854, -117.1629944], [32.8166505, -117.2235262], [32.765639, -117.1629593], [32.7463991, -117.2460937], [32.7636358, -117.160546], [32.8423735, -117.1748064], [32.9090447, -117.2268713], [32.9793178, -117.2514326], [33.046258, -117.2864668], [33.1253241, -117.3238308], [33.1855655, -117.3708908], [33.2610097, -117.428299], [33.3303219, -117.4941691], [33.3832746, -117.5771242], [33.4468885, -117.6339617], [33.5130625, -117.6678463], [33.513366, -117.7548337], [33.5636922, -117.8250918], [33.6129902, -117.891394], [33.6402754, -117.9741172], [33.6904627, -118.0423172], [33.7538509, -118.0863918], [33.8282764, -118.0827059], [33.8978078, -118.1049288], [33.9700917, -118.1223955], [34.0202342, -118.1894913], [34.0679058, -118.2559641], [34.0479156, -118.3443764], [34.0285998, -118.4483797], [34.0364125, -118.5368202], [34.0381977, -118.6236848], [34.0340817, -118.7128568], [34.0207777, -118.7998858], [34.0402379, -118.8842353], [34.0579492, -118.9721296], [34.0856978, -119.0542863], [34.1465124, -119.1109824], [34.2176582, -119.1419936], [34.256031, -119.216964], [34.2870043, -119.3261555], [34.3362707, -119.4046237], [34.385444, -119.4884385], [34.4161172, -119.571979], [34.4179985, -119.6637461], [34.4422096, -119.7769934], [34.4342429, -119.870751], [34.4414379, -119.7733254], [34.4180794, -119.670239], [34.4413103, -119.7602102], [34.4373458, -119.8530196], [34.4405379, -119.760688], [34.5077595, -119.7949933], [34.5471127, -119.8936506], [34.5777349, -119.9803072], [34.6106471, -120.0609639], [34.5950295, -120.1475398], [34.6639693, -120.1182541], [34.7120184, -120.1842625], [34.7391263, -120.2656924], [34.7898178, -120.3291606], [34.8504659, -120.3829769], [34.9171669, -120.4178482], [34.9900842, -120.4336153], [35.0465075, -120.4932039], [35.1041128, -120.5506354], [35.1380225, -120.6294448], [35.1839743, -120.7013252], [35.2539603, -120.6765108], [35.3147459, -120.6226554], [35.3896091, -120.626035], [35.4624273, -120.6485235], [35.5190504, -120.7033011], [35.5907373, -120.6944081], [35.6548204, -120.7546723], [35.6364505, -120.8553184], [35.572534, -120.7918176], [35.5337122, -120.8685329], [35.5454136, -120.9585217], [35.5274935, -121.0443344], [35.457959, -120.9599205], [35.4139325, -120.8736359], [35.3568091, -120.7928386], [35.3152952, -120.6909192], [35.2417341, -120.683698], [35.1796841, -120.7321995], [35.141237, -120.5970304], [35.1677364, -120.6903314], [35.2437837, -120.682642], [35.3199185, -120.697608], [35.3533567, -120.7795102], [35.3927423, -120.8599809], [35.4522103, -120.9099919], [35.4812617, -120.9955943], [35.5420271, -121.0595907], [35.5935701, -121.1248278], [35.6485176, -121.1839317], [35.6683184, -121.2733169], [35.7611621, -121.321483], [35.8198291, -121.3743563], [35.8759279, -121.4457659], [35.9488016, -121.4784602], [36.013799, -121.5273182], [36.0699368, -121.59959], [36.1413611, -121.6527516], [36.2005804, -121.7236682], [36.2539044, -121.7874287], [36.3014831, -121.8783669], [36.3800042, -121.9018068], [36.458227, -121.9241371], [36.539041, -121.9103235], [36.6040845, -121.8611021], [36.6675498, -121.8140979], [36.7345076, -121.7798507], [36.784084, -121.6896556], [36.9560179, -121.5515518], [37.0533596, -121.5818591], [37.2442085, -121.772453], [37.3309728, -121.8429656], [37.4018253, -121.8764409], [37.472844, -121.910167], [37.5450754, -121.919931], [37.6095233, -121.8739179], [37.6778909, -121.9120836], [37.7707068, -121.9717624], [37.8557563, -122.0295527], [37.9109995, -122.0987594], [37.9414543, -122.0940636]],
+              {"bubblingMouseEvents": true, "color": "black", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(feature_group_faec413cea5b4f69bf993b609cc1d575);
+        
+    
+            ant_path_165593218f444b94ab93069f29b04ebe.bindTooltip(
+                `<div>
+                     Roadtrip from Santa Ana, US --> Oakland, US
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_6dcb3a1d78664c6aa6bfbef3f38cc69a = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_a5a359b74b2f4ce1a35078093e6c1d54,
+                },
+                overlays :  {
+                    "openstreetmap" : tile_layer_83ea38c13a1b4960961d92262f40d59a,
+                    "Photos" : feature_group_57a2d125883e411195c7bce750a08529,
+                    "Heatmap" : feature_group_7b3ff9c23d384341a7414a35da18937f,
+                    "Highway 1" : feature_group_faec413cea5b4f69bf993b609cc1d575,
+                },
+            };
+            L.control.layers(
+                layer_control_6dcb3a1d78664c6aa6bfbef3f38cc69a.base_layers,
+                layer_control_6dcb3a1d78664c6aa6bfbef3f38cc69a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_375fec848d6a432caa32d23561da6fbf);
+            tile_layer_83ea38c13a1b4960961d92262f40d59a.remove();
+        
+</script>
