@@ -1,4 +1,18 @@
 
+/*.navbar-custom .nav .navlinks-container-blog {
+  position: relative;
+  max-width: 300px;
+}
+*/
+
+.smb-navlinks-parent {
+  width: 150px;
+}
+
+.smb-navbar-right {
+  /*width: 250px;*/
+}
+
 .smb-navbar {
   max-width: 850px;
 }
