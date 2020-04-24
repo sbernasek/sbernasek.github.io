@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>Recent Trips</title>
+  <title>Itineraries</title>
 
   <meta name="author" content="Sebastian Bernasek" />
 
@@ -75,19 +75,19 @@
   
 
   
-  <meta property="og:title" content="Recent Trips" />
+  <meta property="og:title" content="Itineraries" />
   
 
    
-  <meta property="og:description" content="Travel maps We combined our photos and tracking data to summarize our recent trips below. There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html). In each map: * The blue/red shading (heatmap) shows where we were * Red lines are flights * Green lines are trains * Black lines are...">
+  <meta property="og:description" content="We combined photos and mobile tracking data to summarize our recent travels. Check out the results below! There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html). In each map: * The color shading shows where we were * Red lines are flights * Green lines are trains * Black lines...">
   
 
 
   <meta property="og:type" content="website" />
 
   
-  <meta property="og:url" content="/travel/trips/" />
-  <link rel="canonical" href="/travel/trips/" />
+  <meta property="og:url" content="/travel/itineraries/" />
+  <link rel="canonical" href="/travel/itineraries/" />
   
 
   
@@ -100,11 +100,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Recent Trips" />
+  <meta name="twitter:title" content="Itineraries" />
   
 
   
-  <meta name="twitter:description" content="Travel maps We combined our photos and tracking data to summarize our recent trips below. There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html). In each map: * The blue/red shading (heatmap) shows where we were * Red lines are flights * Green lines are trains * Black lines are...">
+  <meta name="twitter:description" content="We combined photos and mobile tracking data to summarize our recent travels. Check out the results below! There's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html). In each map: * The color shading shows where we were * Red lines are flights * Green lines are trains * Black lines...">
   
 
   
@@ -124,50 +124,54 @@
 
   
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid smb-row">
+  <div class="container-fluid smb-navbar">
 
-    <!-- Left column -->
-    <div class="smb-col smb-col-left"><a class="navbar-brand" href="/travel">Xtina & Seb</a></div>
+    <!-- LEFT: header -->
+    <div class="navbar-header">
+      
+      
+
+      <a class="navbar-brand" href="/travel">Xtina & Seb</a>
+
+      <!-- Add the title on the right (for mobile).  smb page title, right align, and  -->
+      
+        <div class="smb-right-align smb-blog-title-mobile">
+          <h1 class="smb-page-title">Itineraries</h1>
+        </div>
+      
+
+    </div>
 
 
-    <!-- Center column -->
-    
+    <div class="collapse navbar-collapse" id="main-navbar">
 
-      <!-- Blog avatar -->
-      <div class="smb-col smb-col-center">      
-        <div class="blog-avatar-container">
-          <div class="avatar-img-border">
-            <a href="/travel">
-              <img class="avatar-img" src="/img/site/blog_avatar.png" />
-            </a>
+      <!-- RIGHT: Navigation bar for web browsers *** THIS BLOCK PUSHES AVATAR DOWN -->
+      
+          <div class="nav navbar-nav navbar-right">
+            <button class="navbar-brand smb-back-button smb-desktop-only" onclick="goBack()">
+              <span>Go Back</span>
+            </button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
           </div>
-        </div>
-      </div>
-
-    <!-- Page title -->
-      
 
       
-    <!-- Right column -->
-    
 
-      <!-- Right column -->
-      <div class="smb-col smb-col-right smb-hide-mobile">
-        <div class="smb-right-align">
-
-          <button class="navbar-brand smb-back-button" onclick="goBack()">
-            <span>Go Back</span>
-          </button>
-          <script>
-            function goBack() {
-              window.history.back();
-            }
-          </script> 
-
+      <!-- Add the title in the middle (desktop only). -->
+      
+        <div class="smb-page-heading smb-blog-title">
+          <h1 class="smb-page-title"><span class="page-heading">Itineraries</span></h1>
         </div>
-      </div>
+      
 
-    
+    </div>
+
+
+  <!-- CENTER: avatar -->
+  
 
   </div>
 </nav>
@@ -177,33 +181,18 @@
 
 
 
+  
 
+  <header class="header-section ">
+    
 
-<header class="header-section ">
+    
 
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="intro-header-blog"></div>
 
-        <div class="page-heading">
-          <!-- SEB EDIT -->
-          <!-- <h1>Recent Trips</h1> -->
+    
 
-          
-
-          <!-- <hr class="small"> -->
-          <!-- END SEB EDIT -->
-		      
-    		  
-    		  
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
+  </header>
 
 
 
@@ -212,66 +201,59 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <h1> Travel maps </h1>
+      <div style="margin-top: -20px"></div>
 
-<p>We combined our photos and tracking data to summarize our recent trips below. There’s also a <a href="/travel/maps/merge.html">composite version</a>.</p>
+<p>We combined photos and mobile tracking data to summarize our recent travels. Check out the results below! There’s also a <a href="/travel/maps/merge.html">composite version</a>.</p>
 
 <p>In each map:</p>
 <ul>
-  <li>The blue/red shading (heatmap) shows where we were</li>
+  <li>The color shading shows where we were</li>
   <li>Red lines are flights</li>
   <li>Green lines are trains</li>
   <li>Black lines are driving routes</li>
 </ul>
 
-<p>The menu in the top right corner controls which segments of the itinerary are shown.</p>
+<p>The menu in the top right corner of each map controls which segments of the itinerary are shown.</p>
 
-<p><br />
-<br /></p>
-<hr />
+<h2 id="spring-2020">Spring 2020</h2>
 
-<h3 id="spring-2020">Spring 2020</h3>
-<p>Seb hiked a long way, then we went skiing. When the snow ran out, we drove a long way to find more of it.</p>
+<p class="smb-map-text">
+Seb hiked a long way, then we went skiing. When the snow ran out, we drove a long way to find more of it.
+</p>
 <div class="map-container">
     <iframe src="/travel/maps/2020_spring.html" allowfullscreen="" frameborder="0">
     </iframe>
 </div>
-<p><br />
-<br /></p>
+<hr class="smb-map-break" />
 
-<h3 id="winter-2019">Winter 2019</h3>
-<p>After a long roadtrip through Morocco, we went skiing with Mike™ in the Alps.</p>
-<p>
-  <div class="map-container">
-      <iframe src="/travel/maps/2019_winter.html" allowfullscreen="" frameborder="0">
-      </iframe>
-  </div>
+<h2 id="winter-2019">Winter 2019</h2>
+<p class="smb-map-text">
+After a long roadtrip through Morocco, we went skiing with Mike&trade; in the Alps.
 </p>
-<p><br />
-<br /></p>
+<div class="map-container">
+    <iframe src="/travel/maps/2019_winter.html" allowfullscreen="" frameborder="0">
+    </iframe>
+</div>
+<hr class="smb-map-break" />
 
-<h3 id="fall-2019">Fall 2019</h3>
-<p>We met up with friends and looked at very old buildings in Europe.</p>
-<p>
-  <div class="map-container">
-      <iframe src="/travel/maps/2019_fall.html" allowfullscreen="" frameborder="0">
-      </iframe>
-  </div>
+<h2 id="fall-2019">Fall 2019</h2>
+<p class="smb-map-text">
+We met up with friends and looked at very old buildings in Europe.
 </p>
-<p><br />
-<br /></p>
+<div class="map-container">
+    <iframe src="/travel/maps/2019_fall.html" allowfullscreen="" frameborder="0">
+    </iframe>
+</div>
+<hr class="smb-map-break" />
 
-<h3 id="summer-2019">Summer 2019</h3>
-<p>We took the scenic route from Palm Springs to the Bay Area.</p>
-<p>
-  <div class="map-container">
-      <iframe src="/travel/maps/2019_summer.html" allowfullscreen="" frameborder="0">
-      </iframe>
-  </div>
+<h2 id="summer-2019">Summer 2019</h2>
+<p class="smb-map-text">
+We took the scenic route from Palm Springs to the Bay Area.
 </p>
-<p><br />
-<br /></p>
-
+<div class="map-container">
+    <iframe src="/travel/maps/2019_summer.html" allowfullscreen="" frameborder="0">
+    </iframe>
+</div>
 
 	    
     </div>

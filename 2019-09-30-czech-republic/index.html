@@ -124,44 +124,54 @@
 
   
     <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid smb-row">
+  <div class="container-fluid smb-navbar">
 
-    <!-- Left column -->
-    <div class="smb-col smb-col-left"><a class="navbar-brand" href="/travel">Xtina & Seb</a></div>
-
-
-    <!-- Center column -->
-    
-      <div class="smb-col smb-col-center smb-right-align-mobile">
-        <h1 class="smb-page-title">
-          <span class="page-heading">
-            Czech Republic
-          </span>
-        </h1>
-      </div>
+    <!-- LEFT: header -->
+    <div class="navbar-header">
+      
       
 
+      <a class="navbar-brand" href="/travel">Xtina & Seb</a>
+
+      <!-- Add the title on the right (for mobile).  smb page title, right align, and  -->
       
-    <!-- Right column -->
-    
-
-      <!-- Right column -->
-      <div class="smb-col smb-col-right smb-hide-mobile">
-        <div class="smb-right-align">
-
-          <button class="navbar-brand smb-back-button" onclick="goBack()">
-            <span>Go Back</span>
-          </button>
-          <script>
-            function goBack() {
-              window.history.back();
-            }
-          </script> 
-
+        <div class="smb-right-align smb-blog-title-mobile">
+          <h1 class="smb-page-title">Czech Republic</h1>
         </div>
-      </div>
+      
 
-    
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+
+      <!-- RIGHT: Navigation bar for web browsers *** THIS BLOCK PUSHES AVATAR DOWN -->
+      
+          <div class="nav navbar-nav navbar-right">
+            <button class="navbar-brand smb-back-button smb-desktop-only" onclick="goBack()">
+              <span>Go Back</span>
+            </button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+
+      
+
+      <!-- Add the title in the middle (desktop only). -->
+      
+        <div class="smb-page-heading smb-blog-title">
+          <h1 class="smb-page-title"><span class="page-heading">Czech Republic</span></h1>
+        </div>
+      
+
+    </div>
+
+
+  <!-- CENTER: avatar -->
+  
 
   </div>
 </nav>
@@ -171,33 +181,18 @@
 
 
 
+  
 
+  <header class="header-section ">
+    
 
-<header class="header-section ">
+    
 
-<div class="intro-header no-img">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="intro-header-blog"></div>
 
-        <div class="page-heading">
-          <!-- SEB EDIT -->
-          <!-- <h1>Czech Republic</h1> -->
+    
 
-          
-
-          <!-- <hr class="small"> -->
-          <!-- END SEB EDIT -->
-		      
-    		  
-    		  
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
+  </header>
 
 
 

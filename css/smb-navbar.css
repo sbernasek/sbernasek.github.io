@@ -1,4 +1,8 @@
 
+.smb-navbar {
+  max-width: 850px;
+}
+
 .smb-row {
   display: flex;
   max-width: 800px;
@@ -101,6 +105,15 @@
     width: 175px;
     padding-top: 10px;
   }
+
+
+
+  .navbar-custom .blog-avatar-container .blog-title-container {
+    text-align: center;
+    width: 250px;
+  }
+
+
 
   /*.navbar-custom .blog-avatar-container .avatar-img-border {
     width: 100%;

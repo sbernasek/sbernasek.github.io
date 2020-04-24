@@ -70,6 +70,9 @@
 <loc>/</loc>
 </url>
 <url>
+<loc>/travel/itineraries/</loc>
+</url>
+<url>
 <loc>/nofilter</loc>
 </url>
 <url>
@@ -83,9 +86,6 @@
 </url>
 <url>
 <loc>/tags/</loc>
-</url>
-<url>
-<loc>/travel/trips/</loc>
 </url>
 <url>
 <loc>/cv/cv.pdf</loc>

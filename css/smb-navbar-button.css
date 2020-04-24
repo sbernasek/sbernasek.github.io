@@ -1,10 +1,12 @@
 .smb-back-button {
   text-align: center;
   display: inline-block;
+  width: 125px;
   border: none;
   border-radius: 6px;
   background-opacity: 0;
   padding: 5px 5px;
+  padding-right: 10px;
   transition: all 0.5s;
   transition-duration: 0.5s;
   cursor: pointer;
@@ -15,6 +17,7 @@
 .smb-back-button span {
   cursor: pointer;
   display: inline-block;
+  display: block;
   position: relative;
   transition: 0.5s;
 }
@@ -35,4 +38,25 @@
 .smb-back-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.smb-desktop-only {
+  display: none;
+}
+
+.smb-mobile-only {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+}
+
+@media (min-width: 768px) {
+  .smb-desktop-only {
+    display: inline-block;
+  }
+
+  .smb-mobile-only {
+    display: none;
+  }
 }
