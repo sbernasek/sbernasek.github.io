@@ -18,7 +18,7 @@
 
 .map-container {
     position: relative;
-    top: 20px;
+    top: 0px;
     padding-bottom: 56.25%;
     padding-top: 20%;
     height: 0;
@@ -46,4 +46,15 @@
     margin-bottom: 0;
     margin-left: 0;
     margin: auto;
+}
+
+.smb-map-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+}
+
+.smb-map-break {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

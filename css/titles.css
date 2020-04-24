@@ -1,6 +1,6 @@
 
 .smb-page-title {
-  font-size: 28px;
+  font-size: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin: auto;
@@ -29,4 +29,57 @@
 
 .smb-full-width {
   width: 100%;
+}
+
+
+.smb-blog-title {
+  display: none;
+}
+
+.smb-blog-title-mobile {
+  /*display: block;
+  /*float: right;*/
+  /*height: 50px;
+  top: 0;
+  bottom: 0;
+  text-align: right;
+  padding-top: 0px;
+  padding-bottom: 00px;
+  padding-right: 10px;
+  vertical-align: middle;*/
+  float: right;
+  height: 50px;
+  padding: 5px 5px;
+  line-height: 30px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  
+.smb-blog-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.smb-blog-title-mobile {
+  display: none;
+}
+
+}
+
+.fuck {
+}
+
+
+
+
+
+.smb-page-heading {
+  margin-top: 10px;
 }

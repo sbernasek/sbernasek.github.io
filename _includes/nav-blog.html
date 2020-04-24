@@ -1,100 +1,82 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid smb-row">
+  <div class="container-fluid smb-navbar">
 
-    <!-- Left column -->
-    <div class="smb-col smb-col-left">
-
-      {%- if site.site-image -%}
-        <a class="navbar-brand navbar-brand-logo" href="{{ '' | absolute_url }}"><img src="{{ site.blog_avatar }}"/></a>
-      {%- else -%}
-        <a class="navbar-brand" href="{{ site.blog_url | absolute_url }}">{{ site.blog_title }}</a>
-      {%- endif -%}
-
-    </div>
-
-
-    <!-- Center column -->
-    {% if page.show_avatar %}
-
-      <!-- Blog avatar -->
-      <div class="smb-col smb-col-center">      
-        <div class="blog-avatar-container">
-          <div class="avatar-img-border">
-            <a href="{{ site.blog_url | absolute_url }}">
-              <img class="avatar-img" src="{{ site.blog_avatar | relative_url }}" />
-            </a>
-          </div>
-        </div>
-      </div>
-
-    <!-- Page title -->
-    {% else %}
-      <div class="smb-col smb-col-center smb-right-align-mobile">
-        <h1 class="smb-page-title">
-          <span class="page-heading">
-            {{page.title}}
-          </span>
-        </h1>
-      </div>
-    {% endif %}  
-
+    <!-- LEFT: header -->
+    <div class="navbar-header">
       
-    <!-- Right column -->
-    {% if page.navbar %}
-
-      <!-- Right column -->
-      <div class="smb-col smb-col-right">
-
-        <!-- Navigation bar for web browsers -->
-        <div class="collapse navbar-collapse smb-blog-navbar" id="main-navbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="{{ site.map_page | absolute_url }}">
-                <span class="smb-navbar-link">Trips</span>
-              </a></li>
-            <li class="navlinks-container-blog">
-              <a class="navlinks-parent smb-albums-menu" href="javascript:void(0)">
-                <span class="smb-navbar-link">Photos</span>
-              </a>
-              <div class="navlinks-children">
-                {% for post in paginator.posts %}
-                  <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
-                {%- endfor -%}
-              </div>            
-            </li>
-          </ul>
-        </div>
-
-        <!-- Drop-down navigation bar for mobile -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+      {% if page.navbar %}
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        </button>
+      </button>
+      {% endif %}
 
-      </div>
-      
-    <!-- Otherwise, add back button -->    
-    {% else %}
+      <a class="navbar-brand" href="{{ site.blog_url | absolute_url }}">{{ site.blog_title }}</a>
 
-      <!-- Right column -->
-      <div class="smb-col smb-col-right smb-hide-mobile">
-        <div class="smb-right-align">
-
-          <button class="navbar-brand smb-back-button" onclick="goBack()">
-            <span>Go Back</span>
-          </button>
-          <script>
-            function goBack() {
-              window.history.back();
-            }
-          </script> 
-
+      <!-- Add the title on the right (for mobile).  smb page title, right align, and  -->
+      {% if page.title and page.show_avatar != true %}
+        <div class="smb-right-align smb-blog-title-mobile">
+          <h1 class="smb-page-title">{{page.title}}</h1>
         </div>
-      </div>
+      {% endif %}
 
-    {% endif %}
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+
+      <!-- RIGHT: Navigation bar for web browsers *** THIS BLOCK PUSHES AVATAR DOWN -->
+      {% if page.navbar %} 
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ site.map_page | absolute_url }}">Itineraries</a></li>
+          <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Photos</a>
+              <div class="navlinks-children">
+                {% for post in paginator.posts %}
+                <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
+                {%- endfor -%}
+              </div>
+          </li>
+        </ul>
+        
+      <!-- Need container on right side... -->
+      {% else %}
+          <div class="nav navbar-nav navbar-right">
+            <button class="navbar-brand smb-back-button smb-desktop-only" onclick="goBack()">
+              <span>Go Back</span>
+            </button>
+            <script>
+              function goBack() {
+                window.history.back();
+              }
+            </script>
+          </div>
+
+      {% endif %}
+
+      <!-- Add the title in the middle (desktop only). -->
+      {% if page.title and page.show_avatar != true %}
+        <div class="smb-page-heading smb-blog-title">
+          <h1 class="smb-page-title"><span class="page-heading">{{page.title}}</span></h1>
+        </div>
+      {% endif %}
+
+    </div>
+
+
+  <!-- CENTER: avatar -->
+  {% if page.show_avatar %}
+  <div class="blog-avatar-container">
+    <div class="avatar-img-border">
+      <a href="{{ site.blog_url | absolute_url }}">
+        <img class="avatar-img" src="{{ site.blog_avatar | relative_url }}" />
+    </a>
+    </div>
+  </div>
+  {% endif %}
 
   </div>
 </nav>
