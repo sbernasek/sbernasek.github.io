@@ -216,6 +216,19 @@ class Trip:
                    icon=icon,
                   ).add_to(dst)
 
+    def add_activities(self, activities,
+        line_color='purple',
+        show=True):
+
+        self.fgs['activities'] = FeatureGroup('Hiking/Skiing', show=show).add_to(self.map)
+            
+        # add activities to map
+        for activity in activities:
+            obj = activity.get_line(line_color=line_color, weight=1).add_to(self.fgs['activities'])
+
+            if activity.is_hiking:
+                obj = activity.get_marker().add_to(self.fgs['activities'])
+
     def add_heatmap_to_map(self, show=False, **kwargs):
 
         # add feature group
