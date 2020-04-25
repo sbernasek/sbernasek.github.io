@@ -9,10 +9,12 @@ subtitle:
 
 <div style="margin-top: -20px"></div>
 
-The sections below combine photos and mobile tracking data to summarize our recent travels. Each map contains a few different things: 
+The sections below combine photos, mobile tracking, and activity data to summarize our recent travels. Each map contains a few different things: 
 * A heatmap shows where we were. 
 * Lines reflect routes we took. Flights are red, trains are green, and drives are black. 
-* Circles contain geotagged photos. Zoom in to see exactly where they were shot. 
+* Red/Green circles contain geotagged photos. Zoom in to see exactly where they were shot.
+* Black circles summarize our ski days at each resort.
+* Green circles show hikes we went on.
 * A menu in the top right corner lets you control which of these are shown.
 
 If you're more interested in the big picture, there's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
