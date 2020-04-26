@@ -2,8 +2,8 @@
 layout: blog
 navbar: false
 show_avatar: false
-title: Lake Tahoe
-title_slug: Lake Tahoe
+title: Northern California
+title_slug: Northern California
 subtitle: 
 comments: false
 image: https://i.imgur.com/WDecwZBl.jpg
