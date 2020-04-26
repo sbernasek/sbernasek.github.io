@@ -850,11 +850,11 @@
   \begin{center}
     \begin{tabular*}{\textwidth}{
        @{\extracolsep{\fill}} 
-       L{\textwidth * \real{0.2}}  
-       L{\textwidth * \real{0.2}}  
-       L{\textwidth * \real{0.2}}  
-       L{\textwidth * \real{0.2}}  
-       L{\textwidth * \real{0.2}}
+       L{\textwidth * \real{0.22}}  
+       L{\textwidth * \real{0.20}}  
+       L{\textwidth * \real{0.20}}  
+       L{\textwidth * \real{0.21}}  
+       L{\textwidth * \real{0.17}}
     }}{%
 	\end{tabular*}
   \end{center}
