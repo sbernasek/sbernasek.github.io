@@ -16,16 +16,16 @@ meta-description: Xtina & Seb's Adventures
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
-    <div class="post-image-bg img-container-post" style="background-image: url({{post.image}})"> 
-        
-        <div class="img-caption-post smb-container-centering">
+    <div class="album-cover-container" style="background-image: url({{post.image}})"> 
 
-          <h1 class="smb-post-title">
+        <div class="album-cover-caption-container">
+
+          <h1 class="album-cover-caption-title">
             {{post.title}}
           </h1>
 
           {% if post.subtitle %}
-            <h4 class="smb-post-title">
+            <h4 class="album-cover-caption-subtitle">
               {{ post.subtitle }}
             </h4>
           {% endif %}

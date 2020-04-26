@@ -30,8 +30,8 @@
       <!-- RIGHT: Navigation bar for web browsers *** THIS BLOCK PUSHES AVATAR DOWN -->
       {% if page.navbar %} 
 
-        <ul class="nav navbar-nav navbar-right smb-navbar-right">
-          <li><a href="{{ site.map_page | absolute_url }}">Itineraries</a></li>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="itin-link" class="smb-mobile-mask"><a href="{{ site.map_page | absolute_url }}">Itineraries</a></li>
           <li class="navlinks-container">
               <a class="navlinks-parent smb-navlinks-parent" href="javascript:void(0)">Photos</a>
               <div class="navlinks-children">

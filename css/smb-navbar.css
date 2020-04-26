@@ -5,53 +5,25 @@
 }
 */
 
+
+
 .smb-navlinks-parent {
   width: 150px;
 }
 
-.smb-navbar-right {
-  /*width: 250px;*/
-}
 
 .smb-navbar {
   max-width: 850px;
 }
 
-.smb-row {
-  display: flex;
-  max-width: 800px;
-}
 
-.smb-col {
-  padding: 1em;
-  top:0;
-  bottom: 0;
-  margin: auto;
-  /*border:1px solid black;*/
-}
-
-.smb-col-left {
-    flex-basis: 300px;
-    max-width: 50%;
+/* If the screen size is 600px wide or less, hide the itinerary link */
+@media only screen and (max-width: 768px) {
+  #itin-link {
+    display: none !important;
   }
-
-.smb-col-center {
-  text-align: center;
 }
 
-@media only screen and (min-width: 500px) {
-
-  .smb-col-right,
-  .smb-col-left {
-    flex-basis: 300px;
-    max-width: 50%;
-  }
-
-  .smb-col-center {
-    flex-grow: 1;
-  }
-
-}
 
 
 /*Hide containers on screens <768px*/

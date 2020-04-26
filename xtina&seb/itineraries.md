@@ -9,13 +9,17 @@ subtitle:
 
 <div style="margin-top: -20px"></div>
 
+<div class="smb-small-screen-warning">
+<b>Warning:</b> It looks like you're on a device that may have trouble displaying the content below. We recommend revisiting this page on a laptop or large tablet.
+</div>
+
 The sections below combine photos, mobile tracking, and activity data to summarize our recent travels. Each map contains a few different things: 
 * A heatmap shows where we were. 
-* Lines reflect routes we took. Flights are red, trains are green, and drives are black. 
-* Red camera icons denote geotagged photos.
+* Lines are routes we took. Flights are red, trains are green, and drives are black. 
+* Red camera icons are geotagged photos.
 * Big red or green circles are clusters of photos taken close together.
-* Small green circles describe Seb's hiking endeavours.
-* Small black circles summarize Seb's ski days at a particular resort.
+* Small green circles are hikes we went on.
+* Small black circles summarize ski days at a particular resort.
 * A menu in the top right corner lets you control which of these are shown.
 
 If you're more interested in the big picture, there's also a [composite version]({{ site.map_objs | absolute_url }}/merge.html).
