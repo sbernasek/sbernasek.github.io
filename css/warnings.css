@@ -1,0 +1,17 @@
+/* --- Notification boxes --- */
+.smb-small-screen-warning {
+  background-color: #fdf5d4;
+  border-left-color: #f1c40f;
+  padding: 15px 15px 15px 10px;
+  margin: 20px 20px 20px 5px;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 5px 3px 3px 5px;
+}
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (min-width: 600px) {
+  .smb-small-screen-warning {
+    display: none;
+  }
+}
