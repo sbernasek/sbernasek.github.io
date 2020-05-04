@@ -1,0 +1,75 @@
+
+/* AVATAR CONTAINER */
+.navbar-custom .smb-avatar-container {
+  display: none;
+}
+
+/* AVATAR IMAGE BORDER */
+.navbar-custom .smb-avatar-container .smb-avatar-img-border {
+  display: : none;
+}
+
+/* AVATAR IMAGE */
+.navbar-custom .smb-avatar-container .smb-avatar-img {
+  display: none;
+}
+
+  
+
+@media only screen and (min-width: 768px) {
+
+
+/* AVATAR CONTAINER */
+  .navbar-custom .smb-avatar-container {
+    display: block;
+    position: absolute;
+    width: 175px;
+    left: 50%;
+    margin-top: -60px;        
+    padding-top: 10px;
+    transition: 1s ease;
+  }
+
+/* AVATAR IMAGE BORDER (expanded) */
+  .navbar-custom .smb-avatar-container .smb-avatar-img-border {
+    display: inline-block;
+    width: 100%;
+    border-radius: 0% 0% 25% 25%;
+    margin-left: -50%;
+
+    /*box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);*/
+  }
+
+
+/* AVATAR IMAGE (expanded) */
+  .navbar-custom .smb-avatar-container .smb-avatar-img {
+    display: block;
+    width: 100%;
+    border-radius: 0% 0% 25% 25%;
+  }
+
+
+/* AVATAR IMAGE BORDER (collapsed) */
+  .navbar-custom.top-nav-short .smb-avatar-container {
+    width: 100px;
+  }
+
+
+/* AVATAR IMAGE BORDER (collapsed) */
+  .navbar-custom.top-nav-short .smb-avatar-container .smb-avatar-img-border {
+  }
+
+
+/* AVATAR IMAGE (collapsed) */
+  .navbar-custom.top-nav-short .smb-avatar-container .smb-avatar-img {    
+    width: 100px;    
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 50%;
+    transition: 1s ease;
+  }
+
+}
