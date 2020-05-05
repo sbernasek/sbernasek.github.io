@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 01:19
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 01:28
  restricted system commands enabled.
 **cv.tex
 (./cv.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.160 seconds)
+luaotfload | main : initialization completed in 0.127 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1422,17 +1422,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-(./content/skills.tex
+(./content/summary.tex
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 16.0pt on input line 6.
+(Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/n' will be
-(Font)              scaled to size 16.0pt on input line 6.
-LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
-LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 21.
+(Font)              scaled to size 9.0pt on input line 10.
+) (./content/skills.tex
+LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 21.
+LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 21.
 
 Overfull \hbox (417.00891pt too wide) in paragraph at lines 21--22
 [] 
@@ -1476,24 +1477,24 @@ LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/it' will be
 ) (./content/experience.tex)
 (./content/publications.tex
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 18.
+(Font)              scaled to size 8.0pt on input line 10.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 18.
-LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 18.
+(Font)              scaled to size 8.0pt on input line 10.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./con
-tent/patents.tex) (./content/software.tex
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 18.
+) (./content/patents.tex) (./content/software.tex
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/it' will be
 (Font)              scaled to size 10.0pt on input line 15.
 )
 (./content/mentorship.tex) (./content/teaching.tex [2]) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1503,26 +1504,26 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41941 strings out of 495119
+ 41951 strings out of 495119
  125171,953878 words of node,token memory allocated
- 1564 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 134 glue, 60 attribute, 55 glue_spec, 60 attribute_
+ 1568 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 134 glue, 61 attribute, 55 glue_spec, 61 attribute_
 list, 1 write nodes
-   avail lists: 1:6,2:1687,3:352,4:258,5:557,6:3753,7:1818,8:168,9:552,10:23,11:
-412
+   avail lists: 1:6,2:1573,3:334,4:247,5:536,6:3555,7:1712,8:171,9:513,10:23,11:
+404
  43930 multiletter control sequences out of 65536+600000
- 78 fonts using 16878623 bytes
- 72i,19n,89p,880b,561s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 78 fonts using 16878671 bytes
+ 72i,19n,89p,880b,560s stack positions out of 5000i,500n,10000p,200000b,100000s
 </Library/Fonts/SourceSansPro-BoldIt.otf></usr/local/texlive/2016/texmf-dist/fon
 ts/opentype/adobe/sourcesanspro/SourceSansPro-RegularIt.otf></Library/Fonts/Sour
 ceSansPro-LightIt.otf></Library/Fonts/SourceSansPro-Light.otf></Library/Fonts/So
 urceSansPro-Bold.otf><./fonts/Roboto-Regular.ttf><./fonts/FontAwesome.ttf><./fon
 ts/Roboto-Italic.ttf></Library/Fonts/SourceSansPro-Regular.otf><./fonts/Roboto-B
 old.ttf><./fonts/Roboto-Thin.ttf>
-Output written on cv.pdf (3 pages, 59730 bytes).
+Output written on cv.pdf (3 pages, 59873 bytes).
 
-PDF statistics: 133 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 131072)
+PDF statistics: 134 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
