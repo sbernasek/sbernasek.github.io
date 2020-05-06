@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 10:26
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 17:11
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.143 seconds)
+luaotfload | main : initialization completed in 0.140 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1480,7 +1480,7 @@ LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/sc' will be
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/bx/n' will be
 (Font)              scaled to size 9.0pt on input line 53.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 92.
+(Font)              scaled to size 9.0pt on input line 79.
 )
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/sc' will be
 (Font)              scaled to size 8.0pt on input line 108.
@@ -1506,10 +1506,10 @@ Here is how much of LuaTeX's memory you used:
  1250 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 96 glue, 48 attribute, 55 glue_spec, 48 attribute_l
 ist, 1 write nodes
-   avail lists: 1:7,2:1642,3:345,4:261,5:652,6:4167,7:1850,8:104,9:527,10:17,11:
-480
+   avail lists: 1:6,2:1642,3:345,4:261,5:689,6:4313,7:1866,8:104,9:527,10:17,11:
+500
  43930 multiletter control sequences out of 65536+600000
- 77 fonts using 16745327 bytes
+ 77 fonts using 16745231 bytes
  72i,19n,89p,884b,561s stack positions out of 5000i,500n,10000p,200000b,100000s
 </Library/Fonts/SourceSansPro-LightIt.otf></Library/Fonts/SourceSansPro-Semibold
 .otf></usr/local/texlive/2016/texmf-dist/fonts/opentype/adobe/sourcesanspro/Sour
@@ -1517,7 +1517,7 @@ ceSansPro-RegularIt.otf></Library/Fonts/SourceSansPro-Light.otf></Library/Fonts/
 SourceSansPro-Bold.otf><./fonts/Roboto-Regular.ttf><./fonts/FontAwesome.ttf><./f
 onts/Roboto-Italic.ttf></Library/Fonts/SourceSansPro-Regular.otf><./fonts/Roboto
 -Bold.ttf><./fonts/Roboto-Thin.ttf>
-Output written on resume.pdf (1 page, 50550 bytes).
+Output written on resume.pdf (1 page, 50658 bytes).
 
 PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
