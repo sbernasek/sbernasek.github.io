@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 10:26
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 17:12
  restricted system commands enabled.
 **cv.tex
 (./cv.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.130 seconds)
+luaotfload | main : initialization completed in 0.138 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1481,9 +1481,9 @@ LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/sc' will be
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/bx/n' will be
 (Font)              scaled to size 9.0pt on input line 53.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 92.
+(Font)              scaled to size 9.0pt on input line 79.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 98.
+(Font)              scaled to size 8.0pt on input line 85.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./con
@@ -1515,10 +1515,10 @@ Here is how much of LuaTeX's memory you used:
  1572 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 134 glue, 62 attribute, 55 glue_spec, 62 attribute_
 list, 1 write nodes
-   avail lists: 1:6,2:1597,3:342,4:256,5:654,6:4194,7:1815,8:175,9:521,10:23,11:
-487
+   avail lists: 1:7,2:1597,3:342,4:256,5:691,6:4340,7:1831,8:175,9:521,10:23,11:
+507
  43932 multiletter control sequences out of 65536+600000
- 79 fonts using 17011967 bytes
+ 79 fonts using 17012111 bytes
  72i,19n,89p,880b,560s stack positions out of 5000i,500n,10000p,200000b,100000s
 </Library/Fonts/SourceSansPro-BoldIt.otf></Library/Fonts/SourceSansPro-LightIt.o
 tf></Library/Fonts/SourceSansPro-Semibold.otf></usr/local/texlive/2016/texmf-dis
@@ -1526,7 +1526,7 @@ t/fonts/opentype/adobe/sourcesanspro/SourceSansPro-RegularIt.otf></Library/Fonts
 /SourceSansPro-Light.otf></Library/Fonts/SourceSansPro-Bold.otf><./fonts/Roboto-
 Regular.ttf><./fonts/FontAwesome.ttf><./fonts/Roboto-Italic.ttf></Library/Fonts/
 SourceSansPro-Regular.otf><./fonts/Roboto-Bold.ttf><./fonts/Roboto-Thin.ttf>
-Output written on cv.pdf (3 pages, 63664 bytes).
+Output written on cv.pdf (3 pages, 63834 bytes).
 
 PDF statistics: 146 PDF objects out of 1000 (max. 8388607)
  103 compressed objects within 2 object streams
