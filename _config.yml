@@ -39,7 +39,7 @@ navbar-links:
     - Publications: "pages/publications"
     - Dissertation: "/dissertation"
     #- Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf" # direct download
-  Resume: "cv/cv.pdf"
+  Resume: "docs/cv.pdf"
   GitHub: "https://github.com/sebastianbernasek"
   Adventures: "xtina&seb"
 
