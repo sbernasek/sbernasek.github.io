@@ -88,12 +88,8 @@
 <loc>/tags/</loc>
 </url>
 <url>
-<loc>/cv/cv.pdf</loc>
-<lastmod>2020-05-05T17:12:11-07:00</lastmod>
-</url>
-<url>
-<loc>/cv/resume.pdf</loc>
-<lastmod>2020-05-05T17:11:14-07:00</lastmod>
+<loc>/docs/cv.pdf</loc>
+<lastmod>2020-06-05T14:26:37-07:00</lastmod>
 </url>
 <url>
 <loc>/docs/dissertation.pdf</loc>
@@ -102,6 +98,10 @@
 <url>
 <loc>/docs/preview.pdf</loc>
 <lastmod>2020-03-18T11:51:44-07:00</lastmod>
+</url>
+<url>
+<loc>/docs/resume.pdf</loc>
+<lastmod>2020-06-05T14:06:11-07:00</lastmod>
 </url>
 <url>
 <loc>/xtina&amp;seb/maps/2019_fall.html</loc>
