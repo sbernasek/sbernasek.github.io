@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  5 MAY 2020 17:11
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.5.22)  4 JUN 2020 17:25
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.140 seconds)
+luaotfload | main : initialization completed in 0.130 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1422,65 +1422,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-(./content/skills.tex
+(./content/summary.tex
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 16.0pt on input line 6.
+(Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/n' will be
-(Font)              scaled to size 16.0pt on input line 6.
-LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
-LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 16.0pt on input line 4.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 21.
+(Font)              scaled to size 9.0pt on input line 10.
+LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/bx/n' will be
+(Font)              scaled to size 9.0pt on input line 16.
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.00014pt on input line 27.
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 27.
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.99986pt on input line 27.
+LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 27.
 
-Overfull \hbox (417.00891pt too wide) in paragraph at lines 21--22
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
  []
 
 
-Overfull \hbox (427.70375pt too wide) in paragraph at lines 33--34
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
  []
 
 
-Overfull \hbox (427.70375pt too wide) in paragraph at lines 45--46
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
  []
 
 
-Overfull \hbox (422.35225pt too wide) in paragraph at lines 57--58
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
  []
 
 
-Overfull \hbox (443.74193pt too wide) in paragraph at lines 69--70
-[] 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
  []
 
-) (./content/education.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--29
+
+ []
+
+) (./content/skills.tex
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 20.
+LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 20.
+
+Overfull \hbox (417.00891pt too wide) in paragraph at lines 20--21
+[] 
+ []
+
+
+Overfull \hbox (427.70375pt too wide) in paragraph at lines 32--33
+[] 
+ []
+
+
+Overfull \hbox (427.70375pt too wide) in paragraph at lines 44--45
+[] 
+ []
+
+
+Overfull \hbox (422.35225pt too wide) in paragraph at lines 56--57
+[] 
+ []
+
+
+Overfull \hbox (443.74193pt too wide) in paragraph at lines 68--69
+[] 
+ []
+
+) (./content/education_short.tex
+LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 19.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/sl' in size <8> not avail
 able
 (Font)              Font shape `EU2/SourceSansPro(2)/m/it' tried instead on inpu
-t line 21.
+t line 19.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 19.
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
+(Font)              scaled to size 8.0pt on input line 19.
 
 
 LaTeX Font Warning: Font shape `EU2/SourceSansPro(3)/m/sc' undefined
-(Font)              using `EU2/SourceSansPro(3)/m/n' instead on input line 21.
+(Font)              using `EU2/SourceSansPro(3)/m/n' instead on input line 19.
 
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 31.
-) (./content/experience.tex
-LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/bx/n' will be
-(Font)              scaled to size 9.0pt on input line 53.
+(Font)              scaled to size 8.0pt on input line 29.
+) (./content/experience_short.tex
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(3)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 79.
+(Font)              scaled to size 9.0pt on input line 77.
 )
 LaTeX Font Info:    Font shape `EU2/SourceSansPro(2)/m/sc' will be
 (Font)              scaled to size 8.0pt on input line 108.
@@ -1501,26 +1545,26 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41886 strings out of 495119
+ 41913 strings out of 495119
  125171,953878 words of node,token memory allocated
- 1250 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 96 glue, 48 attribute, 55 glue_spec, 48 attribute_l
+ 1228 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 94 glue, 46 attribute, 55 glue_spec, 46 attribute_l
 ist, 1 write nodes
-   avail lists: 1:6,2:1642,3:345,4:261,5:689,6:4313,7:1866,8:104,9:527,10:17,11:
-500
- 43930 multiletter control sequences out of 65536+600000
- 77 fonts using 16745231 bytes
- 72i,19n,89p,884b,561s stack positions out of 5000i,500n,10000p,200000b,100000s
-</Library/Fonts/SourceSansPro-LightIt.otf></Library/Fonts/SourceSansPro-Semibold
-.otf></usr/local/texlive/2016/texmf-dist/fonts/opentype/adobe/sourcesanspro/Sour
-ceSansPro-RegularIt.otf></Library/Fonts/SourceSansPro-Light.otf></Library/Fonts/
+   avail lists: 1:6,2:1592,3:339,4:252,5:727,6:4422,7:1856,8:104,9:518,10:17,11:
+517
+ 43939 multiletter control sequences out of 65536+600000
+ 85 fonts using 21483071 bytes
+ 72i,19n,89p,884b,560s stack positions out of 5000i,500n,10000p,200000b,100000s
+</Library/Fonts/SourceSansPro-LightIt.otf></usr/local/texlive/2016/texmf-dist/fo
+nts/opentype/adobe/sourcesanspro/SourceSansPro-RegularIt.otf></Library/Fonts/Sou
+rceSansPro-Semibold.otf></Library/Fonts/SourceSansPro-Light.otf></Library/Fonts/
 SourceSansPro-Bold.otf><./fonts/Roboto-Regular.ttf><./fonts/FontAwesome.ttf><./f
 onts/Roboto-Italic.ttf></Library/Fonts/SourceSansPro-Regular.otf><./fonts/Roboto
 -Bold.ttf><./fonts/Roboto-Thin.ttf>
-Output written on resume.pdf (1 page, 50658 bytes).
+Output written on resume.pdf (1 page, 51850 bytes).
 
-PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 131072)
+PDF statistics: 106 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
