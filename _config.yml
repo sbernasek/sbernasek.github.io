@@ -36,12 +36,12 @@ navbar-links:
   Research: 
     - Projects: "pages/projects"
     - Software: "pages/software"
-    - Publications: "pages/publications"
+    - Papers: "pages/publications"
+    - GitHub: "https://github.com/sebastianbernasek"
     - Dissertation: "/dissertation"
     #- Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf" # direct download
-  Resume: "docs/cv.pdf"
-  GitHub: "https://github.com/sebastianbernasek"
-  Adventures: "xtina&seb"
+  Resume: "docs/cv.pdf"      
+  Travels: "xtina&seb"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
