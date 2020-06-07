@@ -571,7 +571,8 @@ footer .theme-by {
 .intro-header {
   /*margin: 80px 0 20px;*/
   position: relative;
-  margin-top: 130px;
+  min-height: 101px;
+  /*margin-top: 130px;*/
   /*margin-bottom: 20px;*/
 }
 
@@ -667,18 +668,17 @@ footer .theme-by {
 
 @media only screen and (max-width: 768px) {
 
-  .intro-header {
+  .big-img.intro-header {
     display: none;
   }
 }
   
 
-
 @media only screen and (min-width: 768px) {
 
-  .intro-header {
+  /*.intro-header {
     margin-top: 130px;
-  }
+  }*/
   .intro-header.big-img {
     margin-top: 91px; /* Full navbar is small navbar + 20px padding on each side when expanded */
   }
@@ -968,5 +968,4 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
-
 
