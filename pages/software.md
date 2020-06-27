@@ -15,7 +15,7 @@ The software projects detailed below were originally developed to support my own
 A python framework for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while increasing reproducibility.
 
 <p class="aligncenter">
-  <img src="/img/software/flyqma.png" width="650px">
+  <img src="/img/software/flyqma_pipeline.png" width="650px">
 </p>
 
 See the [Fly-QMA page](https://www.sbernasek.com/flyqma) for more info.
