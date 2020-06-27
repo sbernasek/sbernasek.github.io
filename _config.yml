@@ -34,7 +34,7 @@ blog_avatar: "/img/site/blog_avatar_2.png"
 # List of links in the navigation bar
 navbar-links:
   Projects: 
-    - Research: "pages/projects"
+    - Research: "pages/research"
     - Software: "pages/software"
     - Publications: "pages/publications"
     #- Dissertation: "/dissertation"

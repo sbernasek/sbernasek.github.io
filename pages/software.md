@@ -1,5 +1,9 @@
 ---
 layout: page
+use-site-title: false
+title: Software
+bigimg:
+ - "/img/site/triangulation.jpg" : "Triangulating R8 cells in the early fly eye"
 ---
 
 

@@ -1,5 +1,9 @@
 ---
 layout: page
+use-site-title: false
+title: Research
+bigimg:
+ - "/img/site/histone.jpg" : "Cell nuclei in the early fly eye"
 ---
 
 My primary field is quantitative biology; I synthesize concepts from chemical engineering and computer science to study the behavior of biological systems. As a graduate student, I was particularly focused on exploring the chemical mechanisms that guide cells to adopt the appropriate roles and functions during the formation of complex organs.
