@@ -1,30 +1,45 @@
 ---
 layout: page
-title: Software
 ---
 
-{% accordion software-accordion %}
+### Fly-QMA
 
-  {% collapse Fly-QMA %}
-  A python package for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while improving reproducibility. [[site](https://www.sbernasek.com/flyqma)][[code](https://github.com/sebastianbernasek/flyqma)]
+A python framework for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while increasing reproducibility. [[code](https://github.com/sebastianbernasek/flyqma)]
 
-      pip install flyqma
+Check out the [Fly-QMA page](https://www.sbernasek.com/flyqma) for more info.
 
-  {% endcollapse %}
+<p class="aligncenter">
+  <img src="/img/software/flyqma.png" width="650px">
+</p>
 
-  {% collapse FlyEye Analysis %}
-  A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. Supports dynamic analysis, spatial analysis, model fitting, and visualization of the resultant trends. [[site](https://www.sbernasek.com/flyeye)][[code](https://github.com/sebastianbernasek/flyeye)]
 
-      pip install flyeye
+<br>
+### Fly-Eye Analysis
 
-  {% endcollapse %}
+A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. Supports dynamic analysis, spatial analysis, model fitting, and visualization of the resultant trends. [[code](https://github.com/sebastianbernasek/flyeye)]
 
-  {% collapse TF-Binding %}
-  A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable. [[code](https://github.com/sebastianbernasek/binding)]
-  {% endcollapse %}
+Check out the [Fly-Eye Analysis page](https://www.sbernasek.com/flyeye) for more info.
 
-  {% collapse Gene SSA %}
-  A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I've come across. [[code](https://github.com/sebastianbernasek/genessa)]
-  {% endcollapse %}
+<p class="aligncenter">
+  <img src="/img/software/flyeye.png" width="650px">
+</p>
 
-{% endaccordion %}
+
+<br>
+### TF-Binding
+
+A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable. [[code](https://github.com/sebastianbernasek/binding)]
+
+<p class="aligncenter">
+  <img src="/img/software/tfbinding.png" width="650px">
+</p>
+
+
+<br>
+### Gene SSA
+
+A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I've come across. [[code](https://github.com/sebastianbernasek/genessa)]
+
+<p class="aligncenter">
+  <img src="/img/software/genessa.png" width="650px">
+</p>

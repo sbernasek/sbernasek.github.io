@@ -36,7 +36,7 @@
               <a class="navlinks-parent smb-navlinks-parent" href="javascript:void(0)">Photos</a>
               <div class="navlinks-children">
                 {% for post in paginator.posts %}
-                <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
+                  <a href="{{ post.url | absolute_url }}">{{post.title_slug}}</a>
                 {%- endfor -%}
               </div>
           </li>

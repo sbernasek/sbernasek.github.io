@@ -33,11 +33,11 @@ blog_avatar: "/img/site/blog_avatar_2.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Research: 
-    - Projects: "pages/projects"
+  Projects: 
+    - Research: "pages/projects"
     - Software: "pages/software"
-    - Papers: "pages/publications"
-    - Dissertation: "/dissertation"
+    - Publications: "pages/publications"
+    #- Dissertation: "/dissertation"
     #- Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf" # direct download
   Resume:
     - Resume: "docs/resume.pdf"
