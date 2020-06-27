@@ -16,7 +16,7 @@ Check out the [Fly-QMA page](https://www.sbernasek.com/flyqma) for more info.
 <br>
 ### Fly-Eye Analysis
 
-A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. Supports dynamic analysis, spatial analysis, model fitting, and visualization of the resultant trends. [[code](https://github.com/sebastianbernasek/flyeye)]
+A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. The main purpose of this package is to infer aggregate dynamic behavior by assigning a developmental age to each segmented nucleus using the approach described in our upcoming [paper](https://doi.org/10.1101/430744). The package also provides various spatial analysis, model fitting, and visualization methods that are particularly useful for analyzing FlyEye Silhouette data. [[code](https://github.com/sebastianbernasek/flyeye)]
 
 Check out the [Fly-Eye Analysis page](https://www.sbernasek.com/flyeye) for more info.
 
