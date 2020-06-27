@@ -77,7 +77,7 @@
   
 
    
-  <meta property="og:description" content="### Fly-QMA A python framework for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while increasing reproducibility. [[code](https://github.com/sebastianbernasek/flyqma)] Check out the [Fly-QMA page](https://www.sbernasek.com/flyqma) for more info. ### Fly-Eye Analysis A python platform for analyzing...">
+  <meta property="og:description" content="The software projects detailed below were originally developed to support my own research endeavours. I've since packaged them for public distribution in order to ensure that my results remain reproducible and to facilitate new avenues for future research. I don't actively promote any of these, but if you have any...">
   
 
 
@@ -102,7 +102,7 @@
   
 
   
-  <meta name="twitter:description" content="### Fly-QMA A python framework for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while increasing reproducibility. [[code](https://github.com/sebastianbernasek/flyqma)] Check out the [Fly-QMA page](https://www.sbernasek.com/flyqma) for more info. ### Fly-Eye Analysis A python platform for analyzing...">
+  <meta name="twitter:description" content="The software projects detailed below were originally developed to support my own research endeavours. I've since packaged them for public distribution in order to ensure that my results remain reproducible and to facilitate new avenues for future research. I don't actively promote any of these, but if you have any...">
   
 
   
@@ -186,44 +186,65 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <h3 id="fly-qma">Fly-QMA</h3>
+      <p>The software projects detailed below were originally developed to support my own research endeavours. I’ve since packaged them for public distribution in order to ensure that my results remain reproducible and to facilitate new avenues for future research. I don’t actively promote any of these, but if you have any questions or there are any additional features you’d like to see, please don’t hesitate to contact me via github!</p>
 
-<p>A python framework for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while increasing reproducibility. [<a href="https://github.com/sebastianbernasek/flyqma">code</a>]</p>
+<h3 id="flyqma">FlyQMA</h3>
 
-<p>Check out the <a href="https://www.sbernasek.com/flyqma">Fly-QMA page</a> for more info.</p>
+<p>A python framework for automated mosaic analysis of Drosophila imaginal discs. Facilitates high-throughput segmentation, bleedthrough correction, and annotation of raw microscope images in order to accelerate experimental pipelines while increasing reproducibility.</p>
+
+<p>See the <a href="https://www.sbernasek.com/flyqma">Fly-QMA page</a> for more info.</p>
 
 <p class="aligncenter">
   <img src="/img/software/flyqma.png" width="650px" />
 </p>
 
+<p><strong>Use cases:</strong><br />
+• Comparing Pnt-GFP expression between yan clones (<a href="https://doi.org/10.1101/430744">Figure 4</a>)</p>
+
 <p><br /></p>
-<h3 id="fly-eye-analysis">Fly-Eye Analysis</h3>
+<h3 id="flyeye-analysis">FlyEye Analysis</h3>
 
-<p>A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. The main purpose of this package is to infer aggregate dynamic behavior by assigning a developmental age to each segmented nucleus using the approach described in our upcoming <a href="https://doi.org/10.1101/430744">paper</a>. The package also provides various spatial analysis, model fitting, and visualization methods that are particularly useful for analyzing FlyEye Silhouette data. [<a href="https://github.com/sebastianbernasek/flyeye">code</a>]</p>
+<p>A python platform for analyzing gene expression measurements obtained using FlyEye Silhouette. The main purpose of this package is to infer aggregate dynamic behavior by assigning a developmental age to each segmented nucleus using the approach described in our upcoming <a href="https://doi.org/10.1101/430744">paper</a>. The package also provides various spatial analysis, model fitting, and visualization methods that are particularly useful for analyzing FlyEye Silhouette data.</p>
 
-<p>Check out the <a href="https://www.sbernasek.com/flyeye">Fly-Eye Analysis page</a> for more info.</p>
+<p>See the <a href="https://www.sbernasek.com/flyeye">FlyEye Analysis page</a> for more info.</p>
 
 <p class="aligncenter">
   <img src="/img/software/flyeye.png" width="650px" />
 </p>
 
-<p><br /></p>
-<h3 id="tf-binding">TF-Binding</h3>
+<p><strong>Use cases:</strong><br />
+• Measuring Pnt-to-Yan ratio dynamics during retinal patterning (<a href="https://doi.org/10.1101/430744">Several figures</a>)<br />
+• Measuring the effect of miR-7 on Yan expression dynamics (<a href="https://doi.org/10.1016/j.cell.2019.06.023">Figure 5</a>)</p>
 
-<p>A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable. [<a href="https://github.com/sebastianbernasek/binding">code</a>]</p>
+<p><br /></p>
+<h3 id="tf-binding">TF Binding</h3>
+
+<p>A python package for simulating the statistical mechanics of cooperative binding events between transcription factors and their target promoters. A recursive, cython-based implementation enables large-scale and highly parallelized enumeration of all possible microstates that would otherwise be computationally intractable.</p>
+
+<p>Check out the <a href="https://github.com/sebastianbernasek/binding">repo</a> for more info.</p>
 
 <p class="aligncenter">
   <img src="/img/software/tfbinding.png" width="650px" />
 </p>
 
+<p><strong>Use cases:</strong><br />
+• Exploring Pnt/Yan competition for shared ETS binding sites (<a href="https://doi.org/10.1101/430744">Figure 3</a>)</p>
+
 <p><br /></p>
 <h3 id="gene-ssa">Gene SSA</h3>
 
-<p>A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I’ve come across. [<a href="https://github.com/sebastianbernasek/genessa">code</a>]</p>
+<p>A python framework for exact stochastic simulation of Markov processes, with a particular emphasis on gene regulatory networks. Leverages a cython backend to simulate large networks faster and more efficiently than all other open source tools I’ve come across.</p>
+
+<p>Check out the <a href="https://github.com/sebastianbernasek/genessa">repo</a> for more info.</p>
 
 <p class="aligncenter">
   <img src="/img/software/genessa.png" width="650px" />
 </p>
+
+<p><strong>Use cases:</strong><br />
+• Surveying the influence of metabolism on GRN perturbation sensitivity (<a href="https://doi.org/10.1016/j.cell.2019.06.023">Figure 4</a>)<br />
+• Predicting Yan expression dynamics under miR-7 ablation (<a href="https://doi.org/10.1016/j.cell.2019.06.023">Figure 5</a>)</p>
+
 
 	    
     </div>
