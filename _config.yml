@@ -262,6 +262,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-pdf-embed
+  - jekyll-redirect-from
 
 destination: ./_site
 

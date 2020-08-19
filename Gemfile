@@ -10,7 +10,7 @@ group :jekyll_plugins do
   gem "jekyll-pdf-embed"
   gem 'jekyll-paginate'
   gem "jekyll-sitemap"
-  gem "jekyll-pdf-embed"
+  gem 'jekyll-redirect-from'
 end
 
 #gem 'accordion.rb'
