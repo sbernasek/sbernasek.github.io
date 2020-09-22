@@ -38,11 +38,11 @@ navbar-links:
     - Software: "pages/software"
     - Publications: "pages/publications"
     #- Dissertation: "/dissertation"
-    #- Dissertation: "https://github.com/sebastianbernasek/dissertation/raw/master/thesis.pdf" # direct download
+    #- Dissertation: "https://github.com/sbernasek/dissertation/raw/master/thesis.pdf" # direct download
   Resume:
     - Resume: "docs/resume.pdf"
     - Full CV: "docs/cv.pdf"          
-    - GitHub: "https://github.com/sebastianbernasek"
+    - GitHub: "https://github.com/sbernasek"
   Travels: "xtina&seb"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -88,7 +88,7 @@ author:
 social-network-links:
   email: "sbernasek@gmail.com"
   linkedin: sbernasek
-  github: sebastianbernasek
+  github: sbernasek
 
 
 # Select which share links to show in posts

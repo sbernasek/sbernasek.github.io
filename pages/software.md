@@ -49,7 +49,7 @@ A python package for simulating the statistical mechanics of cooperative binding
   <img src="/img/software/tfbinding.png" width="650px">
 </p>
 
-Check out the [repo](https://github.com/sebastianbernasek/binding) for more info.
+Check out the [repo](https://github.com/sbernasek/binding) for more info.
 
 **Use cases:**\\
 &#8226; Exploring Pnt/Yan competition for shared ETS binding sites ([Figure 3](https://doi.org/10.1101/430744))
@@ -64,7 +64,7 @@ A python framework for exact stochastic simulation of Markov processes, with a p
   <img src="/img/software/genessa.png" width="650px">
 </p>
 
-Check out the [repo](https://github.com/sebastianbernasek/genessa) for more info.
+Check out the [repo](https://github.com/sbernasek/genessa) for more info.
 
 **Use cases:**\\
 &#8226; Surveying the influence of metabolism on GRN perturbation sensitivity ([Figure 4](https://doi.org/10.1016/j.cell.2019.06.023))\\
